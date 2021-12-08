@@ -1,0 +1,19 @@
+{
+    "python.pythonPath": "C:\\Users\\lidas\\.msvscode.hdinsight\\hdinsightJupyter\\Scripts\\python.exe",
+    "python.defaultInterpreterPath": "C:\\Users\\lidas\\.msvscode.hdinsight\\hdinsightJupyter\\Scripts\\python.exe",
+    "jupyter.jupyterLaunchTimeout": 240000,
+    "synapseSparkpoolJobSubmission.synapseSparkPoolClusterConf": [
+        {
+            "name": "studentanalytics batched",
+            "filePath": "extension-output-ms-toolsai.jupyter-#2"
+        },
+        {
+            "name": "studentanalytics batched",
+            "filePath": "extension-output-mshdinsight.azure-hdinsight-#1"
+        },
+        {
+            "name": "studentanalytics batched",
+            "filePath": "c:\\Users\\lidas\\synapse\\notebook.py"
+        }
+    ]
+}
