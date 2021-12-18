@@ -1,0 +1,12 @@
+{
+	"name": "unisa",
+	"type": "Microsoft.Synapse/workspaces/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "PowerBIWorkspace",
+		"typeProperties": {
+			"workspaceID": "84cc4774-2ff1-4a1f-89c9-d1d9ddcaa868",
+			"tenantID": "6c2dbd5d-8f60-46c4-a7fe-15a5993fbca5"
+		}
+	}
+}

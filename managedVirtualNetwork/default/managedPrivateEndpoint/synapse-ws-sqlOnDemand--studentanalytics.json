@@ -1,0 +1,10 @@
+{
+	"name": "synapse-ws-sqlOnDemand--studentanalytics",
+	"properties": {
+		"privateLinkResourceId": "/subscriptions/551f35f8-5023-4513-ae40-48f2e9f65fc6/resourceGroups/DUS02mem/providers/Microsoft.Synapse/workspaces/studentanalytics",
+		"groupId": "sqlOnDemand",
+		"fqdns": [
+			"studentanalytics-ondemand.2e67431a-f8fe-4a74-8e13-f23d53f5a799.sql.azuresynapse.net"
+		]
+	}
+}

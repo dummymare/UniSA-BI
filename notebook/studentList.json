@@ -1,0 +1,101 @@
+{
+	"name": "studentList",
+	"properties": {
+		"nbformat": 4,
+		"nbformat_minor": 2,
+		"bigDataPool": {
+			"referenceName": "batched",
+			"type": "BigDataPoolReference"
+		},
+		"sessionProperties": {
+			"driverMemory": "28g",
+			"driverCores": 4,
+			"executorMemory": "28g",
+			"executorCores": 4,
+			"numExecutors": 2,
+			"conf": {
+				"spark.dynamicAllocation.enabled": "false",
+				"spark.dynamicAllocation.minExecutors": "2",
+				"spark.dynamicAllocation.maxExecutors": "2"
+			}
+		},
+		"metadata": {
+			"saveOutput": true,
+			"synapse_widget": {
+				"version": "0.1"
+			},
+			"kernelspec": {
+				"name": "synapse_pyspark",
+				"display_name": "Synapse PySpark"
+			},
+			"language_info": {
+				"name": "python"
+			},
+			"a365ComputeOptions": {
+				"id": "/subscriptions/551f35f8-5023-4513-ae40-48f2e9f65fc6/resourceGroups/DUS02mem/providers/Microsoft.Synapse/workspaces/studentanalytics/bigDataPools/batched",
+				"name": "batched",
+				"type": "Spark",
+				"endpoint": "https://studentanalytics.dev.azuresynapse.net/livyApi/versions/2019-11-01-preview/sparkPools/batched",
+				"auth": {
+					"type": "AAD",
+					"authResource": "https://dev.azuresynapse.net"
+				},
+				"sparkVersion": "2.4",
+				"nodeCount": 3,
+				"cores": 4,
+				"memory": 28,
+				"extraHeader": null
+			}
+		},
+		"cells": [
+			{
+				"cell_type": "code",
+				"source": [
+					"studentDF = spark.read.format(\"csv\").option(\"header\", \"true\").load(\"abfss://datalake@dus02store.dfs.core.windows.net/reOrganized_v2/StudentLists/*\")"
+				],
+				"attachments": null,
+				"execution_count": 4
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					},
+					"collapsed": true
+				},
+				"source": [
+					"studentDF.columns"
+				],
+				"attachments": null,
+				"execution_count": 10
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					},
+					"collapsed": true
+				},
+				"source": [
+					"studentDF.groupBy(\"CourseGradeCode\").count().show()"
+				],
+				"attachments": null,
+				"execution_count": 12
+			}
+		]
+	}
+}

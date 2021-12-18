@@ -1,0 +1,257 @@
+{
+	"name": "learnonline",
+	"properties": {
+		"nbformat": 4,
+		"nbformat_minor": 2,
+		"bigDataPool": {
+			"referenceName": "batched",
+			"type": "BigDataPoolReference"
+		},
+		"sessionProperties": {
+			"driverMemory": "28g",
+			"driverCores": 4,
+			"executorMemory": "28g",
+			"executorCores": 4,
+			"numExecutors": 2,
+			"conf": {
+				"spark.dynamicAllocation.enabled": "false",
+				"spark.dynamicAllocation.minExecutors": "2",
+				"spark.dynamicAllocation.maxExecutors": "2"
+			}
+		},
+		"metadata": {
+			"saveOutput": true,
+			"synapse_widget": {
+				"version": "0.1"
+			},
+			"kernelspec": {
+				"name": "synapse_pyspark",
+				"display_name": "Synapse PySpark"
+			},
+			"language_info": {
+				"name": "python"
+			},
+			"a365ComputeOptions": {
+				"id": "/subscriptions/551f35f8-5023-4513-ae40-48f2e9f65fc6/resourceGroups/DUS02mem/providers/Microsoft.Synapse/workspaces/studentanalytics/bigDataPools/batched",
+				"name": "batched",
+				"type": "Spark",
+				"endpoint": "https://studentanalytics.dev.azuresynapse.net/livyApi/versions/2019-11-01-preview/sparkPools/batched",
+				"auth": {
+					"type": "AAD",
+					"authResource": "https://dev.azuresynapse.net"
+				},
+				"sparkVersion": "2.4",
+				"nodeCount": 3,
+				"cores": 4,
+				"memory": 28,
+				"extraHeader": null
+			}
+		},
+		"cells": [
+			{
+				"cell_type": "code",
+				"source": [
+					"# Read from Cosmos DB analytical store into a Spark DataFrame and display 10 rows from the DataFrame\n",
+					"# To select a preferred list of regions in a multi-region Cosmos DB account, add .option(\"spark.cosmos.preferredRegions\", \"<Region1>,<Region2>\")\n",
+					"\n",
+					"df = spark.read\\\n",
+					"    .format(\"cosmos.olap\")\\\n",
+					"    .option(\"spark.synapse.linkedService\", \"CosmosDbMongoDbApi1\")\\\n",
+					"    .option(\"spark.cosmos.container\", \"learnonline\")\\\n",
+					"    .schema(StructSchema)\\\n",
+					"    .load()"
+				],
+				"attachments": null,
+				"execution_count": 20
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					},
+					"collapsed": true
+				},
+				"source": [
+					"df = df.withColumnRenamed('Activity/Resource Name', 'ActivityResourceName')\r\n",
+					"df = df.withColumnRenamed('Activity/Resource Type', 'ActivityResourceType')\r\n",
+					"df = df.withColumnRenamed('Assessment Method', 'AssessmentMethod')\r\n",
+					"df = df.withColumnRenamed('Number of views', 'NumberOfViews')\r\n",
+					"df = df.withColumnRenamed('Total Views (all students)', 'TotalViews')\r\n",
+					"df = df.withColumnRenamed('Percentage of total views', 'PercentTotalViews')\r\n",
+					"df = df.withColumnRenamed('Number of contributes', 'NumberOfContributes')\r\n",
+					"df = df.withColumnRenamed('Total Contributions (all students)', 'TotalContributions')\r\n",
+					"df = df.withColumnRenamed('Percentage of total contributions', 'PercentTotalContributions')\r\n",
+					"df = df.withColumnRenamed('Student ID', 'StudentID')\r\n",
+					"df = df.withColumnRenamed('Course ID', 'CourseID')\r\n",
+					"df = df.withColumnRenamed('Subject Area', 'SubjectArea')\r\n",
+					"df = df.withColumnRenamed('Catalog Number', 'CatalogNumber')\r\n",
+					"df = df.withColumnRenamed('Course Name', 'CourseName')\r\n",
+					"df = df.withColumnRenamed('Term Code', 'TermCode')\r\n",
+					"df = df.withColumnRenamed('Total Number of Students', 'TotalNumberOfStudents')\r\n",
+					"df = df.withColumnRenamed('Number of students that viewed activity/resource', 'NumberOfStudentsViewedActivityResource')\r\n",
+					"df = df.withColumnRenamed('Number of students that contributed to activity/resource', 'NumberOfStudentsContributedActivityResource')\r\n",
+					"df = df.withColumnRenamed('Proportion of students engaged (%)', 'PercentStudentsEngaged')\r\n",
+					"df = df.withColumnRenamed('Proportion of students not engaged (%)', 'PercentStudentsNotEngaged')"
+				],
+				"attachments": null,
+				"execution_count": 21
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					},
+					"collapsed": true
+				},
+				"source": [
+					"df.printSchema()"
+				],
+				"attachments": null,
+				"execution_count": 24
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					},
+					"collapsed": true
+				},
+				"source": [
+					"from pyspark.sql.types import *"
+				],
+				"attachments": null,
+				"execution_count": 1
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					},
+					"collapsed": true
+				},
+				"source": [
+					"dataSchema = [\r\n",
+					"    StructField('rid', StringType(), True),\r\n",
+					"    StructField('ts', LongType(), True),\r\n",
+					"    StructField('id', StringType(), True),\r\n",
+					"    StructField('etag', StringType(), True),\r\n",
+					"    StructField('oid', StringType(), True),\r\n",
+					"    StructField('tid', StringType(), True),\r\n",
+					"    StructField('ActivityResourceName', StringType(), True),\r\n",
+					"    StructField('ActivityResourceType', StringType(), True),\r\n",
+					"    StructField('AssessmentMethod', StringType(), True),\r\n",
+					"    StructField('NumberOfViews', IntegerType(), True),\r\n",
+					"    StructField('TotalViews', IntegerType(), True),\r\n",
+					"    StructField('PercentTotalViews', DoubleType(), True),\r\n",
+					"    StructField('NumberOfContributes', IntegerType(), True),\r\n",
+					"    StructField('TotalContributions', IntegerType(), True),\r\n",
+					"    StructField('PercentTotalContributions', DoubleType(), True),\r\n",
+					"    StructField('StudentID', StringType(), True),\r\n",
+					"    StructField('CourseID', IntegerType(), True),\r\n",
+					"    StructField('SubjectArea', StringType(), True),\r\n",
+					"    StructField('CatalogNumber', IntegerType(), True),\r\n",
+					"    StructField('CourseName', StringType(), True),\r\n",
+					"    StructField('TermCode', IntegerType(), True),\r\n",
+					"    StructField('Year', IntegerType(), True),\r\n",
+					"    StructField('partitionKey', StringType(), True),\r\n",
+					"    StructField('TotalNumberOfStudents', IntegerType(), True),\r\n",
+					"    StructField('NumberOfStudentsViewedActivityResource', IntegerType(), True),\r\n",
+					"    StructField('NumberOfStudentsContributedActivityResource', IntegerType(), True),\r\n",
+					"    StructField('PercentStudentsEngaged', DoubleType(), True),\r\n",
+					"    StructField('PercentStudentsNotEngaged', DoubleType(), True),\r\n",
+					"]"
+				],
+				"attachments": null,
+				"execution_count": 16
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					},
+					"collapsed": true
+				},
+				"source": [
+					"StructSchema=StructType(fields=dataSchema)"
+				],
+				"attachments": null,
+				"execution_count": 17
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					},
+					"collapsed": true
+				},
+				"source": [
+					"print(StructSchema)"
+				],
+				"attachments": null,
+				"execution_count": 8
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					},
+					"collapsed": true
+				},
+				"source": [
+					"df.collect()"
+				],
+				"attachments": null,
+				"execution_count": 26
+			}
+		]
+	}
+}

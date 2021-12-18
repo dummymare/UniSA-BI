@@ -1,0 +1,574 @@
+{
+	"name": "NewDimStudent",
+	"properties": {
+		"nbformat": 4,
+		"nbformat_minor": 2,
+		"bigDataPool": {
+			"referenceName": "batched",
+			"type": "BigDataPoolReference"
+		},
+		"sessionProperties": {
+			"driverMemory": "28g",
+			"driverCores": 4,
+			"executorMemory": "28g",
+			"executorCores": 4,
+			"numExecutors": 2,
+			"conf": {
+				"spark.dynamicAllocation.enabled": "false",
+				"spark.dynamicAllocation.minExecutors": "2",
+				"spark.dynamicAllocation.maxExecutors": "2"
+			}
+		},
+		"metadata": {
+			"saveOutput": true,
+			"synapse_widget": {
+				"version": "0.1",
+				"state": {
+					"d0fb87a0-7a08-4444-80f0-1c7b837c6c88": {
+						"type": "Synapse.DataFrame",
+						"sync_state": {
+							"table": {
+								"rows": [
+									{
+										"0": "CCXZAGWZD",
+										"1": "2005",
+										"2": [
+											"Full-Time"
+										],
+										"3": "M",
+										"4": "N",
+										"5": [
+											"XBBE"
+										],
+										"6": [],
+										"7": [
+											"Thirroul",
+											"WOLLONGONG"
+										],
+										"8": [
+											2500,
+											2515
+										],
+										"9": [
+											"NSW"
+										],
+										"10": [
+											"WOLLONGONG,NSW,2500",
+											"Thirroul,NSW,2515"
+										],
+										"11": [
+											"Australia"
+										],
+										"12": "19991018"
+									},
+									{
+										"0": "CCXZAGWZD",
+										"1": "2025",
+										"2": [
+											"Full-Time"
+										],
+										"3": "M",
+										"4": "N",
+										"5": [
+											"XBBE"
+										],
+										"6": [],
+										"7": [
+											"Thirroul",
+											"WOLLONGONG"
+										],
+										"8": [
+											2500,
+											2515
+										],
+										"9": [
+											"NSW"
+										],
+										"10": [
+											"WOLLONGONG,NSW,2500",
+											"Thirroul,NSW,2515"
+										],
+										"11": [
+											"Australia"
+										],
+										"12": "19991018"
+									},
+									{
+										"0": "CCXZAXXXG",
+										"1": "1912",
+										"2": [
+											"Part-Time"
+										],
+										"3": "M",
+										"4": "N",
+										"5": [
+											"XBBE"
+										],
+										"6": [],
+										"7": [
+											"HILLSIDE",
+											"THORNHILL PARK"
+										],
+										"8": [
+											3037,
+											3335
+										],
+										"9": [
+											"VIC"
+										],
+										"10": [
+											"THORNHILL PARK,VIC,3335",
+											"HILLSIDE,VIC,3037"
+										],
+										"11": [
+											"Australia"
+										],
+										"12": "19960608"
+									},
+									{
+										"0": "CCXZBGXWH",
+										"1": "1912",
+										"2": [
+											"Full-Time"
+										],
+										"3": "M",
+										"4": "N",
+										"5": [
+											"XBBE"
+										],
+										"6": [],
+										"7": [
+											"WALKLEY HEIGHTS",
+											"RANKIN PARK"
+										],
+										"8": [
+											5098,
+											2287
+										],
+										"9": [
+											"SA",
+											"NSW"
+										],
+										"10": [
+											"RANKIN PARK,NSW,2287",
+											"WALKLEY HEIGHTS,SA,5098"
+										],
+										"11": [
+											"Australia"
+										],
+										"12": "19920426"
+									},
+									{
+										"0": "CCXZBGXWH",
+										"1": "2014",
+										"2": [
+											"Full-Time"
+										],
+										"3": "M",
+										"4": "N",
+										"5": [
+											"XBBE"
+										],
+										"6": [],
+										"7": [
+											"WALKLEY HEIGHTS",
+											"RANKIN PARK"
+										],
+										"8": [
+											5098,
+											2287
+										],
+										"9": [
+											"SA",
+											"NSW"
+										],
+										"10": [
+											"RANKIN PARK,NSW,2287",
+											"WALKLEY HEIGHTS,SA,5098"
+										],
+										"11": [
+											"Australia"
+										],
+										"12": "19920426"
+									},
+									{
+										"0": "CCXZGADZW",
+										"1": "2012",
+										"2": [
+											"Full-Time"
+										],
+										"3": "M",
+										"4": "Y",
+										"5": [
+											"IHCN"
+										],
+										"6": [],
+										"7": [
+											"XI'AN",
+											"ADELAIDE"
+										],
+										"8": [
+											710065,
+											5000
+										],
+										"9": [
+											"SA",
+											"61"
+										],
+										"10": [
+											"XI'AN,61,710065",
+											"ADELAIDE,SA,5000"
+										],
+										"11": [
+											"Australia"
+										],
+										"12": "19981201"
+									},
+									{
+										"0": "CCXZGALGB",
+										"1": "2012",
+										"2": [
+											"Full-Time"
+										],
+										"3": "M",
+										"4": "Y",
+										"5": [
+											"IHCN"
+										],
+										"6": [],
+										"7": [
+											"ADELAIDE",
+											"WEIFANG"
+										],
+										"8": [
+											5000,
+											262400
+										],
+										"9": [
+											"SA",
+											"37"
+										],
+										"10": [
+											"ADELAIDE,SA,5000",
+											"WEIFANG,37,262400"
+										],
+										"11": [
+											"Australia"
+										],
+										"12": "19990325"
+									},
+									{
+										"0": "CCXZGALGZ",
+										"1": "2012",
+										"2": [
+											"Full-Time"
+										],
+										"3": "M",
+										"4": "Y",
+										"5": [
+											"IHCN"
+										],
+										"6": [],
+										"7": [
+											"XI'AN",
+											"ADELAIDE"
+										],
+										"8": [
+											710082,
+											5000
+										],
+										"9": [
+											"SA",
+											"61"
+										],
+										"10": [
+											"ADELAIDE,SA,5000",
+											"XI'AN,61,710082"
+										],
+										"11": [
+											"Australia"
+										],
+										"12": "19990313"
+									}
+								],
+								"schema": [
+									{
+										"key": "0",
+										"name": "StudentID",
+										"type": "string"
+									},
+									{
+										"key": "1",
+										"name": "TermCode",
+										"type": "int"
+									},
+									{
+										"key": "2",
+										"name": "AcademicLoadDesc",
+										"type": "ArrayType(StringType,true)"
+									},
+									{
+										"key": "3",
+										"name": "GenderCode",
+										"type": "string"
+									},
+									{
+										"key": "4",
+										"name": "InternationalStudentFlag",
+										"type": "string"
+									},
+									{
+										"key": "5",
+										"name": "ProgramCode",
+										"type": "ArrayType(StringType,true)"
+									},
+									{
+										"key": "6",
+										"name": "ProgramDesc",
+										"type": "ArrayType(StringType,true)"
+									},
+									{
+										"key": "7",
+										"name": "StudentAddressCityCode",
+										"type": "ArrayType(StringType,true)"
+									},
+									{
+										"key": "8",
+										"name": "StudentAddressPostcode",
+										"type": "ArrayType(IntegerType,true)"
+									},
+									{
+										"key": "9",
+										"name": "StudentAddressStateCode",
+										"type": "ArrayType(StringType,true)"
+									},
+									{
+										"key": "10",
+										"name": "AddressDesc",
+										"type": "ArrayType(StringType,true)"
+									},
+									{
+										"key": "11",
+										"name": "StudentCountryDesc",
+										"type": "ArrayType(StringType,true)"
+									},
+									{
+										"key": "12",
+										"name": "BirthDateSK",
+										"type": "int"
+									}
+								]
+							},
+							"isSummary": false,
+							"language": "scala"
+						},
+						"persist_state": {
+							"view": {
+								"type": "details",
+								"chartOptions": {
+									"chartType": "bar",
+									"aggregationType": "sum",
+									"categoryFieldKeys": [
+										"0"
+									],
+									"seriesFieldKeys": [
+										"1"
+									],
+									"isStacked": false
+								}
+							}
+						}
+					}
+				}
+			},
+			"enableDebugMode": false,
+			"kernelspec": {
+				"name": "synapse_pyspark",
+				"display_name": "Synapse PySpark"
+			},
+			"language_info": {
+				"name": "python"
+			},
+			"a365ComputeOptions": {
+				"id": "/subscriptions/551f35f8-5023-4513-ae40-48f2e9f65fc6/resourceGroups/DUS02mem/providers/Microsoft.Synapse/workspaces/studentanalytics/bigDataPools/batched",
+				"name": "batched",
+				"type": "Spark",
+				"endpoint": "https://studentanalytics.dev.azuresynapse.net/livyApi/versions/2019-11-01-preview/sparkPools/batched",
+				"auth": {
+					"type": "AAD",
+					"authResource": "https://dev.azuresynapse.net"
+				},
+				"sparkVersion": "2.4",
+				"nodeCount": 3,
+				"cores": 4,
+				"memory": 28,
+				"extraHeader": null
+			}
+		},
+		"cells": [
+			{
+				"cell_type": "code",
+				"source": [
+					"from pyspark.sql.functions import *\r\n",
+					"from pyspark.sql.types import *"
+				],
+				"attachments": null,
+				"execution_count": 1
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"StudentDF = spark.sql(\"SELECT * FROM `default`.`dimstudent`\")\r\n",
+					"StudentDF.printSchema()"
+				],
+				"attachments": null,
+				"execution_count": 40
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"StudentDF = StudentDF.select('AcademicLoadDesc', 'GenderCode', 'InternationalStudentFlag', 'ProgramCode', 'ProgramDescs', \r\n",
+					"                            'StudentAddressCityCode', 'StudentAddressPostcode', 'StudentAddressStateCode', 'StudentCountryDesc',\r\n",
+					"                            'StudentID', explode(col('TermCodes')).alias('TermCode'), 'BirthDateSK')\r\n",
+					"StudentDF = StudentDF.withColumn('StudentAddressPostcode', when(isnull(StudentDF.StudentAddressPostcode), \r\n",
+					"                                                                        StudentDF.StudentAddressCityCode.cast(IntegerType()))\r\n",
+					"                                                            .otherwise(StudentDF.StudentAddressPostcode))\r\n",
+					"StudentDF = StudentDF.withColumn('ProgramDesc', StudentDF.ProgramDescs.__getitem__(0).cast(StringType()))\r\n",
+					"StudentDF = StudentDF.withColumn('AddressDesc', concat_ws(',', StudentDF.StudentAddressCityCode, \r\n",
+					"                                                            StudentDF.StudentAddressStateCode, StudentDF.StudentAddressPostcode))"
+				],
+				"attachments": null,
+				"execution_count": 41
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"StudentDF.printSchema()"
+				],
+				"attachments": null,
+				"execution_count": 43
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"StudentDF = StudentDF.groupBy(['StudentID', 'TermCode']).\\\r\n",
+					"                        agg(collect_set(StudentDF.AcademicLoadDesc).alias('AcademicLoadDesc'), \r\n",
+					"                        collect_set(StudentDF.GenderCode).__getitem__(0).cast(StringType()).alias('GenderCode'),\r\n",
+					"                        collect_set(StudentDF.InternationalStudentFlag).__getitem__(0).cast(StringType()).alias('InternationalStudentFlag'), \r\n",
+					"                        collect_set(StudentDF.ProgramCode).alias('ProgramCode'),\r\n",
+					"                        collect_set(StudentDF.ProgramDesc).alias('ProgramDesc'), \r\n",
+					"                        collect_set(StudentDF.StudentAddressCityCode).alias('StudentAddressCityCode'),\r\n",
+					"                        collect_set(StudentDF.StudentAddressPostcode).alias('StudentAddressPostcode'),\r\n",
+					"                        collect_set(StudentDF.StudentAddressStateCode).alias('StudentAddressStateCode'), \r\n",
+					"                        collect_set(StudentDF.AddressDesc).alias('AddressDesc'),\r\n",
+					"                        collect_set(StudentDF.StudentCountryDesc).alias('StudentCountryDesc'),\r\n",
+					"                        collect_set(StudentDF.BirthDateSK).__getitem__(0).cast(IntegerType()).alias('BirthDateSK'))"
+				],
+				"attachments": null,
+				"execution_count": 42
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"StudentDF.where(size(col('BirthDateSK'))>1).count()"
+				],
+				"attachments": null,
+				"execution_count": 35
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					},
+					"collapsed": false
+				},
+				"source": [
+					"display(StudentDF.where(size(col('StudentAddressCityCode'))>1).limit(20))"
+				],
+				"attachments": null,
+				"execution_count": 44
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"StudentDF.write.mode(\"overwrite\").saveAsTable(\"unisadw.DimStudent\")"
+				],
+				"attachments": null,
+				"execution_count": 46
+			}
+		]
+	}
+}

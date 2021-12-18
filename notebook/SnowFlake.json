@@ -1,0 +1,450 @@
+{
+	"name": "SnowFlake",
+	"properties": {
+		"nbformat": 4,
+		"nbformat_minor": 2,
+		"bigDataPool": {
+			"referenceName": "batched",
+			"type": "BigDataPoolReference"
+		},
+		"sessionProperties": {
+			"driverMemory": "28g",
+			"driverCores": 4,
+			"executorMemory": "28g",
+			"executorCores": 4,
+			"numExecutors": 1,
+			"conf": {
+				"spark.dynamicAllocation.enabled": "false",
+				"spark.dynamicAllocation.minExecutors": "1",
+				"spark.dynamicAllocation.maxExecutors": "1"
+			}
+		},
+		"metadata": {
+			"saveOutput": true,
+			"synapse_widget": {
+				"version": "0.1",
+				"state": {
+					"8cd65552-83f7-40fd-9167-9e63aeb4dc7b": {
+						"type": "Synapse.DataFrame",
+						"sync_state": {
+							"table": {
+								"rows": [
+									{
+										"0": "170263",
+										"1": "2112",
+										"2": "2021",
+										"3": "Solution Activity 7B",
+										"4": "File",
+										"5": "Formative",
+										"6": "1079",
+										"7": "UO Mathematical Methods for Engineers 2",
+										"8": "MATH",
+										"9": "1185410973696",
+										"10": "Engineering",
+										"11": "704374636545"
+									},
+									{
+										"0": "170263",
+										"1": "2112",
+										"2": "2021",
+										"3": "Individual communication with the teaching team",
+										"4": "Dialogue",
+										"5": "Formative",
+										"6": "1079",
+										"7": "UO Mathematical Methods for Engineers 2",
+										"8": "MATH",
+										"9": "1185410973697",
+										"10": "Engineering",
+										"11": "704374636545"
+									},
+									{
+										"0": "163523",
+										"1": "2012",
+										"2": "2020",
+										"3": "Claims in Tort of Negligence for Building Defects - Notes",
+										"4": "File",
+										"5": "Formative",
+										"6": "2029",
+										"7": "UO Introduction to Contract Administration",
+										"8": "BUIL",
+										"9": "1185410973698",
+										"10": "Construction Management",
+										"11": "94489280513"
+									},
+									{
+										"0": "163523",
+										"1": "2112",
+										"2": "2021",
+										"3": "Concept 6.1: Duress - Notes",
+										"4": "File",
+										"5": "Formative",
+										"6": "2029",
+										"7": "UO Introduction to Contract Administration",
+										"8": "BUIL",
+										"9": "1185410973699",
+										"10": "Construction Management",
+										"11": "214748364800"
+									},
+									{
+										"0": "163523",
+										"1": "2025",
+										"2": "2020",
+										"3": "Concept 4.3: Promissory Estoppel - Notes",
+										"4": "File",
+										"5": "Formative",
+										"6": "2029",
+										"7": "UO Introduction to Contract Administration",
+										"8": "BUIL",
+										"9": "1185410973700",
+										"10": "Construction Management",
+										"11": "987842478080"
+									},
+									{
+										"0": "163523",
+										"1": "2025",
+										"2": "2020",
+										"3": "Week 4 Learning Activities Forum",
+										"4": "Forum",
+										"5": "Formative",
+										"6": "2029",
+										"7": "UO Introduction to Contract Administration",
+										"8": "BUIL",
+										"9": "1185410973701",
+										"10": "Construction Management",
+										"11": "987842478080"
+									},
+									{
+										"0": "163506",
+										"1": "1914",
+										"2": "2019",
+										"3": "Week 6 Review Questions",
+										"4": "Forum",
+										"5": "Formative",
+										"6": "1024",
+										"7": "UO Information Technology Fundamentals",
+										"8": "INFT",
+										"9": "1185410973702",
+										"10": "Information Technology & Data Analysis",
+										"11": "670014898176"
+									},
+									{
+										"0": "164085",
+										"1": "1912",
+										"2": "2019",
+										"3": "Assessment 2 Resources",
+										"4": "Folder",
+										"5": "Formative",
+										"6": "2027",
+										"7": "UO Construction Cost Planning",
+										"8": "BUIL",
+										"9": "1185410973703",
+										"10": "Construction Management",
+										"11": "798863917056"
+									},
+									{
+										"0": "163521",
+										"1": "2005",
+										"2": "2020",
+										"3": "Assessment 2 Resources",
+										"4": "Folder",
+										"5": "Formative",
+										"6": "1026",
+										"7": "UO Introduction to Construction Business Management",
+										"8": "BUIL",
+										"9": "1185410973704",
+										"10": "Construction Management",
+										"11": "635655159808"
+									},
+									{
+										"0": "163521",
+										"1": "2005",
+										"2": "2020",
+										"3": "Slides and Notes - 6.1 Understanding Economic Growth",
+										"4": "File",
+										"5": "Formative",
+										"6": "1026",
+										"7": "UO Introduction to Construction Business Management",
+										"8": "BUIL",
+										"9": "1185410973705",
+										"10": "Construction Management",
+										"11": "635655159808"
+									}
+								],
+								"schema": [
+									{
+										"key": "0",
+										"name": "CourseID",
+										"type": "bigint"
+									},
+									{
+										"key": "1",
+										"name": "TermCode",
+										"type": "bigint"
+									},
+									{
+										"key": "2",
+										"name": "Year",
+										"type": "bigint"
+									},
+									{
+										"key": "3",
+										"name": "ActivityResourceName",
+										"type": "string"
+									},
+									{
+										"key": "4",
+										"name": "ActivityResourceType",
+										"type": "string"
+									},
+									{
+										"key": "5",
+										"name": "AssessmentMethod",
+										"type": "string"
+									},
+									{
+										"key": "6",
+										"name": "CatalogNumber",
+										"type": "bigint"
+									},
+									{
+										"key": "7",
+										"name": "CourseName",
+										"type": "string"
+									},
+									{
+										"key": "8",
+										"name": "SubjectArea",
+										"type": "string"
+									},
+									{
+										"key": "9",
+										"name": "ResourceSK",
+										"type": "bigint"
+									},
+									{
+										"key": "10",
+										"name": "STEMfield",
+										"type": "string"
+									},
+									{
+										"key": "11",
+										"name": "CourseSK",
+										"type": "bigint"
+									}
+								]
+							},
+							"isSummary": false,
+							"language": "scala"
+						},
+						"persist_state": {
+							"view": {
+								"type": "details",
+								"chartOptions": {
+									"chartType": "bar",
+									"aggregationType": "sum",
+									"categoryFieldKeys": [
+										"1"
+									],
+									"seriesFieldKeys": [
+										"0"
+									],
+									"isStacked": false
+								}
+							}
+						}
+					}
+				}
+			},
+			"enableDebugMode": false,
+			"kernelspec": {
+				"name": "synapse_pyspark",
+				"display_name": "Synapse PySpark"
+			},
+			"language_info": {
+				"name": "python"
+			},
+			"a365ComputeOptions": {
+				"id": "/subscriptions/551f35f8-5023-4513-ae40-48f2e9f65fc6/resourceGroups/DUS02mem/providers/Microsoft.Synapse/workspaces/studentanalytics/bigDataPools/batched",
+				"name": "batched",
+				"type": "Spark",
+				"endpoint": "https://studentanalytics.dev.azuresynapse.net/livyApi/versions/2019-11-01-preview/sparkPools/batched",
+				"auth": {
+					"type": "AAD",
+					"authResource": "https://dev.azuresynapse.net"
+				},
+				"sparkVersion": "2.4",
+				"nodeCount": 3,
+				"cores": 4,
+				"memory": 28,
+				"extraHeader": null
+			}
+		},
+		"cells": [
+			{
+				"cell_type": "code",
+				"source": [
+					"DimAssignment = spark.sql(\"SELECT * FROM `default`.`dimassignment`\")\r\n",
+					"DimCourse = spark.sql(\"SELECT * FROM `default`.`dimcourse`\")\r\n",
+					"DimCourseResource = spark.sql(\"SELECT * FROM `default`.`dimcourseresource`\")"
+				],
+				"attachments": null,
+				"execution_count": 8
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"from pyspark.sql.functions import *"
+				],
+				"attachments": null,
+				"execution_count": 2
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"DimCourseResource.count()"
+				],
+				"attachments": null,
+				"execution_count": 16
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"DimCourse = DimCourse.withColumnRenamed('count', 'NumberOfStudents')"
+				],
+				"attachments": null,
+				"execution_count": 9
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"DimAssignment = DimAssignment.join(DimCourse, ['CourseID', 'TermCode'], 'left').select('DimAssignment.*', DimCourse.CourseSK)"
+				],
+				"attachments": null,
+				"execution_count": 10
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"DimCourseResource = DimCourseResource.withColumnRenamed('count', 'NumberOfStudentsVisited')\r\n",
+					"DimCourseResource = DimCourseResource.join(DimCourse, ['CourseID', 'TermCode'], 'left').select('DimCourseResource.*', DimCourse.CourseSK)"
+				],
+				"attachments": null,
+				"execution_count": 11
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					},
+					"collapsed": false
+				},
+				"source": [
+					"display(DimCourseResource.limit(10))"
+				],
+				"attachments": null,
+				"execution_count": 12
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"DimAssignment.write.mode(\"overwrite\").saveAsTable(\"unisadw.dimassignment\")"
+				],
+				"attachments": null,
+				"execution_count": 13
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"DimCourseResource.write.mode(\"overwrite\").saveAsTable(\"unisadw.dimcourseresource\")\r\n",
+					"DimCourse.write.mode(\"overwrite\").saveAsTable(\"unisadw.dimcourse\")"
+				],
+				"attachments": null,
+				"execution_count": 15
+			}
+		]
+	}
+}

@@ -1,0 +1,495 @@
+{
+	"name": "dataLakeDF",
+	"properties": {
+		"nbformat": 4,
+		"nbformat_minor": 2,
+		"bigDataPool": {
+			"referenceName": "batched",
+			"type": "BigDataPoolReference"
+		},
+		"sessionProperties": {
+			"driverMemory": "28g",
+			"driverCores": 4,
+			"executorMemory": "28g",
+			"executorCores": 4,
+			"numExecutors": 2,
+			"conf": {
+				"spark.dynamicAllocation.enabled": "false",
+				"spark.dynamicAllocation.minExecutors": "2",
+				"spark.dynamicAllocation.maxExecutors": "2"
+			}
+		},
+		"metadata": {
+			"saveOutput": true,
+			"synapse_widget": {
+				"version": "0.1",
+				"state": {
+					"9f4c8c3b-bee3-485f-9688-638f23db44ce": {
+						"type": "Synapse.DataFrame",
+						"sync_state": {
+							"table": {
+								"rows": [
+									{
+										"0": "0",
+										"1": "Part B: Thermal comfort +Part C:VentilationPart +D: Energy Efficiency+Part E: Acoustics and Lighting + Part F: Introduction and conclusion",
+										"2": "11/06/2021 5:00:00 PM",
+										"3": "14/06/2021 12:00:00 PM",
+										"4": "nan",
+										"5": "18/06/2021 7:34:55 AM",
+										"6": "CCXZGLCXW",
+										"7": "164088",
+										"8": "CIVE",
+										"9": "2015",
+										"10": "UO Construction Environmental Science",
+										"11": "2112",
+										"12": "2021",
+										"13": "External, UniSA Online, Online"
+									},
+									{
+										"0": "1",
+										"1": "Part B: Thermal comfort +Part C:VentilationPart +D: Energy Efficiency+Part E: Acoustics and Lighting + Part F: Introduction and conclusion",
+										"2": "11/06/2021 5:00:00 PM",
+										"3": "14/06/2021 12:00:00 PM",
+										"4": "16/06/2021 11:55:00 PM",
+										"5": "16/06/2021 8:45:36 PM",
+										"6": "CCXZGLZXB",
+										"7": "164088",
+										"8": "CIVE",
+										"9": "2015",
+										"10": "UO Construction Environmental Science",
+										"11": "2112",
+										"12": "2021",
+										"13": "External, UniSA Online, Online"
+									},
+									{
+										"0": "2",
+										"1": "Part B: Thermal comfort +Part C:VentilationPart +D: Energy Efficiency+Part E: Acoustics and Lighting + Part F: Introduction and conclusion",
+										"2": "11/06/2021 5:00:00 PM",
+										"3": "14/06/2021 12:00:00 PM",
+										"4": "18/06/2021 5:00:00 PM",
+										"5": "18/06/2021 9:53:47 PM",
+										"6": "CCXHHGZZD",
+										"7": "164088",
+										"8": "CIVE",
+										"9": "2015",
+										"10": "UO Construction Environmental Science",
+										"11": "2112",
+										"12": "2021",
+										"13": "External, UniSA Online, Online"
+									},
+									{
+										"0": "3",
+										"1": "Part B: Thermal comfort +Part C:VentilationPart +D: Energy Efficiency+Part E: Acoustics and Lighting + Part F: Introduction and conclusion",
+										"2": "11/06/2021 5:00:00 PM",
+										"3": "14/06/2021 12:00:00 PM",
+										"4": "nan",
+										"5": "10/06/2021 1:01:20 PM",
+										"6": "CCXZWZAZB",
+										"7": "164088",
+										"8": "CIVE",
+										"9": "2015",
+										"10": "UO Construction Environmental Science",
+										"11": "2112",
+										"12": "2021",
+										"13": "External, UniSA Online, Online"
+									},
+									{
+										"0": "4",
+										"1": "Part B: Thermal comfort +Part C:VentilationPart +D: Energy Efficiency+Part E: Acoustics and Lighting + Part F: Introduction and conclusion",
+										"2": "11/06/2021 5:00:00 PM",
+										"3": "14/06/2021 12:00:00 PM",
+										"4": "nan",
+										"5": "14/06/2021 11:40:32 AM",
+										"6": "CCXZLZHHX",
+										"7": "164088",
+										"8": "CIVE",
+										"9": "2015",
+										"10": "UO Construction Environmental Science",
+										"11": "2112",
+										"12": "2021",
+										"13": "External, UniSA Online, Online"
+									},
+									{
+										"0": "5",
+										"1": "Part B: Thermal comfort +Part C:VentilationPart +D: Energy Efficiency+Part E: Acoustics and Lighting + Part F: Introduction and conclusion",
+										"2": "11/06/2021 5:00:00 PM",
+										"3": "14/06/2021 12:00:00 PM",
+										"4": "nan",
+										"5": "14/06/2021 7:31:17 AM",
+										"6": "CCXZAAHHX",
+										"7": "164088",
+										"8": "CIVE",
+										"9": "2015",
+										"10": "UO Construction Environmental Science",
+										"11": "2112",
+										"12": "2021",
+										"13": "External, UniSA Online, Online"
+									},
+									{
+										"0": "6",
+										"1": "Part B: Thermal comfort +Part C:VentilationPart +D: Energy Efficiency+Part E: Acoustics and Lighting + Part F: Introduction and conclusion",
+										"2": "11/06/2021 5:00:00 PM",
+										"3": "14/06/2021 12:00:00 PM",
+										"4": "nan",
+										"5": "14/06/2021 3:13:01 PM",
+										"6": "CCXZAGWZD",
+										"7": "164088",
+										"8": "CIVE",
+										"9": "2015",
+										"10": "UO Construction Environmental Science",
+										"11": "2112",
+										"12": "2021",
+										"13": "External, UniSA Online, Online"
+									},
+									{
+										"0": "7",
+										"1": "Part B: Thermal comfort +Part C:VentilationPart +D: Energy Efficiency+Part E: Acoustics and Lighting + Part F: Introduction and conclusion",
+										"2": "11/06/2021 5:00:00 PM",
+										"3": "14/06/2021 12:00:00 PM",
+										"4": "21/06/2021 12:00:00 PM",
+										"5": "21/06/2021 5:53:49 PM",
+										"6": "CCXHZDLGW",
+										"7": "164088",
+										"8": "CIVE",
+										"9": "2015",
+										"10": "UO Construction Environmental Science",
+										"11": "2112",
+										"12": "2021",
+										"13": "External, UniSA Online, Online"
+									},
+									{
+										"0": "8",
+										"1": "Part B: Thermal comfort +Part C:VentilationPart +D: Energy Efficiency+Part E: Acoustics and Lighting + Part F: Introduction and conclusion",
+										"2": "11/06/2021 5:00:00 PM",
+										"3": "14/06/2021 12:00:00 PM",
+										"4": "17/06/2021 12:00:00 PM",
+										"5": "22/06/2021 10:37:07 AM",
+										"6": "CCXZGBBGD",
+										"7": "164088",
+										"8": "CIVE",
+										"9": "2015",
+										"10": "UO Construction Environmental Science",
+										"11": "2112",
+										"12": "2021",
+										"13": "External, UniSA Online, Online"
+									},
+									{
+										"0": "9",
+										"1": "Part B: Thermal comfort +Part C:VentilationPart +D: Energy Efficiency+Part E: Acoustics and Lighting + Part F: Introduction and conclusion",
+										"2": "11/06/2021 5:00:00 PM",
+										"3": "14/06/2021 12:00:00 PM",
+										"4": "nan",
+										"5": "12/06/2021 1:03:08 PM",
+										"6": "CCXZDCXCB",
+										"7": "164088",
+										"8": "CIVE",
+										"9": "2015",
+										"10": "UO Construction Environmental Science",
+										"11": "2112",
+										"12": "2021",
+										"13": "External, UniSA Online, Online"
+									}
+								],
+								"schema": [
+									{
+										"key": "0",
+										"name": "_c0",
+										"type": "string"
+									},
+									{
+										"key": "1",
+										"name": "Assessment Name",
+										"type": "string"
+									},
+									{
+										"key": "2",
+										"name": "Initial Due Date",
+										"type": "string"
+									},
+									{
+										"key": "3",
+										"name": "Global Extension Due Date",
+										"type": "string"
+									},
+									{
+										"key": "4",
+										"name": "Individual Extension Due Date",
+										"type": "string"
+									},
+									{
+										"key": "5",
+										"name": "Last Submission Time",
+										"type": "string"
+									},
+									{
+										"key": "6",
+										"name": "Student ID",
+										"type": "string"
+									},
+									{
+										"key": "7",
+										"name": "Course ID",
+										"type": "string"
+									},
+									{
+										"key": "8",
+										"name": "Subject Area",
+										"type": "string"
+									},
+									{
+										"key": "9",
+										"name": "Catalog Number",
+										"type": "string"
+									},
+									{
+										"key": "10",
+										"name": "Course Name",
+										"type": "string"
+									},
+									{
+										"key": "11",
+										"name": "Term Code",
+										"type": "string"
+									},
+									{
+										"key": "12",
+										"name": "Year",
+										"type": "string"
+									},
+									{
+										"key": "13",
+										"name": "Course Offering Description",
+										"type": "string"
+									}
+								]
+							},
+							"isSummary": false,
+							"language": "scala"
+						},
+						"persist_state": {
+							"view": {
+								"type": "details",
+								"chartOptions": {
+									"chartType": "bar",
+									"aggregationType": "count",
+									"categoryFieldKeys": [
+										"0"
+									],
+									"seriesFieldKeys": [
+										"0"
+									],
+									"isStacked": false
+								}
+							}
+						}
+					}
+				}
+			},
+			"kernelspec": {
+				"name": "synapse_pyspark",
+				"display_name": "Synapse PySpark"
+			},
+			"language_info": {
+				"name": "python"
+			},
+			"a365ComputeOptions": {
+				"id": "/subscriptions/551f35f8-5023-4513-ae40-48f2e9f65fc6/resourceGroups/DUS02mem/providers/Microsoft.Synapse/workspaces/studentanalytics/bigDataPools/batched",
+				"name": "batched",
+				"type": "Spark",
+				"endpoint": "https://studentanalytics.dev.azuresynapse.net/livyApi/versions/2019-11-01-preview/sparkPools/batched",
+				"auth": {
+					"type": "AAD",
+					"authResource": "https://dev.azuresynapse.net"
+				},
+				"sparkVersion": "2.4",
+				"nodeCount": 3,
+				"cores": 4,
+				"memory": 28,
+				"extraHeader": null
+			}
+		},
+		"cells": [
+			{
+				"cell_type": "code",
+				"metadata": {
+					"collapsed": false
+				},
+				"source": [
+					"lateSubDF = spark.read.format(\"csv\").option(\"header\", \"true\").load(\"abfss://datalake@dus02store.dfs.core.windows.net/reOrganized_v2/LateSubmissions/*\")\r\n",
+					"display(lateSubDF.limit(10))"
+				],
+				"attachments": null,
+				"execution_count": 1
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					},
+					"collapsed": true
+				},
+				"source": [
+					"lateSubDF.count()"
+				],
+				"attachments": null,
+				"execution_count": 2
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					},
+					"collapsed": true
+				},
+				"source": [
+					"len(lateSubDF.columns)"
+				],
+				"attachments": null,
+				"execution_count": 3
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					},
+					"collapsed": true
+				},
+				"source": [
+					"lateSubDF.write.mode(\"overwrite\").saveAsTable(\"default.lateSubMerged\")"
+				],
+				"attachments": null,
+				"execution_count": 14
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					},
+					"collapsed": true
+				},
+				"source": [
+					"lateSubDF.columns"
+				],
+				"attachments": null,
+				"execution_count": 11
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					},
+					"collapsed": true
+				},
+				"source": [
+					"lateSubDF = lateSubDF.withColumnRenamed(\"Assessment Name\", \"AssessmentName\")\r\n",
+					"lateSubDF = lateSubDF.withColumnRenamed(\"Initial Due Date\", \"InitialDueDate\")\r\n",
+					"lateSubDF = lateSubDF.withColumnRenamed(\"Global Extension Due Date\", \"GlobalExtensionDueDate\")"
+				],
+				"attachments": null,
+				"execution_count": 6
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					},
+					"collapsed": true
+				},
+				"source": [
+					"lateSubDF = lateSubDF.withColumnRenamed(\"Individual Extension Due Date\", \"IndividualExtensionDueDate\")\r\n",
+					"lateSubDF = lateSubDF.withColumnRenamed(\"Last Submission Time\", \"LastSubmissionTime\")\r\n",
+					"lateSubDF = lateSubDF.withColumnRenamed(\"Student ID\", \"StudentID\")\r\n",
+					"lateSubDF = lateSubDF.withColumnRenamed(\"Course ID\", \"CourseID\")\r\n",
+					"lateSubDF = lateSubDF.withColumnRenamed(\"Subject Area\", \"SubjectArea\")\r\n",
+					"lateSubDF = lateSubDF.withColumnRenamed(\"Catalog Number\", \"CatalogNumber\")"
+				],
+				"attachments": null,
+				"execution_count": 8
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					},
+					"collapsed": true
+				},
+				"source": [
+					"lateSubDF = lateSubDF.withColumnRenamed(\"Course Name\", \"CourseName\")\r\n",
+					"lateSubDF = lateSubDF.withColumnRenamed(\"Term Code\", \"TermCode\")\r\n",
+					"lateSubDF = lateSubDF.withColumnRenamed(\"Course Offering Description\", \"CourseOfferingDescription\")"
+				],
+				"attachments": null,
+				"execution_count": 10
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					},
+					"collapsed": true
+				},
+				"source": [
+					""
+				],
+				"attachments": null,
+				"execution_count": null
+			}
+		]
+	}
+}

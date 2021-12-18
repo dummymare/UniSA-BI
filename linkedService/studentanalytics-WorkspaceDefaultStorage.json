@@ -1,0 +1,15 @@
+{
+	"name": "studentanalytics-WorkspaceDefaultStorage",
+	"type": "Microsoft.Synapse/workspaces/linkedservices",
+	"properties": {
+		"typeProperties": {
+			"url": "https://dus02store.dfs.core.windows.net"
+		},
+		"type": "AzureBlobFS",
+		"connectVia": {
+			"referenceName": "AutoResolveIntegrationRuntime",
+			"type": "IntegrationRuntimeReference"
+		},
+		"annotations": []
+	}
+}

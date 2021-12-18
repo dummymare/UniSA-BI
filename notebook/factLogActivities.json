@@ -1,0 +1,590 @@
+{
+	"name": "factLogActivities",
+	"properties": {
+		"nbformat": 4,
+		"nbformat_minor": 2,
+		"bigDataPool": {
+			"referenceName": "batched",
+			"type": "BigDataPoolReference"
+		},
+		"sessionProperties": {
+			"driverMemory": "28g",
+			"driverCores": 4,
+			"executorMemory": "28g",
+			"executorCores": 4,
+			"numExecutors": 2,
+			"conf": {
+				"spark.dynamicAllocation.enabled": "false",
+				"spark.dynamicAllocation.minExecutors": "2",
+				"spark.dynamicAllocation.maxExecutors": "2"
+			}
+		},
+		"metadata": {
+			"saveOutput": true,
+			"synapse_widget": {
+				"version": "0.1",
+				"state": {
+					"f5a52ce9-3647-4aa4-82e4-82d26390b36e": {
+						"type": "Synapse.DataFrame",
+						"sync_state": {
+							"table": {
+								"rows": [
+									{
+										"0": "Overview report",
+										"1": "229"
+									},
+									{
+										"0": "The user with id '5217' updated the 'label' activity with course module id '74789'.",
+										"1": "4"
+									},
+									{
+										"0": "Course participation",
+										"1": "779"
+									},
+									{
+										"0": "The user with id '14408' updated the completion state for the course module with id '227552' for the user with id '14408'.",
+										"1": "1"
+									},
+									{
+										"0": "The user with id '19247' updated the completion state for the course module with id '227552' for the user with id '19247'.",
+										"1": "1"
+									},
+									{
+										"0": "Grade history",
+										"1": "6"
+									},
+									{
+										"0": "The user with id '31482' updated the completion state for the course module with id '227552' for the user with id '31482'.",
+										"1": "1"
+									},
+									{
+										"0": "Activity report",
+										"1": "99"
+									},
+									{
+										"0": "SCORM package",
+										"1": "1316"
+									},
+									{
+										"0": "Single view",
+										"1": "583"
+									},
+									{
+										"0": "The user with id '10228' updated the 'label' activity with course module id '50894'.",
+										"1": "4"
+									},
+									{
+										"0": "The user with id '2152' updated the 'label' activity with course module id '50894'.",
+										"1": "3"
+									},
+									{
+										"0": "Glossary",
+										"1": "3970"
+									},
+									{
+										"0": "Chat",
+										"1": "5"
+									},
+									{
+										"0": "URL",
+										"1": "33186"
+									},
+									{
+										"1": "24070"
+									},
+									{
+										"0": "Submission comments",
+										"1": "724"
+									},
+									{
+										"0": "The user with id '10228' created the 'label' activity with course module id '50894'.",
+										"1": "1"
+									},
+									{
+										"0": "The user with id '19706' updated the completion state for the course module with id '227552' for the user with id '19706'.",
+										"1": "1"
+									},
+									{
+										"0": "Scheduler",
+										"1": "13097"
+									},
+									{
+										"0": "Live logs",
+										"1": "104"
+									},
+									{
+										"0": "Extensions",
+										"1": "54621"
+									},
+									{
+										"0": "Online text submissions",
+										"1": "5656"
+									},
+									{
+										"0": "H5P",
+										"1": "351751"
+									},
+									{
+										"0": "Choice",
+										"1": "7579"
+									},
+									{
+										"0": "The user with id '10743' updated the 'label' activity with course module id '227552'.",
+										"1": "3"
+									},
+									{
+										"0": "Lightbox Gallery",
+										"1": "33"
+									},
+									{
+										"0": "Book",
+										"1": "318"
+									},
+									{
+										"0": "Quiz",
+										"1": "633102"
+									},
+									{
+										"0": "Workshop",
+										"1": "2123"
+									},
+									{
+										"0": "nan",
+										"1": "8475"
+									},
+									{
+										"0": "Mahara portfolio",
+										"1": "5"
+									},
+									{
+										"0": "User report",
+										"1": "89515"
+									},
+									{
+										"0": "Wiki",
+										"1": "525"
+									},
+									{
+										"0": "File",
+										"1": "578398"
+									},
+									{
+										"0": "Excel spreadsheet",
+										"1": "41"
+									},
+									{
+										"0": "External tool",
+										"1": "1724"
+									},
+									{
+										"0": "UniSA Media Library Video Assignment",
+										"1": "38"
+									},
+									{
+										"0": "The user with id '33798' updated the completion state for the course module with id '227552' for the user with id '33798'.",
+										"1": "1"
+									},
+									{
+										"0": "Page",
+										"1": "28805"
+									},
+									{
+										"0": "Logs",
+										"1": "905"
+									},
+									{
+										"0": "OpenDocument spreadsheet",
+										"1": "347"
+									},
+									{
+										"0": "Recycle bin",
+										"1": "4317"
+									},
+									{
+										"0": "File submissions",
+										"1": "47346"
+									},
+									{
+										"0": "The user with id '23957' updated the completion state for the course module with id '227552' for the user with id '23957'.",
+										"1": "1"
+									},
+									{
+										"0": "The user with id '5217' updated the 'label' activity with course module id '127365'.",
+										"1": "1"
+									},
+									{
+										"0": "Plain text file",
+										"1": "1"
+									},
+									{
+										"0": "Dialogue",
+										"1": "3788"
+									},
+									{
+										"0": "The user with id '2152' updated the 'label' activity with course module id '50127'.",
+										"1": "2"
+									},
+									{
+										"0": "The user with id '6225' updated the 'label' activity with course module id '61207'.",
+										"1": "2"
+									},
+									{
+										"0": "The user with id '33252' updated the completion state for the course module with id '227552' for the user with id '33252'.",
+										"1": "1"
+									},
+									{
+										"0": "Group self-selection",
+										"1": "5769"
+									},
+									{
+										"0": "Folder",
+										"1": "82768"
+									},
+									{
+										"0": "The user with id '6225' updated the 'label' activity with course module id '50127'.",
+										"1": "3"
+									},
+									{
+										"0": "System",
+										"1": "3296054"
+									},
+									{
+										"0": "Lesson",
+										"1": "71627"
+									},
+									{
+										"0": "Forum",
+										"1": "1111629"
+									},
+									{
+										"0": "The user with id '6225' created the 'label' activity with course module id '61207'.",
+										"1": "1"
+									},
+									{
+										"0": "Zoom meeting",
+										"1": "17405"
+									},
+									{
+										"0": "Database",
+										"1": "35397"
+									},
+									{
+										"0": "The user with id '5217' created the 'label' activity with course module id '74789'.",
+										"1": "2"
+									},
+									{
+										"0": "Feedback",
+										"1": "8757"
+									},
+									{
+										"0": "UniSA Media Library",
+										"1": "14"
+									},
+									{
+										"0": "Survey",
+										"1": "15"
+									},
+									{
+										"0": "Assignment",
+										"1": "807415"
+									},
+									{
+										"0": "The user with id '30694' updated the completion state for the course module with id '227552' for the user with id '30694'.",
+										"1": "1"
+									},
+									{
+										"0": "Grader report",
+										"1": "9901"
+									}
+								],
+								"schema": [
+									{
+										"key": "0",
+										"name": "Component",
+										"type": "string"
+									},
+									{
+										"key": "1",
+										"name": "count",
+										"type": "bigint"
+									}
+								]
+							},
+							"isSummary": false,
+							"language": "scala"
+						},
+						"persist_state": {
+							"view": {
+								"type": "details",
+								"chartOptions": {
+									"chartType": "bar",
+									"aggregationType": "sum",
+									"categoryFieldKeys": [
+										"0"
+									],
+									"seriesFieldKeys": [
+										"1"
+									],
+									"isStacked": false
+								}
+							}
+						}
+					},
+					"6845bc24-7911-4fb3-8c0c-d54d4b3021b3": {
+						"type": "Synapse.DataFrame",
+						"sync_state": {
+							"table": {
+								"rows": [
+									{
+										"0": "Forums 1",
+										"1": "2",
+										"2": "3 will be combined...\"",
+										"3": "System",
+										"4": "Course module updated",
+										"5": "The user with id '5217' updated the 'label' activity with course module id '74789'."
+									},
+									{
+										"0": "Forums 1",
+										"1": "2",
+										"2": "3 will be combined...\"",
+										"3": "System",
+										"4": "Course module updated",
+										"5": "The user with id '5217' updated the 'label' activity with course module id '74789'."
+									},
+									{
+										"0": "Forums 1",
+										"1": "2",
+										"2": "3 will be combined...\"",
+										"3": "System",
+										"4": "Course module updated",
+										"5": "The user with id '5217' updated the 'label' activity with course module id '74789'."
+									},
+									{
+										"0": "Forums 1",
+										"1": "2",
+										"2": "3 will be combined...\"",
+										"3": "System",
+										"4": "Course module updated",
+										"5": "The user with id '5217' updated the 'label' activity with course module id '74789'."
+									}
+								],
+								"schema": [
+									{
+										"key": "0",
+										"name": "_c0",
+										"type": "string"
+									},
+									{
+										"key": "1",
+										"name": "Unnamed: 0",
+										"type": "string"
+									},
+									{
+										"key": "2",
+										"name": "Student ID",
+										"type": "string"
+									},
+									{
+										"key": "3",
+										"name": "Time",
+										"type": "string"
+									},
+									{
+										"key": "4",
+										"name": "Event context",
+										"type": "string"
+									},
+									{
+										"key": "5",
+										"name": "Component",
+										"type": "string"
+									},
+									{
+										"key": "6",
+										"name": "Event name",
+										"type": "string"
+									},
+									{
+										"key": "7",
+										"name": "Description",
+										"type": "string"
+									}
+								]
+							},
+							"isSummary": false,
+							"language": "scala"
+						},
+						"persist_state": {
+							"view": {
+								"type": "details",
+								"chartOptions": {
+									"chartType": "bar",
+									"aggregationType": "count",
+									"categoryFieldKeys": [
+										"0"
+									],
+									"seriesFieldKeys": [
+										"0"
+									],
+									"isStacked": false
+								}
+							}
+						}
+					}
+				}
+			},
+			"enableDebugMode": false,
+			"kernelspec": {
+				"name": "synapse_pyspark",
+				"display_name": "Synapse PySpark"
+			},
+			"language_info": {
+				"name": "python"
+			},
+			"a365ComputeOptions": {
+				"id": "/subscriptions/551f35f8-5023-4513-ae40-48f2e9f65fc6/resourceGroups/DUS02mem/providers/Microsoft.Synapse/workspaces/studentanalytics/bigDataPools/batched",
+				"name": "batched",
+				"type": "Spark",
+				"endpoint": "https://studentanalytics.dev.azuresynapse.net/livyApi/versions/2019-11-01-preview/sparkPools/batched",
+				"auth": {
+					"type": "AAD",
+					"authResource": "https://dev.azuresynapse.net"
+				},
+				"sparkVersion": "2.4",
+				"nodeCount": 3,
+				"cores": 4,
+				"memory": 28,
+				"extraHeader": null
+			}
+		},
+		"cells": [
+			{
+				"cell_type": "code",
+				"source": [
+					"from pyspark.sql.functions import *\r\n",
+					"from pyspark.sql.types import *"
+				],
+				"attachments": null,
+				"execution_count": 1
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"cmDF = spark.read.format(\"csv\").option(\"header\", \"true\").load(\"abfss://datalake@dus02store.dfs.core.windows.net/NewLogData/CM/*\")\r\n",
+					"engDF = spark.read.format(\"csv\").option(\"header\", \"true\").load(\"abfss://datalake@dus02store.dfs.core.windows.net/NewLogData/ENG/*\")\r\n",
+					"itDF = spark.read.format(\"csv\").option(\"header\", \"true\").load(\"abfss://datalake@dus02store.dfs.core.windows.net/NewLogData/IT/*\")"
+				],
+				"attachments": null,
+				"execution_count": 2
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"cmDF.count()"
+				],
+				"attachments": null,
+				"execution_count": 10
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"engDF.count()"
+				],
+				"attachments": null,
+				"execution_count": 11
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"itDF.count()"
+				],
+				"attachments": null,
+				"execution_count": 12
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					},
+					"collapsed": false
+				},
+				"source": [
+					""
+				],
+				"attachments": null,
+				"execution_count": 8
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					},
+					"collapsed": false
+				},
+				"source": [
+					"display(cmDF.filter(cmDF.Component == \"The user with id '5217' updated the 'label' activity with course module id '74789'.\").limit(20))"
+				],
+				"attachments": null,
+				"execution_count": 9
+			}
+		]
+	}
+}

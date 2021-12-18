@@ -1,0 +1,95 @@
+{
+	"name": "MLdataset",
+	"properties": {
+		"nbformat": 4,
+		"nbformat_minor": 2,
+		"bigDataPool": {
+			"referenceName": "batched",
+			"type": "BigDataPoolReference"
+		},
+		"sessionProperties": {
+			"driverMemory": "28g",
+			"driverCores": 4,
+			"executorMemory": "28g",
+			"executorCores": 4,
+			"numExecutors": 1,
+			"conf": {
+				"spark.dynamicAllocation.enabled": "false",
+				"spark.dynamicAllocation.minExecutors": "1",
+				"spark.dynamicAllocation.maxExecutors": "1",
+				"spark.autotune.trackingId": "b0eff59e-23fa-4133-84d2-faf0f911201e"
+			}
+		},
+		"metadata": {
+			"saveOutput": true,
+			"synapse_widget": {
+				"version": "0.1"
+			},
+			"enableDebugMode": false,
+			"kernelspec": {
+				"name": "synapse_pyspark",
+				"display_name": "Synapse PySpark"
+			},
+			"language_info": {
+				"name": "python"
+			},
+			"a365ComputeOptions": {
+				"id": "/subscriptions/551f35f8-5023-4513-ae40-48f2e9f65fc6/resourceGroups/DUS02mem/providers/Microsoft.Synapse/workspaces/studentanalytics/bigDataPools/batched",
+				"name": "batched",
+				"type": "Spark",
+				"endpoint": "https://studentanalytics.dev.azuresynapse.net/livyApi/versions/2019-11-01-preview/sparkPools/batched",
+				"auth": {
+					"type": "AAD",
+					"authResource": "https://dev.azuresynapse.net"
+				},
+				"sparkVersion": "2.4",
+				"nodeCount": 3,
+				"cores": 4,
+				"memory": 28,
+				"extraHeader": null
+			}
+		},
+		"cells": [
+			{
+				"cell_type": "code",
+				"source": [
+					"from pyspark.sql.functions import *"
+				],
+				"attachments": null,
+				"execution_count": 1
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"courseDF = spark.sql(\"SELECT * FROM `default`.`dimcourse`\")\r\n",
+					"courseDF = courseDF.withColumn('CommenceDate', when(col('TermCode')==1825, to_date(lit('2018-09-17'), 'yyyy-MM-dd'))\r\n",
+					"                                                .when(col('TermCode')==1905, to_date(lit('2019-01-14'), 'yyyy-MM-dd'))\r\n",
+					"                                                .when(col('TermCode')==1912, to_date(lit('2019-04-08'), 'yyyy-MM-dd'))\r\n",
+					"                                                .when(col('TermCode')==1914, to_date(lit('2019-06-17'), 'yyyy-MM-dd'))\r\n",
+					"                                                .when(col('TermCode')==1925, to_date(lit('2019-09-23'), 'yyyy-MM-dd'))\r\n",
+					"                                                .when(col('TermCode')==2005, to_date(lit('2020-01-03'), 'yyyy-MM-dd'))\r\n",
+					"                                                .when(col('TermCode')==2012, to_date(lit('2020-04-06'), 'yyyy-MM-dd'))\r\n",
+					"                                                .when(col('TermCode')==2014, to_date(lit('2020-06-05'), 'yyyy-MM-dd'))\r\n",
+					"                                                .when(col('TermCode')==2025, to_date(lit('2020-09-21'), 'yyyy-MM-dd'))\r\n",
+					"                                                .when(col('TermCode')==2105, to_date(lit('2021-01-11'), 'yyyy-MM-dd'))\r\n",
+					"                                                .when(col('TermCode')==2112, to_date(lit('2021-04-05'), 'yyyy-MM-dd')))\r\n",
+					"courseDF = courseDF.withColumn('NumberOfStudents', lit(0))\r\n",
+					"courseDF.write.mode(\"overwrite\").saveAsTable(\"unisadw.dimcourse\")"
+				],
+				"attachments": null,
+				"execution_count": 2
+			}
+		]
+	}
+}

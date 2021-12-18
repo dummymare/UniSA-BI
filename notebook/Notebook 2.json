@@ -1,0 +1,331 @@
+{
+	"name": "Notebook 2",
+	"properties": {
+		"nbformat": 4,
+		"nbformat_minor": 2,
+		"bigDataPool": {
+			"referenceName": "batched",
+			"type": "BigDataPoolReference"
+		},
+		"sessionProperties": {
+			"driverMemory": "28g",
+			"driverCores": 4,
+			"executorMemory": "28g",
+			"executorCores": 4,
+			"numExecutors": 1,
+			"conf": {
+				"spark.dynamicAllocation.enabled": "false",
+				"spark.dynamicAllocation.minExecutors": "1",
+				"spark.dynamicAllocation.maxExecutors": "1"
+			}
+		},
+		"metadata": {
+			"saveOutput": true,
+			"synapse_widget": {
+				"version": "0.1"
+			},
+			"enableDebugMode": false,
+			"kernelspec": {
+				"name": "synapse_pyspark",
+				"display_name": "Synapse PySpark"
+			},
+			"language_info": {
+				"name": "python"
+			},
+			"a365ComputeOptions": {
+				"id": "/subscriptions/551f35f8-5023-4513-ae40-48f2e9f65fc6/resourceGroups/DUS02mem/providers/Microsoft.Synapse/workspaces/studentanalytics/bigDataPools/batched",
+				"name": "batched",
+				"type": "Spark",
+				"endpoint": "https://studentanalytics.dev.azuresynapse.net/livyApi/versions/2019-11-01-preview/sparkPools/batched",
+				"auth": {
+					"type": "AAD",
+					"authResource": "https://dev.azuresynapse.net"
+				},
+				"sparkVersion": "2.4",
+				"nodeCount": 3,
+				"cores": 4,
+				"memory": 28,
+				"extraHeader": null
+			}
+		},
+		"cells": [
+			{
+				"cell_type": "code",
+				"source": [
+					"from pyspark.sql.functions import *\r\n",
+					"from pyspark.sql.types import *"
+				],
+				"attachments": null,
+				"execution_count": 1
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"StudentDF =  spark.sql(\"SELECT * FROM `default`.`dimstudent`\")"
+				],
+				"attachments": null,
+				"execution_count": 2
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"StudentDF = StudentDF.withColumn('AddressLine1', concat_ws(',', StudentDF.City1, StudentDF.StateProvince1, StudentDF.Postcode1, StudentDF.Country1))\r\n",
+					"StudentDF = StudentDF.withColumn('AddressLine2', concat_ws(',', StudentDF.City2, StudentDF.StateProvince2, StudentDF.Postcode2, StudentDF.Country2))"
+				],
+				"attachments": null,
+				"execution_count": 3
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					},
+					"collapsed": false
+				},
+				"source": [
+					"StudentDF.filter(StudentDF.Country2.isNotNull()).collect()"
+				],
+				"attachments": null,
+				"execution_count": 6
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"StudentDF.write.mode(\"overwrite\").saveAsTable(\"unisadw.DimStudent\")"
+				],
+				"attachments": null,
+				"execution_count": 7
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"DimCourse = spark.sql(\"SELECT * FROM `unisadw`.`dimcourse`\")\r\n",
+					"DimAssignment = spark.sql(\"SELECT * FROM `unisadw`.`dimassignment`\")\r\n",
+					"DimCourseResource = spark.sql(\"SELECT * FROM `unisadw`.`dimcourseresource`\")"
+				],
+				"attachments": null,
+				"execution_count": 8
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"DimCourse.printSchema()"
+				],
+				"attachments": null,
+				"execution_count": 10
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"DimCourse = DimCourse.withColumn('STEMfield', when(DimCourse.SubjectArea == 'BUIL', lit('Construction Management'))\r\n",
+					"                                            .when(DimCourse.SubjectArea == 'CIVE', lit('Construction Management'))\r\n",
+					"                                            .when(DimCourse.SubjectArea == 'INFS', lit('Information Technology & Data Analysis'))\r\n",
+					"                                            .when(DimCourse.SubjectArea == 'INFT', lit('Information Technology & Data Analysis'))\r\n",
+					"                                            .when(DimCourse.SubjectArea == 'EEET', lit('Engineering'))\r\n",
+					"                                            .when(DimCourse.SubjectArea == 'ENGG', lit('Engineering'))\r\n",
+					"                                            .when(DimCourse.SubjectArea == 'MENG', lit('Engineering'))\r\n",
+					"                                            .when(DimCourse.SubjectArea == 'RENG', lit('Engineering'))\r\n",
+					"                                            .when(DimCourse.SubjectArea == 'PHYS', lit('Engineering'))\r\n",
+					"                                            .when(concat(DimCourse.SubjectArea, DimCourse.CatalogNumber.cast(StringType())) == 'COMP1047', lit('Engineering'))\r\n",
+					"                                            .when(concat(DimCourse.SubjectArea, DimCourse.CatalogNumber.cast(StringType())) == 'MATH1076', lit('Engineering'))\r\n",
+					"                                            .when(concat(DimCourse.SubjectArea, DimCourse.CatalogNumber.cast(StringType())) == 'MATH1077', lit('Engineering'))\r\n",
+					"                                            .when(concat(DimCourse.SubjectArea, DimCourse.CatalogNumber.cast(StringType())) == 'MATH1079', lit('Engineering'))\r\n",
+					"                                            .when(concat(DimCourse.SubjectArea, DimCourse.CatalogNumber.cast(StringType())) == 'MATH1075', lit('Information Technology & Data Analysis'))\r\n",
+					"                                            .when(concat(DimCourse.SubjectArea, DimCourse.CatalogNumber.cast(StringType())) == 'MATH2032', lit('Information Technology & Data Analysis'))\r\n",
+					"                                            .when(concat(DimCourse.SubjectArea, DimCourse.CatalogNumber.cast(StringType())) == 'COMP1043', lit('Information Technology & Data Analysis'))\r\n",
+					"                                            .when(concat(DimCourse.SubjectArea, DimCourse.CatalogNumber.cast(StringType())) == 'COMP1044', lit('Information Technology & Data Analysis'))\r\n",
+					"                                            .when(concat(DimCourse.SubjectArea, DimCourse.CatalogNumber.cast(StringType())) == 'COMP2033', lit('Information Technology & Data Analysis')))"
+				],
+				"attachments": null,
+				"execution_count": 12
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"DimAssignment = DimAssignment.withColumn('STEMfield', when(DimAssignment.SubjectArea == 'BUIL', lit('Construction Management'))\r\n",
+					"                                            .when(DimAssignment.SubjectArea == 'CIVE', lit('Construction Management'))\r\n",
+					"                                            .when(DimAssignment.SubjectArea == 'INFS', lit('Information Technology & Data Analysis'))\r\n",
+					"                                            .when(DimAssignment.SubjectArea == 'INFT', lit('Information Technology & Data Analysis'))\r\n",
+					"                                            .when(DimAssignment.SubjectArea == 'EEET', lit('Engineering'))\r\n",
+					"                                            .when(DimAssignment.SubjectArea == 'ENGG', lit('Engineering'))\r\n",
+					"                                            .when(DimAssignment.SubjectArea == 'MENG', lit('Engineering'))\r\n",
+					"                                            .when(DimAssignment.SubjectArea == 'RENG', lit('Engineering'))\r\n",
+					"                                            .when(DimAssignment.SubjectArea == 'PHYS', lit('Engineering'))\r\n",
+					"                                            .when(concat(DimAssignment.SubjectArea, DimAssignment.CatalogNumber.cast(StringType())) == 'COMP1047', lit('Engineering'))\r\n",
+					"                                            .when(concat(DimAssignment.SubjectArea, DimAssignment.CatalogNumber.cast(StringType())) == 'MATH1076', lit('Engineering'))\r\n",
+					"                                            .when(concat(DimAssignment.SubjectArea, DimAssignment.CatalogNumber.cast(StringType())) == 'MATH1077', lit('Engineering'))\r\n",
+					"                                            .when(concat(DimAssignment.SubjectArea, DimAssignment.CatalogNumber.cast(StringType())) == 'MATH1079', lit('Engineering'))\r\n",
+					"                                            .when(concat(DimAssignment.SubjectArea, DimAssignment.CatalogNumber.cast(StringType())) == 'MATH1075', lit('Information Technology & Data Analysis'))\r\n",
+					"                                            .when(concat(DimAssignment.SubjectArea, DimAssignment.CatalogNumber.cast(StringType())) == 'MATH2032', lit('Information Technology & Data Analysis'))\r\n",
+					"                                            .when(concat(DimAssignment.SubjectArea, DimAssignment.CatalogNumber.cast(StringType())) == 'COMP1043', lit('Information Technology & Data Analysis'))\r\n",
+					"                                            .when(concat(DimAssignment.SubjectArea, DimAssignment.CatalogNumber.cast(StringType())) == 'COMP1044', lit('Information Technology & Data Analysis'))\r\n",
+					"                                            .when(concat(DimAssignment.SubjectArea, DimAssignment.CatalogNumber.cast(StringType())) == 'COMP2033', lit('Information Technology & Data Analysis')))"
+				],
+				"attachments": null,
+				"execution_count": 13
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"DimCourseResource = DimCourseResource.withColumn('STEMfield', when(DimCourseResource.SubjectArea == 'BUIL', lit('Construction Management'))\r\n",
+					"                                            .when(DimCourseResource.SubjectArea == 'CIVE', lit('Construction Management'))\r\n",
+					"                                            .when(DimCourseResource.SubjectArea == 'INFS', lit('Information Technology & Data Analysis'))\r\n",
+					"                                            .when(DimCourseResource.SubjectArea == 'INFT', lit('Information Technology & Data Analysis'))\r\n",
+					"                                            .when(DimCourseResource.SubjectArea == 'EEET', lit('Engineering'))\r\n",
+					"                                            .when(DimCourseResource.SubjectArea == 'ENGG', lit('Engineering'))\r\n",
+					"                                            .when(DimCourseResource.SubjectArea == 'MENG', lit('Engineering'))\r\n",
+					"                                            .when(DimCourseResource.SubjectArea == 'RENG', lit('Engineering'))\r\n",
+					"                                            .when(DimCourseResource.SubjectArea == 'PHYS', lit('Engineering'))\r\n",
+					"                                            .when(concat(DimCourseResource.SubjectArea, DimCourseResource.CatalogNumber.cast(StringType())) == 'COMP1047', lit('Engineering'))\r\n",
+					"                                            .when(concat(DimCourseResource.SubjectArea, DimCourseResource.CatalogNumber.cast(StringType())) == 'MATH1076', lit('Engineering'))\r\n",
+					"                                            .when(concat(DimCourseResource.SubjectArea, DimCourseResource.CatalogNumber.cast(StringType())) == 'MATH1077', lit('Engineering'))\r\n",
+					"                                            .when(concat(DimCourseResource.SubjectArea, DimCourseResource.CatalogNumber.cast(StringType())) == 'MATH1079', lit('Engineering'))\r\n",
+					"                                            .when(concat(DimCourseResource.SubjectArea, DimCourseResource.CatalogNumber.cast(StringType())) == 'MATH1075', lit('Information Technology & Data Analysis'))\r\n",
+					"                                            .when(concat(DimCourseResource.SubjectArea, DimCourseResource.CatalogNumber.cast(StringType())) == 'MATH2032', lit('Information Technology & Data Analysis'))\r\n",
+					"                                            .when(concat(DimCourseResource.SubjectArea, DimCourseResource.CatalogNumber.cast(StringType())) == 'COMP1043', lit('Information Technology & Data Analysis'))\r\n",
+					"                                            .when(concat(DimCourseResource.SubjectArea, DimCourseResource.CatalogNumber.cast(StringType())) == 'COMP1044', lit('Information Technology & Data Analysis'))\r\n",
+					"                                            .when(concat(DimCourseResource.SubjectArea, DimCourseResource.CatalogNumber.cast(StringType())) == 'COMP2033', lit('Information Technology & Data Analysis')))"
+				],
+				"attachments": null,
+				"execution_count": 14
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"DimCourse.write.mode(\"overwrite\").saveAsTable(\"unisadw.dimcourse\")\r\n",
+					"DimAssignment.write.mode(\"overwrite\").saveAsTable(\"unisadw.dimassignment\")\r\n",
+					"DimCourseResource.write.mode(\"overwrite\").saveAsTable(\"unisadw.dimcourseresource\")"
+				],
+				"attachments": null,
+				"execution_count": 17
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"DimCourse = spark.sql(\"SELECT * FROM `default`.`dimcourse`\")\r\n",
+					"DimAssignment = spark.sql(\"SELECT * FROM `default`.`dimassignment`\")\r\n",
+					"DimCourseResource = spark.sql(\"SELECT * FROM `default`.`dimcourseresource`\")"
+				],
+				"attachments": null,
+				"execution_count": 16
+			}
+		]
+	}
+}

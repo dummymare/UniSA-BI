@@ -1,0 +1,127 @@
+{
+	"name": "CopyPipeline_65l",
+	"properties": {
+		"activities": [
+			{
+				"name": "ForEach_65l",
+				"type": "ForEach",
+				"dependsOn": [],
+				"userProperties": [],
+				"typeProperties": {
+					"items": {
+						"value": "@pipeline().parameters.cw_items",
+						"type": "Expression"
+					},
+					"activities": [
+						{
+							"name": "Copy_65l",
+							"type": "Copy",
+							"dependsOn": [],
+							"policy": {
+								"timeout": "7.00:00:00",
+								"retry": 0,
+								"retryIntervalInSeconds": 30,
+								"secureOutput": false,
+								"secureInput": false
+							},
+							"userProperties": [
+								{
+									"name": "Source",
+									"value": "@{item().source.collection}"
+								},
+								{
+									"name": "Destination",
+									"value": "datalake/fromAtlas/@{item().destination.fileName}"
+								}
+							],
+							"typeProperties": {
+								"source": {
+									"type": "MongoDbAtlasSource",
+									"batchSize": 100
+								},
+								"sink": {
+									"type": "JsonSink",
+									"storeSettings": {
+										"type": "AzureBlobFSWriteSettings"
+									},
+									"formatSettings": {
+										"type": "JsonWriteSettings",
+										"filePattern": "setOfObjects"
+									}
+								},
+								"enableStaging": false,
+								"validateDataConsistency": true,
+								"logSettings": {
+									"enableCopyActivityLog": true,
+									"copyActivityLogSettings": {
+										"logLevel": "Warning",
+										"enableReliableLogging": false
+									},
+									"logLocationSettings": {
+										"linkedServiceName": {
+											"referenceName": "studentanalytics-WorkspaceDefaultStorage",
+											"type": "LinkedServiceReference"
+										},
+										"path": "datalake/log"
+									}
+								}
+							},
+							"inputs": [
+								{
+									"referenceName": "SourceDataset_65l",
+									"type": "DatasetReference",
+									"parameters": {
+										"cw_collection": "@item().source.collection"
+									}
+								}
+							],
+							"outputs": [
+								{
+									"referenceName": "DestinationDataset_65l",
+									"type": "DatasetReference",
+									"parameters": {
+										"cw_fileName": "@item().destination.fileName"
+									}
+								}
+							]
+						}
+					]
+				}
+			}
+		],
+		"parameters": {
+			"cw_items": {
+				"type": "Array",
+				"defaultValue": [
+					{
+						"source": {
+							"collection": "coursesitevisits"
+						},
+						"destination": {
+							"fileName": "coursesitevisits.json"
+						}
+					},
+					{
+						"source": {
+							"collection": "studentlist"
+						},
+						"destination": {
+							"fileName": "studentlist.json"
+						}
+					},
+					{
+						"source": {
+							"collection": "submissionvgrades"
+						},
+						"destination": {
+							"fileName": "submissionvgrades.json"
+						}
+					}
+				]
+			}
+		},
+		"annotations": [],
+		"lastPublishTime": "2021-09-12T09:57:43Z"
+	},
+	"type": "Microsoft.Synapse/workspaces/pipelines"
+}

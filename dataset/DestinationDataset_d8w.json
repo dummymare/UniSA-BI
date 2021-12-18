@@ -1,0 +1,23 @@
+{
+	"name": "DestinationDataset_d8w",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "studentanalytics-WorkspaceDefaultStorage",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"folderPath": "fromAtlas",
+				"fileSystem": "datalake"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"quoteChar": "\""
+		},
+		"schema": {}
+	},
+	"type": "Microsoft.Synapse/workspaces/datasets"
+}

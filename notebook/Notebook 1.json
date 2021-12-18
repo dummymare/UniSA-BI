@@ -1,0 +1,725 @@
+{
+	"name": "Notebook 1",
+	"properties": {
+		"nbformat": 4,
+		"nbformat_minor": 2,
+		"bigDataPool": {
+			"referenceName": "batched",
+			"type": "BigDataPoolReference"
+		},
+		"sessionProperties": {
+			"driverMemory": "28g",
+			"driverCores": 4,
+			"executorMemory": "28g",
+			"executorCores": 4,
+			"numExecutors": 4,
+			"conf": {
+				"spark.dynamicAllocation.enabled": "false",
+				"spark.dynamicAllocation.minExecutors": "4",
+				"spark.dynamicAllocation.maxExecutors": "4"
+			}
+		},
+		"metadata": {
+			"saveOutput": true,
+			"synapse_widget": {
+				"version": "0.1",
+				"state": {
+					"1fc491b0-74d2-464e-b91e-221f285e75e6": {
+						"type": "Synapse.DataFrame",
+						"sync_state": {
+							"table": {
+								"rows": [
+									{
+										"0": "CCXZWXLBC",
+										"1": "1912",
+										"2": "Part-Time",
+										"3": "F",
+										"4": "N",
+										"5": "19651218",
+										"6": "2005",
+										"7": "326417514496",
+										"8": "XBCP",
+										"10": "KAPUNDA",
+										"12": "5373",
+										"14": "SA",
+										"16": "Australia"
+									},
+									{
+										"0": "CCXZWXLBC",
+										"1": "2005",
+										"2": "Full-Time",
+										"3": "F",
+										"4": "N",
+										"5": "19651218",
+										"6": "2014",
+										"7": "326417514497",
+										"8": "XBCP",
+										"10": "KAPUNDA",
+										"12": "5373",
+										"14": "SA",
+										"16": "Australia"
+									},
+									{
+										"0": "CCXZWXLBC",
+										"1": "2014",
+										"2": "Part-Time",
+										"3": "F",
+										"4": "N",
+										"5": "19651218",
+										"6": "9999",
+										"7": "326417514498",
+										"8": "XBCP",
+										"10": "KAPUNDA",
+										"12": "5373",
+										"14": "SA",
+										"16": "Australia"
+									},
+									{
+										"0": "CCXZAAGHG",
+										"1": "1914",
+										"2": "Part-Time",
+										"3": "M",
+										"4": "N",
+										"5": "19800729",
+										"6": "2005",
+										"7": "326417514499",
+										"8": "XBCP",
+										"10": "Rochedale South",
+										"12": "4123",
+										"14": "QLD",
+										"16": "Australia"
+									},
+									{
+										"0": "CCXZAAGHG",
+										"1": "2005",
+										"2": "Full-Time",
+										"3": "M",
+										"4": "N",
+										"5": "19800729",
+										"6": "2025",
+										"7": "326417514500",
+										"8": "XBCP",
+										"10": "Rochedale South",
+										"12": "4123",
+										"14": "QLD",
+										"16": "Australia"
+									},
+									{
+										"0": "CCXZAAGHG",
+										"1": "2025",
+										"2": "Part-Time",
+										"3": "M",
+										"4": "N",
+										"5": "19800729",
+										"6": "9999",
+										"7": "326417514501",
+										"8": "XBCP",
+										"10": "Rochedale South",
+										"12": "4123",
+										"14": "QLD",
+										"16": "Australia"
+									},
+									{
+										"0": "CCXHXCXZG",
+										"1": "2005",
+										"2": "Part-Time",
+										"3": "M",
+										"4": "N",
+										"5": "19851123",
+										"6": "9999",
+										"7": "326417514502",
+										"8": "XBFP",
+										"10": "Gracemere",
+										"12": "4702",
+										"14": "QLD",
+										"16": "Australia"
+									},
+									{
+										"0": "CCXZGAXHZ",
+										"1": "2012",
+										"2": "Part-Time",
+										"3": "M",
+										"4": "N",
+										"5": "20001105",
+										"6": "9999",
+										"7": "326417514503",
+										"8": "XHCM",
+										"10": "CRAFERS",
+										"12": "5152",
+										"14": "SA",
+										"16": "Australia"
+									},
+									{
+										"0": "CCXZAHXBL",
+										"1": "1912",
+										"2": "Part-Time",
+										"3": "M",
+										"4": "N",
+										"5": "19951013",
+										"6": "1914",
+										"7": "326417514504",
+										"8": "XBCP",
+										"10": "NIGHTCLIFF",
+										"12": "814",
+										"14": "NT",
+										"16": "Australia"
+									},
+									{
+										"0": "CCXZAHXBL",
+										"1": "1914",
+										"2": "Full-Time",
+										"3": "M",
+										"4": "N",
+										"5": "19951013",
+										"6": "1925",
+										"7": "326417514505",
+										"8": "XBCP",
+										"10": "NIGHTCLIFF",
+										"12": "814",
+										"14": "NT",
+										"16": "Australia"
+									},
+									{
+										"0": "CCXZAHXBL",
+										"1": "1925",
+										"2": "Part-Time",
+										"3": "M",
+										"4": "N",
+										"5": "19951013",
+										"6": "2005",
+										"7": "326417514506",
+										"8": "XBCP",
+										"10": "NIGHTCLIFF",
+										"12": "814",
+										"14": "NT",
+										"16": "Australia"
+									},
+									{
+										"0": "CCXZAHXBL",
+										"1": "2005",
+										"2": "Full-Time",
+										"3": "M",
+										"4": "N",
+										"5": "19951013",
+										"6": "2025",
+										"7": "326417514507",
+										"8": "XBCP",
+										"10": "NIGHTCLIFF",
+										"12": "814",
+										"14": "NT",
+										"16": "Australia"
+									},
+									{
+										"0": "CCXZAHXBL",
+										"1": "2025",
+										"2": "Part-Time",
+										"3": "M",
+										"4": "N",
+										"5": "19951013",
+										"6": "2105",
+										"7": "326417514508",
+										"8": "XBCP",
+										"10": "NIGHTCLIFF",
+										"12": "814",
+										"14": "NT",
+										"16": "Australia"
+									},
+									{
+										"0": "CCXZAHXBL",
+										"1": "2105",
+										"2": "Full-Time",
+										"3": "M",
+										"4": "N",
+										"5": "19951013",
+										"6": "9999",
+										"7": "326417514509",
+										"8": "XBCP",
+										"10": "NIGHTCLIFF",
+										"12": "814",
+										"14": "NT",
+										"16": "Australia"
+									},
+									{
+										"0": "CCXZWAHWX",
+										"1": "2014",
+										"2": "Full-Time",
+										"3": "M",
+										"4": "N",
+										"5": "19920610",
+										"6": "9999",
+										"7": "326417514510",
+										"8": "XBCA",
+										"10": "HORSHAM",
+										"12": "3400",
+										"14": "VIC",
+										"16": "Australia"
+									},
+									{
+										"0": "DZXDX",
+										"1": "2005",
+										"2": "Part-Time",
+										"3": "F",
+										"4": "N",
+										"5": "19710622",
+										"6": "9999",
+										"7": "326417514511",
+										"8": "XBCP",
+										"10": "FORTITUDE VALLEY",
+										"12": "4006",
+										"14": "QLD",
+										"16": "Australia"
+									},
+									{
+										"0": "CCXCAGBCC",
+										"1": "1912",
+										"2": "Part-Time",
+										"3": "M",
+										"4": "N",
+										"5": "19930531",
+										"6": "9999",
+										"7": "326417514512",
+										"8": "XBBE",
+										"10": "GLENELG SOUTH",
+										"12": "5045",
+										"14": "SA",
+										"16": "Australia"
+									},
+									{
+										"0": "CCXXWDALG",
+										"1": "1914",
+										"2": "Full-Time",
+										"3": "F",
+										"4": "N",
+										"5": "19810811",
+										"6": "2105",
+										"7": "326417514513",
+										"8": "XBCP",
+										"10": "DARLINGTON",
+										"12": "5047",
+										"14": "SA",
+										"16": "Australia"
+									},
+									{
+										"0": "CCXXWDALG",
+										"1": "2105",
+										"2": "Unknown",
+										"3": "F",
+										"4": "N",
+										"5": "19810811",
+										"6": "9999",
+										"7": "326417514514",
+										"8": "XBCP",
+										"10": "DARLINGTON",
+										"12": "5047",
+										"14": "SA",
+										"16": "Australia"
+									},
+									{
+										"0": "CCXZDWLAW",
+										"1": "1905",
+										"2": "Part-Time",
+										"3": "F",
+										"4": "N",
+										"5": "19570424",
+										"6": "9999",
+										"7": "326417514515",
+										"8": "XBCA",
+										"10": "NUNDAH",
+										"12": "4012",
+										"14": "QLD",
+										"16": "Australia"
+									}
+								],
+								"schema": [
+									{
+										"key": "0",
+										"name": "StudentID",
+										"type": "string"
+									},
+									{
+										"key": "1",
+										"name": "EffectiveTerm",
+										"type": "int"
+									},
+									{
+										"key": "2",
+										"name": "AcademicLoadDesc",
+										"type": "string"
+									},
+									{
+										"key": "3",
+										"name": "GenderCode",
+										"type": "string"
+									},
+									{
+										"key": "4",
+										"name": "InternationalStudentFlag",
+										"type": "string"
+									},
+									{
+										"key": "5",
+										"name": "BirthDateSK",
+										"type": "int"
+									},
+									{
+										"key": "6",
+										"name": "ExpiryTerm",
+										"type": "int"
+									},
+									{
+										"key": "7",
+										"name": "StudentSK",
+										"type": "bigint"
+									},
+									{
+										"key": "8",
+										"name": "MajorProgramCode",
+										"type": "string"
+									},
+									{
+										"key": "9",
+										"name": "SecondaryProgramCode",
+										"type": "string"
+									},
+									{
+										"key": "10",
+										"name": "City1",
+										"type": "string"
+									},
+									{
+										"key": "11",
+										"name": "City2",
+										"type": "string"
+									},
+									{
+										"key": "12",
+										"name": "Postcode1",
+										"type": "int"
+									},
+									{
+										"key": "13",
+										"name": "Postcode2",
+										"type": "int"
+									},
+									{
+										"key": "14",
+										"name": "StateProvince1",
+										"type": "string"
+									},
+									{
+										"key": "15",
+										"name": "StateProvince2",
+										"type": "string"
+									},
+									{
+										"key": "16",
+										"name": "Country1",
+										"type": "string"
+									},
+									{
+										"key": "17",
+										"name": "Country2",
+										"type": "string"
+									}
+								]
+							},
+							"isSummary": false,
+							"language": "scala"
+						},
+						"persist_state": {
+							"view": {
+								"type": "details",
+								"chartOptions": {
+									"chartType": "bar",
+									"aggregationType": "sum",
+									"categoryFieldKeys": [
+										"0"
+									],
+									"seriesFieldKeys": [
+										"1"
+									],
+									"isStacked": false
+								}
+							}
+						}
+					}
+				}
+			},
+			"enableDebugMode": false,
+			"kernelspec": {
+				"name": "synapse_pyspark",
+				"display_name": "Synapse PySpark"
+			},
+			"language_info": {
+				"name": "python"
+			},
+			"a365ComputeOptions": {
+				"id": "/subscriptions/551f35f8-5023-4513-ae40-48f2e9f65fc6/resourceGroups/DUS02mem/providers/Microsoft.Synapse/workspaces/studentanalytics/bigDataPools/batched",
+				"name": "batched",
+				"type": "Spark",
+				"endpoint": "https://studentanalytics.dev.azuresynapse.net/livyApi/versions/2019-11-01-preview/sparkPools/batched",
+				"auth": {
+					"type": "AAD",
+					"authResource": "https://dev.azuresynapse.net"
+				},
+				"sparkVersion": "2.4",
+				"nodeCount": 3,
+				"cores": 4,
+				"memory": 28,
+				"extraHeader": null
+			}
+		},
+		"cells": [
+			{
+				"cell_type": "code",
+				"source": [
+					"from pyspark.sql.functions import *\r\n",
+					"from pyspark.sql.types import *"
+				],
+				"attachments": null,
+				"execution_count": 1
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"StudentDF = spark.sql(\"SELECT * FROM `unisadw`.`dimstudent`\")"
+				],
+				"attachments": null,
+				"execution_count": 2
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"StudentDF.filter(size(StudentDF.StudentCountryDesc)>1).count()"
+				],
+				"attachments": null,
+				"execution_count": 3
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"StudentDF = StudentDF.withColumn('MajorProgramCode', StudentDF.ProgramCode.__getitem__(0))\r\n",
+					"StudentDF = StudentDF.withColumn('SecondaryProgramCode', when(size(StudentDF.ProgramCode)>1, StudentDF.ProgramCode.__getitem__(1))\r\n",
+					"                                                        .otherwise(lit(None)))"
+				],
+				"attachments": null,
+				"execution_count": 4
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"StudentDF = StudentDF.withColumn('City1', StudentDF.StudentAddressCityCode.__getitem__(0))\r\n",
+					"StudentDF = StudentDF.withColumn('City2', when(size(StudentDF.StudentAddressCityCode)>1, StudentDF.StudentAddressCityCode.__getitem__(1))\r\n",
+					"                                        .otherwise(lit(None)))"
+				],
+				"attachments": null,
+				"execution_count": 5
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"StudentDF = StudentDF.withColumn('Postcode1', StudentDF.StudentAddressPostcode.__getitem__(0))\r\n",
+					"StudentDF = StudentDF.withColumn('Postcode2', when(size(StudentDF.StudentAddressPostcode)>1, StudentDF.StudentAddressPostcode.__getitem__(1))\r\n",
+					"                                        .otherwise(lit(None)))"
+				],
+				"attachments": null,
+				"execution_count": 6
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"StudentDF = StudentDF.withColumn('StateProvince1', StudentDF.StudentAddressStateCode.__getitem__(0))\r\n",
+					"StudentDF = StudentDF.withColumn('StateProvince2', when(size(StudentDF.StudentAddressStateCode)>1, StudentDF.StudentAddressStateCode.__getitem__(1))\r\n",
+					"                                        .otherwise(lit(None)))"
+				],
+				"attachments": null,
+				"execution_count": 7
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"StudentDF = StudentDF.withColumn('Country1', StudentDF.StudentCountryDesc.__getitem__(0))\r\n",
+					"StudentDF = StudentDF.withColumn('Country2', when(size(StudentDF.StudentCountryDesc)>1, StudentDF.StudentCountryDesc.__getitem__(1))\r\n",
+					"                                        .otherwise(lit(None)))"
+				],
+				"attachments": null,
+				"execution_count": 8
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"StudentDF = StudentDF.drop('ProgramCode', 'StudentAddressCityCode', 'StudentAddressPostcode', \r\n",
+					"                            'StudentAddressStateCode', 'StudentCountryDesc', 'ProgramDesc', 'AddressDesc')"
+				],
+				"attachments": null,
+				"execution_count": 12
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"StudentDF = StudentDF.withColumn('AcademicLoadDesc', when(size(StudentDF.AcademicLoadDesc)==1, StudentDF.AcademicLoadDesc.__getitem__(0))\r\n",
+					"                                                    .otherwise(lit('Unknown')))"
+				],
+				"attachments": null,
+				"execution_count": 10
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"StudentDF.printSchema()"
+				],
+				"attachments": null,
+				"execution_count": 14
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					},
+					"collapsed": false
+				},
+				"source": [
+					"display(StudentDF.limit(20))"
+				],
+				"attachments": null,
+				"execution_count": 15
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"StudentDF.write.mode(\"overwrite\").saveAsTable(\"default.DimStudent\")"
+				],
+				"attachments": null,
+				"execution_count": 16
+			}
+		]
+	}
+}

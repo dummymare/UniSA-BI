@@ -1,0 +1,76 @@
+{
+	"name": "CopyPipeline_d8w",
+	"properties": {
+		"activities": [
+			{
+				"name": "Copy_d8w",
+				"type": "Copy",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "7.00:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [
+					{
+						"name": "Source",
+						"value": "learnonline"
+					},
+					{
+						"name": "Destination",
+						"value": "datalake/fromAtlas/"
+					}
+				],
+				"typeProperties": {
+					"source": {
+						"type": "MongoDbAtlasSource",
+						"batchSize": 100
+					},
+					"sink": {
+						"type": "JsonSink",
+						"storeSettings": {
+							"type": "AzureBlobFSWriteSettings"
+						},
+						"formatSettings": {
+							"type": "JsonWriteSettings",
+							"filePattern": "setOfObjects"
+						}
+					},
+					"enableStaging": false,
+					"validateDataConsistency": true,
+					"logSettings": {
+						"enableCopyActivityLog": true,
+						"copyActivityLogSettings": {
+							"logLevel": "Warning",
+							"enableReliableLogging": false
+						},
+						"logLocationSettings": {
+							"linkedServiceName": {
+								"referenceName": "studentanalytics-WorkspaceDefaultStorage",
+								"type": "LinkedServiceReference"
+							},
+							"path": "datalake/log"
+						}
+					}
+				},
+				"inputs": [
+					{
+						"referenceName": "SourceDataset_d8w",
+						"type": "DatasetReference"
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "DestinationDataset_d8w",
+						"type": "DatasetReference"
+					}
+				]
+			}
+		],
+		"annotations": [],
+		"lastPublishTime": "2021-09-13T04:31:23Z"
+	},
+	"type": "Microsoft.Synapse/workspaces/pipelines"
+}

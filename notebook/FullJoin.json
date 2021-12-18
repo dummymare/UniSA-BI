@@ -1,0 +1,575 @@
+{
+	"name": "FullJoin",
+	"properties": {
+		"nbformat": 4,
+		"nbformat_minor": 2,
+		"bigDataPool": {
+			"referenceName": "batched",
+			"type": "BigDataPoolReference"
+		},
+		"sessionProperties": {
+			"driverMemory": "28g",
+			"driverCores": 4,
+			"executorMemory": "28g",
+			"executorCores": 4,
+			"numExecutors": 2,
+			"conf": {
+				"spark.dynamicAllocation.enabled": "false",
+				"spark.dynamicAllocation.minExecutors": "2",
+				"spark.dynamicAllocation.maxExecutors": "2",
+				"spark.autotune.trackingId": "c634f91f-c29a-4c6c-bc46-854703ee145a"
+			}
+		},
+		"metadata": {
+			"saveOutput": true,
+			"synapse_widget": {
+				"version": "0.1"
+			},
+			"enableDebugMode": false,
+			"kernelspec": {
+				"name": "synapse_pyspark",
+				"display_name": "Synapse PySpark"
+			},
+			"language_info": {
+				"name": "sql"
+			},
+			"a365ComputeOptions": {
+				"id": "/subscriptions/551f35f8-5023-4513-ae40-48f2e9f65fc6/resourceGroups/DUS02mem/providers/Microsoft.Synapse/workspaces/studentanalytics/bigDataPools/batched",
+				"name": "batched",
+				"type": "Spark",
+				"endpoint": "https://studentanalytics.dev.azuresynapse.net/livyApi/versions/2019-11-01-preview/sparkPools/batched",
+				"auth": {
+					"type": "AAD",
+					"authResource": "https://dev.azuresynapse.net"
+				},
+				"sparkVersion": "2.4",
+				"nodeCount": 3,
+				"cores": 4,
+				"memory": 28,
+				"extraHeader": null
+			}
+		},
+		"cells": [
+			{
+				"cell_type": "code",
+				"metadata": {
+					"collapsed": false
+				},
+				"source": [
+					"USE unisadw;"
+				],
+				"attachments": null,
+				"execution_count": 1
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					},
+					"collapsed": false
+				},
+				"source": [
+					"DROP TABLE engagementheadinfo;\r\n",
+					"DROP TABLE engagementheadcourse;"
+				],
+				"attachments": null,
+				"execution_count": 2
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					},
+					"collapsed": false
+				},
+				"source": [
+					"SHOW TABLES"
+				],
+				"attachments": null,
+				"execution_count": 3
+			},
+			{
+				"cell_type": "markdown",
+				"metadata": {
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"Student Demographics"
+				],
+				"attachments": null
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					},
+					"collapsed": false
+				},
+				"source": [
+					"CREATE TABLE studentINFO\r\n",
+					"LOCATION 'abfss://datalake@dus02store.dfs.core.windows.net/MLdataset/'\r\n",
+					"AS\r\n",
+					"SELECT  dimstudent.StudentID, dimstudent.AcademicLoadDesc, dimstudent.GenderCode, dimstudent.InternationalStudentFlag,\r\n",
+					"        (2021 - dimdate.CalendarYear) AS StudentAge, dimstudent.MajorProgramCode,\r\n",
+					"        dimstudent.City1, dimstudent.City2, dimstudent.StateProvince1, dimstudent.StateProvince2, \r\n",
+					"        dimstudent.Country1, dimstudent.Country2, CAST(snapshotengagement.OfficialGrade as int) as gradeNumeric,\r\n",
+					"        dimcourse.SubjectArea, dimcourse.CatalogNumber, dimcourse.TermCode, dimcourse.NumberOfStudents, dimcourse.STEMfield,\r\n",
+					"        dimgrade.Grade, dimgrade.GradePoint, dimcourse.CourseID,\r\n",
+					"        snapshotengagement.EngagementCount, snapshotengagement.VisitCount, snapshotengagement.ViewsDownLoads,\r\n",
+					"        snapshotengagement.MinutesDelivered\r\n",
+					"FROM snapshotengagement, dimstudent, dimcourse, dimgrade, dimdate\r\n",
+					"WHERE snapshotengagement.CourseSK=dimcourse.CourseSK\r\n",
+					"AND snapshotengagement.StudentSK=dimstudent.StudentSK\r\n",
+					"AND snapshotengagement.OfficialGradeSK=dimgrade.GradeSK\r\n",
+					"AND dimstudent.BirthDateSK=dimdate.DateKey\r\n",
+					"AND StudentID IS NOT NULL"
+				],
+				"attachments": null,
+				"execution_count": 2
+			},
+			{
+				"cell_type": "markdown",
+				"metadata": {
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"Number Of Late Submission"
+				],
+				"attachments": null
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					},
+					"collapsed": false
+				},
+				"source": [
+					"CREATE TABLE latesubinfo\r\n",
+					"LOCATION 'abfss://datalake@dus02store.dfs.core.windows.net/DataPrep/LateSub/'\r\n",
+					"AS\r\n",
+					"SELECT dimstudent.StudentID, dimassignment.CourseID, dimassignment.TermCode,\r\n",
+					"        COUNT(*) AS NumberOfLateSubmissions, \r\n",
+					"        sum((CAST(LastSubmissionTime as long) - cast(IndividualDueTime as long))/3600) AS TotalLateHours\r\n",
+					"FROM snapshotfactsubmission, dimstudent, dimassignment, dimgrade\r\n",
+					"WHERE snapshotfactsubmission.AssignmentSK=dimassignment.AssignmentSK\r\n",
+					"AND snapshotfactsubmission.StudentSK=dimstudent.StudentSK\r\n",
+					"AND snapshotfactsubmission.GradeSK=dimgrade.GradeSK\r\n",
+					"AND dimassignment.TermCode!='2112'\r\n",
+					"AND snapshotfactsubmission.LastSubmissionTime>snapshotfactsubmission.IndividualDueTime\r\n",
+					"GROUP BY dimstudent.StudentID, dimassignment.TermCode, dimassignment.CourseID"
+				],
+				"attachments": null,
+				"execution_count": 4
+			},
+			{
+				"cell_type": "markdown",
+				"metadata": {
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"Number of No Submission"
+				],
+				"attachments": null
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					},
+					"collapsed": false
+				},
+				"source": [
+					"CREATE TABLE nosubinfo\r\n",
+					"LOCATION 'abfss://datalake@dus02store.dfs.core.windows.net/DataPrep/NoSub/'\r\n",
+					"AS\r\n",
+					"SELECT dimstudent.StudentID, dimassignment.TermCode,\r\n",
+					"        COUNT(*) AS NumberOfInvalidSubmission\r\n",
+					"FROM snapshotfactsubmission, dimstudent, dimassignment\r\n",
+					"WHERE snapshotfactsubmission.AssignmentSK=dimassignment.AssignmentSK\r\n",
+					"AND snapshotfactsubmission.StudentSK=dimstudent.StudentSK\r\n",
+					"AND dimassignment.TermCode!='2112'\r\n",
+					"AND snapshotfactsubmission.LastSubmissionTime IS NULL\r\n",
+					"GROUP BY dimstudent.StudentID, dimassignment.TermCode"
+				],
+				"attachments": null,
+				"execution_count": 6
+			},
+			{
+				"cell_type": "markdown",
+				"metadata": {
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"Late submissions in 6 weeks"
+				],
+				"attachments": null
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					},
+					"collapsed": false
+				},
+				"source": [
+					"CREATE TABLE latesubheadinfo\r\n",
+					"LOCATION 'abfss://datalake@dus02store.dfs.core.windows.net/DataPrep/LateSub6weeks/'\r\n",
+					"AS\r\n",
+					"SELECT dimstudent.StudentID, dimassignment.TermCode,\r\n",
+					"        COUNT(*) AS NumberOfLateSubmissions,\r\n",
+					"        AVG((CAST(LastSubmissionTime as long) - cast(IndividualDueTime as long))/3600) AS avg_latehours\r\n",
+					"FROM snapshotfactsubmission, dimstudent, dimassignment, dimcourse\r\n",
+					"WHERE snapshotfactsubmission.StudentSK=dimstudent.StudentSK\r\n",
+					"AND snapshotfactsubmission.AssignmentSK=dimassignment.AssignmentSK\r\n",
+					"AND dimassignment.CourseSK=dimcourse.CourseSK\r\n",
+					"AND DATEDIFF(dimcourse.CommenceDate, dimassignment.InitialDueTime)/7<=6\r\n",
+					"AND snapshotfactsubmission.LastSubmissionTime>snapshotfactsubmission.IndividualDueTime\r\n",
+					"GROUP BY dimstudent.StudentID, dimassignment.TermCode"
+				],
+				"attachments": null,
+				"execution_count": 10
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					},
+					"collapsed": false
+				},
+				"source": [
+					"CREATE TABLE latesubheadcourse\r\n",
+					"LOCATION 'abfss://datalake@dus02store.dfs.core.windows.net/DataPrep/LateSub6weeksCourse/'\r\n",
+					"AS\r\n",
+					"SELECT dimstudent.StudentID, dimassignment.TermCode, dimcourse.CourseID,\r\n",
+					"        COUNT(*) AS NumberOfLateSubmissions,\r\n",
+					"        AVG((CAST(LastSubmissionTime as long) - cast(IndividualDueTime as long))/3600) AS avg_latehours\r\n",
+					"FROM snapshotfactsubmission, dimstudent, dimassignment, dimcourse\r\n",
+					"WHERE snapshotfactsubmission.StudentSK=dimstudent.StudentSK\r\n",
+					"AND snapshotfactsubmission.AssignmentSK=dimassignment.AssignmentSK\r\n",
+					"AND dimassignment.CourseSK=dimcourse.CourseSK\r\n",
+					"AND DATEDIFF(dimcourse.CommenceDate, dimassignment.InitialDueTime)/7<=6\r\n",
+					"AND snapshotfactsubmission.LastSubmissionTime>snapshotfactsubmission.IndividualDueTime\r\n",
+					"GROUP BY dimstudent.StudentID, dimassignment.TermCode, dimcourse.CourseID"
+				],
+				"attachments": null,
+				"execution_count": 3
+			},
+			{
+				"cell_type": "markdown",
+				"metadata": {
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"Invalid Submissions in 6 weeks"
+				],
+				"attachments": null
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					},
+					"collapsed": false
+				},
+				"source": [
+					"CREATE TABLE nosubheadinfo\r\n",
+					"LOCATION 'abfss://datalake@dus02store.dfs.core.windows.net/DataPrep/NoSub6weeks/'\r\n",
+					"AS\r\n",
+					"SELECT dimstudent.StudentID, dimassignment.TermCode,\r\n",
+					"        COUNT(*) AS NumberOfInvalidSubmission\r\n",
+					"FROM snapshotfactsubmission, dimstudent, dimassignment, dimcourse\r\n",
+					"WHERE snapshotfactsubmission.StudentSK=dimstudent.StudentSK\r\n",
+					"AND snapshotfactsubmission.AssignmentSK=dimassignment.AssignmentSK\r\n",
+					"AND dimassignment.CourseSK=dimcourse.CourseSK\r\n",
+					"AND DATEDIFF(dimcourse.CommenceDate, dimassignment.InitialDueTime)/7<=6\r\n",
+					"AND snapshotfactsubmission.LastSubmissionTime IS NULL\r\n",
+					"GROUP BY dimstudent.StudentID, dimassignment.TermCode"
+				],
+				"attachments": null,
+				"execution_count": 11
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					},
+					"collapsed": false
+				},
+				"source": [
+					"CREATE TABLE nosubheadcourse\r\n",
+					"LOCATION 'abfss://datalake@dus02store.dfs.core.windows.net/DataPrep/NoSub6weeksCourse/'\r\n",
+					"AS\r\n",
+					"SELECT dimstudent.StudentID, dimassignment.TermCode, dimcourse.CourseID,\r\n",
+					"        COUNT(*) AS NumberOfInvalidSubmission\r\n",
+					"FROM snapshotfactsubmission, dimstudent, dimassignment, dimcourse\r\n",
+					"WHERE snapshotfactsubmission.StudentSK=dimstudent.StudentSK\r\n",
+					"AND snapshotfactsubmission.AssignmentSK=dimassignment.AssignmentSK\r\n",
+					"AND dimassignment.CourseSK=dimcourse.CourseSK\r\n",
+					"AND DATEDIFF(dimcourse.CommenceDate, dimassignment.InitialDueTime)/7<=6\r\n",
+					"AND snapshotfactsubmission.LastSubmissionTime IS NULL\r\n",
+					"GROUP BY dimstudent.StudentID, dimassignment.TermCode, dimcourse.CourseID"
+				],
+				"attachments": null,
+				"execution_count": 4
+			},
+			{
+				"cell_type": "markdown",
+				"metadata": {
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"Enrolment Summary"
+				],
+				"attachments": null
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					},
+					"collapsed": false
+				},
+				"source": [
+					"CREATE TABLE enrolmentinfo\r\n",
+					"LOCATION 'abfss://datalake@dus02store.dfs.core.windows.net/DataPrep/Enrolment/'\r\n",
+					"AS\r\n",
+					"SELECT StudentID, TermCode,\r\n",
+					"        AcademicLoadDesc, GenderCode, InternationalStudentFlag, (2021 - dimdate.CalendarYear) AS Age,\r\n",
+					"        MajorProgramCode, City1, StateProvince1, Country1,\r\n",
+					"        COUNT(distinct CourseID) AS NumberOfEnrolments,\r\n",
+					"        AVG(OfficialGrade) AS GradeAverage,\r\n",
+					"        AVG(dimgrade.GradePoint) AS GPA,\r\n",
+					"        sum(ViewsDownLoads) AS TotalVideoView,\r\n",
+					"        sum(MinutesDelivered) AS TotalMinutesDelivered,\r\n",
+					"        sum(EngagementCount) AS TotalEngagementCount,\r\n",
+					"        collect_set(CourseName) AS enrolledCourses\r\n",
+					"FROM snapshotengagement, dimstudent, dimcourse, dimgrade, dimdate\r\n",
+					"WHERE snapshotengagement.StudentSK=dimstudent.StudentSK\r\n",
+					"AND snapshotengagement.CourseSK=dimcourse.CourseSK\r\n",
+					"AND snapshotengagement.OfficialGradeSK=dimgrade.GradeSK\r\n",
+					"AND dimstudent.BirthDateSK=dimdate.DateKey\r\n",
+					"GROUP BY dimstudent.StudentID, dimcourse.TermCode, \r\n",
+					"        AcademicLoadDesc, GenderCode, InternationalStudentFlag, dimdate.CalendarYear,\r\n",
+					"        MajorProgramCode, City1, StateProvince1, Country1"
+				],
+				"attachments": null,
+				"execution_count": 7
+			},
+			{
+				"cell_type": "markdown",
+				"metadata": {
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"Past Semester Engagement"
+				],
+				"attachments": null
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					},
+					"collapsed": false
+				},
+				"source": [
+					"CREATE TABLE engagementinfo\r\n",
+					"LOCATION 'abfss://datalake@dus02store.dfs.core.windows.net/DataPrep/Engagement/'\r\n",
+					"AS\r\n",
+					"SELECT StudentID, TermCode, ActivityResourceType, COUNT(*) AS EngagementCount\r\n",
+					"FROM factlearnonlineengagement, dimstudent, dimcourseresource\r\n",
+					"WHERE factlearnonlineengagement.StudentSK=dimstudent.StudentSK\r\n",
+					"AND factlearnonlineengagement.ResourceSK=dimcourseresource.ResourceSK\r\n",
+					"AND dimcourseresource.TermCode!='2112'\r\n",
+					"GROUP BY dimstudent.StudentID, dimcourseresource.TermCode, dimcourseresource.ActivityResourceType"
+				],
+				"attachments": null,
+				"execution_count": 5
+			},
+			{
+				"cell_type": "markdown",
+				"metadata": {
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"Number of Engagements in 6 weeks"
+				],
+				"attachments": null
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					},
+					"collapsed": false
+				},
+				"source": [
+					"CREATE TABLE engagementheadinfo\r\n",
+					"LOCATION 'abfss://datalake@dus02store.dfs.core.windows.net/DataPrep/Engagement6weeks/'\r\n",
+					"AS\r\n",
+					"SELECT dimstudent.StudentID, dimcourseresource.TermCode, \r\n",
+					"        dimcourseresource.ActivityResourceType,\r\n",
+					"        COUNT(*) AS NumberOfEngagements\r\n",
+					"FROM factlearnonlineengagement, dimstudent, dimcourseresource, dimcourse\r\n",
+					"WHERE factlearnonlineengagement.StudentSK=dimstudent.StudentSK\r\n",
+					"AND factlearnonlineengagement.ResourceSK=dimcourseresource.ResourceSK\r\n",
+					"AND dimcourseresource.CourseSK=dimcourse.CourseSK\r\n",
+					"AND DATEDIFF(dimcourse.CommenceDate, factlearnonlineengagement.EngageTime)/7<=6\r\n",
+					"GROUP BY dimstudent.StudentID, dimcourseresource.TermCode, \r\n",
+					"        dimcourseresource.ActivityResourceType"
+				],
+				"attachments": null,
+				"execution_count": 3
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					},
+					"collapsed": false
+				},
+				"source": [
+					"CREATE TABLE engagementheadcourse\r\n",
+					"LOCATION 'abfss://datalake@dus02store.dfs.core.windows.net/DataPrep/Engagement6weeksCourse/'\r\n",
+					"AS\r\n",
+					"SELECT dimstudent.StudentID, dimcourseresource.TermCode, dimcourse.CourseID,\r\n",
+					"        dimcourseresource.ActivityResourceType,\r\n",
+					"        COUNT(*) AS NumberOfEngagements\r\n",
+					"FROM factlearnonlineengagement, dimstudent, dimcourseresource, dimcourse\r\n",
+					"WHERE factlearnonlineengagement.StudentSK=dimstudent.StudentSK\r\n",
+					"AND factlearnonlineengagement.ResourceSK=dimcourseresource.ResourceSK\r\n",
+					"AND dimcourseresource.CourseSK=dimcourse.CourseSK\r\n",
+					"AND DATEDIFF(dimcourse.CommenceDate, factlearnonlineengagement.EngageTime)/7<=6\r\n",
+					"GROUP BY dimstudent.StudentID, dimcourseresource.TermCode, dimcourse.CourseID,\r\n",
+					"        dimcourseresource.ActivityResourceType"
+				],
+				"attachments": null,
+				"execution_count": 4
+			}
+		]
+	}
+}

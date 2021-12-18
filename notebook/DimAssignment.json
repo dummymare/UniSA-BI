@@ -1,0 +1,958 @@
+{
+	"name": "DimAssignment",
+	"properties": {
+		"nbformat": 4,
+		"nbformat_minor": 2,
+		"bigDataPool": {
+			"referenceName": "batched",
+			"type": "BigDataPoolReference"
+		},
+		"sessionProperties": {
+			"driverMemory": "28g",
+			"driverCores": 4,
+			"executorMemory": "28g",
+			"executorCores": 4,
+			"numExecutors": 2,
+			"conf": {
+				"spark.dynamicAllocation.enabled": "false",
+				"spark.dynamicAllocation.minExecutors": "2",
+				"spark.dynamicAllocation.maxExecutors": "2"
+			}
+		},
+		"metadata": {
+			"saveOutput": true,
+			"synapse_widget": {
+				"version": "0.1",
+				"state": {
+					"6d3a7da8-b523-40a3-8093-5aa3549dfc58": {
+						"type": "Synapse.DataFrame",
+						"sync_state": {
+							"table": {
+								"rows": [
+									{
+										"0": "2019-05-10 17:00:00",
+										"1": "1"
+									},
+									{
+										"0": "2021-05-12 12:00:00",
+										"1": "1"
+									},
+									{
+										"0": "2021-03-09 12:00:00",
+										"1": "4"
+									},
+									{
+										"0": "2020-06-09 12:00:00",
+										"1": "3"
+									},
+									{
+										"0": "2019-04-23 12:00:00",
+										"1": "3"
+									},
+									{
+										"0": "0020-01-28 12:00:00",
+										"1": "1"
+									},
+									{
+										"0": "2019-09-09 17:00:00",
+										"1": "2"
+									},
+									{
+										"0": "2020-10-30 12:00:00",
+										"1": "1"
+									},
+									{
+										"1": "492"
+									},
+									{
+										"0": "2019-03-06 23:55:00",
+										"1": "1"
+									},
+									{
+										"0": "2019-11-13 23:00:00",
+										"1": "1"
+									},
+									{
+										"0": "2019-08-07 12:00:00",
+										"1": "1"
+									},
+									{
+										"0": "2020-03-10 12:00:00",
+										"1": "1"
+									},
+									{
+										"0": "2021-02-17 12:00:00",
+										"1": "1"
+									},
+									{
+										"0": "0020-03-10 12:00:00",
+										"1": "1"
+									},
+									{
+										"0": "2021-03-19 12:00:00",
+										"1": "1"
+									},
+									{
+										"0": "2019-06-15 12:00:00",
+										"1": "1"
+									},
+									{
+										"0": "2019-08-19 12:00:00",
+										"1": "1"
+									},
+									{
+										"0": "2020-06-05 17:00:00",
+										"1": "1"
+									},
+									{
+										"0": "2019-11-06 15:00:00",
+										"1": "1"
+									},
+									{
+										"0": "2019-08-12 12:00:00",
+										"1": "1"
+									},
+									{
+										"0": "2020-08-26 12:00:00",
+										"1": "1"
+									},
+									{
+										"0": "2019-04-17 12:00:00",
+										"1": "1"
+									},
+									{
+										"0": "2020-08-10 12:00:00",
+										"1": "1"
+									},
+									{
+										"0": "2019-06-10 13:00:00",
+										"1": "1"
+									},
+									{
+										"0": "2020-02-20 12:00:00",
+										"1": "1"
+									},
+									{
+										"0": "2019-06-07 12:00:00",
+										"1": "2"
+									},
+									{
+										"0": "2021-06-18 17:00:00",
+										"1": "1"
+									},
+									{
+										"0": "2021-04-27 12:00:00",
+										"1": "4"
+									},
+									{
+										"0": "2019-10-17 12:00:00",
+										"1": "1"
+									},
+									{
+										"0": "2020-03-20 12:00:00",
+										"1": "1"
+									},
+									{
+										"0": "2020-08-20 12:00:00",
+										"1": "1"
+									},
+									{
+										"0": "2018-10-22 12:00:00",
+										"1": "1"
+									},
+									{
+										"0": "2021-06-14 12:00:00",
+										"1": "1"
+									},
+									{
+										"0": "2020-11-25 12:00:00",
+										"1": "1"
+									},
+									{
+										"0": "2019-09-02 12:00:00",
+										"1": "1"
+									},
+									{
+										"0": "2019-10-08 12:00:00",
+										"1": "1"
+									},
+									{
+										"0": "2020-01-28 12:00:00",
+										"1": "1"
+									},
+									{
+										"0": "2019-07-29 12:00:00",
+										"1": "1"
+									},
+									{
+										"0": "2020-11-20 12:00:00",
+										"1": "1"
+									},
+									{
+										"0": "2019-11-25 23:00:00",
+										"1": "1"
+									},
+									{
+										"0": "2020-10-06 12:00:00",
+										"1": "1"
+									},
+									{
+										"0": "2020-02-24 12:00:00",
+										"1": "1"
+									},
+									{
+										"0": "2020-10-23 12:00:00",
+										"1": "1"
+									},
+									{
+										"0": "2019-10-08 23:00:00",
+										"1": "3"
+									},
+									{
+										"0": "2021-06-11 12:00:00",
+										"1": "1"
+									}
+								],
+								"schema": [
+									{
+										"key": "0",
+										"name": "GlobalExtensionDueDateFormed",
+										"type": "timestamp"
+									},
+									{
+										"key": "1",
+										"name": "count",
+										"type": "bigint"
+									}
+								]
+							},
+							"isSummary": false,
+							"language": "scala"
+						},
+						"persist_state": {
+							"view": {
+								"type": "details",
+								"chartOptions": {
+									"chartType": "bar",
+									"aggregationType": "count",
+									"categoryFieldKeys": [
+										"1"
+									],
+									"seriesFieldKeys": [
+										"1"
+									],
+									"isStacked": false
+								}
+							}
+						}
+					}
+				}
+			},
+			"enableDebugMode": false,
+			"kernelspec": {
+				"name": "synapse_pyspark",
+				"display_name": "Synapse PySpark"
+			},
+			"language_info": {
+				"name": "python"
+			},
+			"a365ComputeOptions": {
+				"id": "/subscriptions/551f35f8-5023-4513-ae40-48f2e9f65fc6/resourceGroups/DUS02mem/providers/Microsoft.Synapse/workspaces/studentanalytics/bigDataPools/batched",
+				"name": "batched",
+				"type": "Spark",
+				"endpoint": "https://studentanalytics.dev.azuresynapse.net/livyApi/versions/2019-11-01-preview/sparkPools/batched",
+				"auth": {
+					"type": "AAD",
+					"authResource": "https://dev.azuresynapse.net"
+				},
+				"sparkVersion": "2.4",
+				"nodeCount": 3,
+				"cores": 4,
+				"memory": 28,
+				"extraHeader": null
+			}
+		},
+		"cells": [
+			{
+				"cell_type": "code",
+				"source": [
+					"latesubDF = spark.sql(\"SELECT * FROM `default`.`latesubmerged`\")\r\n",
+					"subvgradeDF = spark.read.load('abfss://datalake@dus02store.dfs.core.windows.net/fromAtlas/newsubmissionvgrades.json', format='json')"
+				],
+				"attachments": null,
+				"execution_count": 16
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"from pyspark.sql.functions import *\r\n",
+					"from pyspark.sql.types import *"
+				],
+				"attachments": null,
+				"execution_count": 2
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"DateDF = spark.read.load('abfss://datalake@dus02store.dfs.core.windows.net/local/QID1109_20210913_202220_1.parq', format='parquet')\r\n",
+					"TimeDF = spark.read.load('abfss://datalake@dus02store.dfs.core.windows.net/local/DimTime.parq', format='parquet')"
+				],
+				"attachments": null,
+				"execution_count": 17
+			},
+			{
+				"cell_type": "markdown",
+				"metadata": {
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"Rename columns for subvgrade"
+				],
+				"attachments": null
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"subvgradeDF = subvgradeDF.withColumnRenamed('Assessment Name', 'AssessmentName')\r\n",
+					"subvgradeDF = subvgradeDF.withColumnRenamed('Course ID', 'CourseID')\r\n",
+					"subvgradeDF = subvgradeDF.withColumnRenamed('Subject Area', 'SubjectArea')\r\n",
+					"subvgradeDF = subvgradeDF.withColumnRenamed('Catalog Number', 'CatalogNumber')\r\n",
+					"subvgradeDF = subvgradeDF.withColumnRenamed('Course Name', 'CourseName')\r\n",
+					"subvgradeDF = subvgradeDF.withColumnRenamed('Term Code', 'TermCode')"
+				],
+				"attachments": null,
+				"execution_count": 18
+			},
+			{
+				"cell_type": "markdown",
+				"metadata": {
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"Transform Student's due dates as supplimentory Initial due dates"
+				],
+				"attachments": null
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"subvgradeDF = subvgradeDF.withColumn('StudentDueTime', to_timestamp(col(\"Student's Due Date\"), \"dd/MM/yyyy hh:mm:ss a\"))\\\r\n",
+					"                        .withColumn(\"StudentDueTimeAlter\", to_timestamp(col(\"Student's Due Date\"), \"dd/MM/yyyy HH:mm\"))\r\n",
+					"subvgradeDF = subvgradeDF.withColumn('StudentDueTime', when(isnull(subvgradeDF.StudentDueTime), subvgradeDF.StudentDueTimeAlter)\r\n",
+					"                                                        .otherwise(subvgradeDF.StudentDueTime))"
+				],
+				"attachments": null,
+				"execution_count": 19
+			},
+			{
+				"cell_type": "markdown",
+				"metadata": {
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"Transform Initial & Global extension due dates"
+				],
+				"attachments": null
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"latesubDF = latesubDF.withColumn('InitialDueDateFormed', to_timestamp(latesubDF.InitialDueDate, \"dd/MM/yyyy hh:mm:ss a\"))\\\r\n",
+					"                    .withColumn('InitialDueDateFormedAlter1', to_timestamp(latesubDF.InitialDueDate, 'dd/MM/yyyy HH:mm'))\\\r\n",
+					"                    .withColumn('InitialDueDateFormedAlter2', to_timestamp(latesubDF.InitialDueDate, 'dd/MM/yy HH:mm'))\\\r\n",
+					"                    .withColumn('GlobalExtensionDueDateFormed', to_timestamp(latesubDF.GlobalExtensionDueDate, \"dd/MM/yyyy hh:mm:ss a\"))\\\r\n",
+					"                    .withColumn('GlobalExtensionDueDateFormedAlter1', to_timestamp(latesubDF.GlobalExtensionDueDate, \"dd/MM/yyyy HH:mm\"))\\\r\n",
+					"                    .withColumn('GlobalExtensionDueDateFormedAlter2', to_timestamp(latesubDF.GlobalExtensionDueDate, \"dd/MM/yy HH:mm\"))"
+				],
+				"attachments": null,
+				"execution_count": 20
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"latesubDF = latesubDF.withColumn('InitialDueDateFormed', \r\n",
+					"                                when(isnull(latesubDF.InitialDueDateFormed) & isnull(latesubDF.InitialDueDateFormedAlter1), \r\n",
+					"                                    latesubDF.InitialDueDateFormedAlter2)\r\n",
+					"                                .when(isnull(latesubDF.InitialDueDateFormed) & latesubDF.InitialDueDateFormedAlter1.isNotNull(),\r\n",
+					"                                    latesubDF.InitialDueDateFormedAlter1)\r\n",
+					"                                .otherwise(latesubDF.InitialDueDateFormed))\r\n",
+					"\r\n",
+					"latesubDF = latesubDF.withColumn('GlobalExtensionDueDateFormed',\r\n",
+					"                                when(isnull(latesubDF.GlobalExtensionDueDateFormed) & isnull(latesubDF.GlobalExtensionDueDateFormedAlter1), \r\n",
+					"                                    latesubDF.GlobalExtensionDueDateFormedAlter2)\r\n",
+					"                                .when(isnull(latesubDF.GlobalExtensionDueDateFormed) & latesubDF.GlobalExtensionDueDateFormedAlter1.isNotNull(),\r\n",
+					"                                    latesubDF.GlobalExtensionDueDateFormedAlter1)\r\n",
+					"                                .otherwise(latesubDF.GlobalExtensionDueDateFormed))"
+				],
+				"attachments": null,
+				"execution_count": 21
+			},
+			{
+				"cell_type": "markdown",
+				"metadata": {
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"Remove duplicates"
+				],
+				"attachments": null
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"subvgradeDF = subvgradeDF.groupBy(['AssessmentName', 'CourseID', 'SubjectArea', 'CatalogNumber', 'CourseName', 'TermCode', 'Year'])\\\r\n",
+					"                            .agg(min('StudentDueTime').alias('DueTime'))"
+				],
+				"attachments": null,
+				"execution_count": 22
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"latesubDF = latesubDF.groupBy(['AssessmentName', 'InitialDueDateFormed', 'GlobalExtensionDueDateFormed', 'CourseID', 'SubjectArea', 'CatalogNumber', 'CourseName', \r\n",
+					"                                'TermCode', 'Year']).count()"
+				],
+				"attachments": null,
+				"execution_count": 23
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"subvgradeDF.count()"
+				],
+				"attachments": null,
+				"execution_count": 11
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					},
+					"collapsed": false
+				},
+				"source": [
+					"latesubDF.select('AssessmentName', 'CourseID', 'SubjectArea', 'CatalogNumber', 'CourseName', 'TermCode', 'Year')\\\r\n",
+					"        .exceptAll(subvgradeDF.select('AssessmentName', 'CourseID', 'SubjectArea', 'CatalogNumber', 'CourseName', 'TermCode', 'Year'))\\\r\n",
+					"        .count()"
+				],
+				"attachments": null,
+				"execution_count": 12
+			},
+			{
+				"cell_type": "markdown",
+				"metadata": {
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"Join latesub and subvgrade"
+				],
+				"attachments": null
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"subvgradeDF = subvgradeDF.join(latesubDF, ['AssessmentName', 'CourseID', 'SubjectArea', 'CatalogNumber', 'CourseName', 'TermCode'], 'left')\\\r\n",
+					"                        .select(subvgradeDF.AssessmentName, subvgradeDF.CourseID, subvgradeDF.SubjectArea, subvgradeDF.CatalogNumber,\r\n",
+					"                                subvgradeDF.CourseName, subvgradeDF.TermCode, subvgradeDF.Year, latesubDF.InitialDueDateFormed,\r\n",
+					"                                latesubDF.GlobalExtensionDueDateFormed, subvgradeDF.DueTime)"
+				],
+				"attachments": null,
+				"execution_count": 24
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					},
+					"collapsed": false
+				},
+				"source": [
+					"subvgradeDF.printSchema()"
+				],
+				"attachments": null,
+				"execution_count": 12
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					},
+					"collapsed": false
+				},
+				"source": [
+					"display(subvgradeDF.groupBy('GlobalExtensionDueDateFormed').count().collect())"
+				],
+				"attachments": null,
+				"execution_count": 21
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"subvgradeDF = subvgradeDF.withColumn('InitialDueDateFormed', when(isnull(subvgradeDF.InitialDueDateFormed), subvgradeDF.DueTime)\r\n",
+					"                                                                .otherwise(subvgradeDF.InitialDueDateFormed))"
+				],
+				"attachments": null,
+				"execution_count": 25
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"def change_year_(date, Year):\r\n",
+					"    return date.replace(year=Year) if date else date\r\n",
+					"\r\n",
+					"change_year = udf(change_year_, TimestampType())"
+				],
+				"attachments": null,
+				"execution_count": 15
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"subvgradeDF = subvgradeDF.withColumn('InitialDueDateFormed', when(year(subvgradeDF.InitialDueDateFormed) == 20, \r\n",
+					"                                                                    change_year(subvgradeDF.InitialDueDateFormed, lit(2020)))\r\n",
+					"                                                                .otherwise(subvgradeDF.InitialDueDateFormed))\r\n",
+					"subvgradeDF = subvgradeDF.withColumn('GlobalExtensionDueDateFormed', when(year(subvgradeDF.GlobalExtensionDueDateFormed) == 20, \r\n",
+					"                                                                    change_year(subvgradeDF.GlobalExtensionDueDateFormed, lit(2020)))\r\n",
+					"                                                                .otherwise(subvgradeDF.GlobalExtensionDueDateFormed))"
+				],
+				"attachments": null,
+				"execution_count": 26
+			},
+			{
+				"cell_type": "markdown",
+				"metadata": {
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"Lookup for DateSK"
+				],
+				"attachments": null
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"subvgradeDF = subvgradeDF.join(DateDF, to_date(subvgradeDF.InitialDueDateFormed) == DateDF.FullDateAlternateKey, 'left')\\\r\n",
+					"                .select(subvgradeDF.AssessmentName, subvgradeDF.CourseID, subvgradeDF.SubjectArea, subvgradeDF.CatalogNumber,\r\n",
+					"                    subvgradeDF.CourseName, subvgradeDF.TermCode, subvgradeDF.Year, subvgradeDF.InitialDueDateFormed,\r\n",
+					"                    subvgradeDF.GlobalExtensionDueDateFormed, DateDF.DateKey.alias('InitialDueDateSK'))"
+				],
+				"attachments": null,
+				"execution_count": 29
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"subvgradeDF = subvgradeDF.join(DateDF, to_date(subvgradeDF.GlobalExtensionDueDateFormed) == DateDF.FullDateAlternateKey, 'left')\\\r\n",
+					"                .select(subvgradeDF.AssessmentName, subvgradeDF.CourseID, subvgradeDF.SubjectArea, subvgradeDF.CatalogNumber,\r\n",
+					"                    subvgradeDF.CourseName, subvgradeDF.TermCode, subvgradeDF.Year, subvgradeDF.InitialDueDateFormed,\r\n",
+					"                    subvgradeDF.GlobalExtensionDueDateFormed, subvgradeDF.InitialDueDateSK, DateDF.DateKey.alias('GlobalExtensionDueDateSK'))"
+				],
+				"attachments": null,
+				"execution_count": 30
+			},
+			{
+				"cell_type": "markdown",
+				"metadata": {
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"lookup for TimeSK"
+				],
+				"attachments": null
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"subvgradeDF = subvgradeDF.join(TimeDF, [hour(subvgradeDF.InitialDueDateFormed) == TimeDF.Hour,\r\n",
+					"                                        minute(subvgradeDF.InitialDueDateFormed) == TimeDF.Minute,\r\n",
+					"                                        second(subvgradeDF.InitialDueDateFormed) == TimeDF.Second], 'left')\\\r\n",
+					"                            .select(subvgradeDF.AssessmentName, subvgradeDF.CourseID, subvgradeDF.SubjectArea, subvgradeDF.CatalogNumber,\r\n",
+					"                                    subvgradeDF.CourseName, subvgradeDF.TermCode, subvgradeDF.Year, subvgradeDF.InitialDueDateFormed,\r\n",
+					"                                    subvgradeDF.GlobalExtensionDueDateFormed, subvgradeDF.InitialDueDateSK, subvgradeDF.GlobalExtensionDueDateSK, TimeDF.TimeSK.alias('InitialDueTimeSK'))"
+				],
+				"attachments": null,
+				"execution_count": 31
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"subvgradeDF = subvgradeDF.join(TimeDF, [hour(subvgradeDF.GlobalExtensionDueDateFormed) == TimeDF.Hour,\r\n",
+					"                                        minute(subvgradeDF.GlobalExtensionDueDateFormed) == TimeDF.Minute,\r\n",
+					"                                        second(subvgradeDF.GlobalExtensionDueDateFormed) == TimeDF.Second], 'left')\\\r\n",
+					"                            .select(subvgradeDF.AssessmentName, subvgradeDF.CourseID, subvgradeDF.SubjectArea, subvgradeDF.CatalogNumber,\r\n",
+					"                                    subvgradeDF.CourseName, subvgradeDF.TermCode, subvgradeDF.Year, subvgradeDF.InitialDueDateFormed.alias('InitialDueTime'),\r\n",
+					"                                    subvgradeDF.GlobalExtensionDueDateFormed.alias('GlobalExtensionDueTime'), subvgradeDF.InitialDueDateSK, subvgradeDF.GlobalExtensionDueDateSK, \r\n",
+					"                                    subvgradeDF.InitialDueTimeSK, TimeDF.TimeSK.alias('GlobalextensionDueTimeSK'))"
+				],
+				"attachments": null,
+				"execution_count": 32
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"subvgradeDF.printSchema()"
+				],
+				"attachments": null,
+				"execution_count": 33
+			},
+			{
+				"cell_type": "markdown",
+				"metadata": {
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"Save results to "
+				],
+				"attachments": null
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"subvgradeDF = subvgradeDF.withColumn('AssignmentSK', monotonically_increasing_id())\r\n",
+					"subvgradeDF.write.mode(\"overwrite\").saveAsTable(\"unisadw.DimAssignment\")"
+				],
+				"attachments": null,
+				"execution_count": 34
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"assignDF = spark.sql(\"SELECT * FROM `unisadw`.`dimassignment`\")\r\n",
+					"assignDF = assignDF.withColumn('AssignmentSK', monotonically_increasing_id())"
+				],
+				"attachments": null,
+				"execution_count": 2
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"assignDF.printSchema()"
+				],
+				"attachments": null,
+				"execution_count": 3
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"assignDF.write.mode(\"overwrite\").saveAsTable(\"unisadw.DimAssignment\")"
+				],
+				"attachments": null,
+				"execution_count": 7
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"assignDF = spark.sql(\"SELECT * FROM `unisadw`.`dimassignmenttmp`\")"
+				],
+				"attachments": null,
+				"execution_count": 6
+			}
+		]
+	}
+}

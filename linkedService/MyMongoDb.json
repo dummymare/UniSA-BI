@@ -1,0 +1,16 @@
+{
+	"name": "MyMongoDb",
+	"type": "Microsoft.Synapse/workspaces/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "MongoDbV2",
+		"typeProperties": {
+			"connectionString": "mongodb://39.74.199.14:1829/?compressors=zlib&readPreference=primary&gssapiServiceName=mongodb&appname=MongoDB%20Compass&ssl=false",
+			"database": "testDB"
+		},
+		"connectVia": {
+			"referenceName": "AutoResolveIntegrationRuntime",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}

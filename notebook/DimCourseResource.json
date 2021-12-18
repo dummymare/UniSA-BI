@@ -1,0 +1,2237 @@
+{
+	"name": "DimCourseResource",
+	"properties": {
+		"nbformat": 4,
+		"nbformat_minor": 2,
+		"bigDataPool": {
+			"referenceName": "batched",
+			"type": "BigDataPoolReference"
+		},
+		"sessionProperties": {
+			"driverMemory": "28g",
+			"driverCores": 4,
+			"executorMemory": "28g",
+			"executorCores": 4,
+			"numExecutors": 2,
+			"conf": {
+				"spark.dynamicAllocation.enabled": "false",
+				"spark.dynamicAllocation.minExecutors": "2",
+				"spark.dynamicAllocation.maxExecutors": "2"
+			}
+		},
+		"metadata": {
+			"saveOutput": true,
+			"synapse_widget": {
+				"version": "0.1",
+				"state": {
+					"b24d8acb-c4cb-4e73-a611-cf7a7c7d5571": {
+						"type": "Synapse.DataFrame",
+						"sync_state": {
+							"table": {
+								"rows": [
+									{
+										"0": "170253",
+										"1": "EEET",
+										"2": "1029",
+										"3": "UO Electrical and Electronic Systems",
+										"4": "2105",
+										"5": "2021",
+										"6": "22"
+									},
+									{
+										"0": "170265",
+										"1": "COMP",
+										"2": "1047",
+										"3": "UO Programming Concepts",
+										"4": "2112",
+										"5": "2021",
+										"6": "106"
+									},
+									{
+										"0": "170263",
+										"1": "MATH",
+										"2": "1079",
+										"3": "UO Mathematical Methods for Engineers 2",
+										"4": "2112",
+										"5": "2021",
+										"6": "54"
+									},
+									{
+										"0": "163523",
+										"1": "BUIL",
+										"2": "2029",
+										"3": "UO Introduction to Contract Administration",
+										"4": "1912",
+										"5": "2019",
+										"6": "31"
+									},
+									{
+										"0": "163523",
+										"1": "BUIL",
+										"2": "2029",
+										"3": "UO Introduction to Contract Administration",
+										"4": "2012",
+										"5": "2020",
+										"6": "69"
+									},
+									{
+										"0": "163523",
+										"1": "BUIL",
+										"2": "2029",
+										"3": "UO Introduction to Contract Administration",
+										"4": "2112",
+										"5": "2021",
+										"6": "85"
+									},
+									{
+										"0": "163523",
+										"1": "BUIL",
+										"2": "2029",
+										"3": "UO Introduction to Contract Administration",
+										"4": "1925",
+										"5": "2019",
+										"6": "68"
+									},
+									{
+										"0": "163523",
+										"1": "BUIL",
+										"2": "2029",
+										"3": "UO Introduction to Contract Administration",
+										"4": "2025",
+										"5": "2020",
+										"6": "122"
+									},
+									{
+										"0": "164242",
+										"1": "MATH",
+										"2": "1075",
+										"3": "UO Quantitative Methods for Business",
+										"4": "2014",
+										"5": "2020",
+										"6": "312"
+									},
+									{
+										"0": "164242",
+										"1": "MATH",
+										"2": "1075",
+										"3": "UO Quantitative Methods for Business",
+										"4": "2005",
+										"5": "2020",
+										"6": "181"
+									},
+									{
+										"0": "164242",
+										"1": "MATH",
+										"2": "1075",
+										"3": "UO Quantitative Methods for Business",
+										"4": "1905",
+										"5": "2019",
+										"6": "93"
+									},
+									{
+										"0": "164242",
+										"1": "MATH",
+										"2": "1075",
+										"3": "UO Quantitative Methods for Business",
+										"4": "1914",
+										"5": "2019",
+										"6": "131"
+									},
+									{
+										"0": "164101",
+										"1": "BUIL",
+										"2": "1024",
+										"3": "UO Building Estimating",
+										"4": "2014",
+										"5": "2020",
+										"6": "87"
+									},
+									{
+										"0": "163504",
+										"1": "BUIL",
+										"2": "1028",
+										"3": "UO Quantity Surveying Practice 1",
+										"4": "1925",
+										"5": "2019",
+										"6": "43"
+									},
+									{
+										"0": "163504",
+										"1": "BUIL",
+										"2": "1028",
+										"3": "UO Quantity Surveying Practice 1",
+										"4": "1912",
+										"5": "2019",
+										"6": "35"
+									},
+									{
+										"0": "164085",
+										"1": "BUIL",
+										"2": "2027",
+										"3": "UO Construction Cost Planning",
+										"4": "2012",
+										"5": "2020",
+										"6": "25"
+									},
+									{
+										"0": "163506",
+										"1": "INFT",
+										"2": "1024",
+										"3": "UO Information Technology Fundamentals",
+										"4": "2105",
+										"5": "2021",
+										"6": "138"
+									},
+									{
+										"0": "164085",
+										"1": "BUIL",
+										"2": "2027",
+										"3": "UO Construction Cost Planning",
+										"4": "1912",
+										"5": "2019",
+										"6": "5"
+									},
+									{
+										"0": "164085",
+										"1": "BUIL",
+										"2": "2027",
+										"3": "UO Construction Cost Planning",
+										"4": "1925",
+										"5": "2019",
+										"6": "24"
+									},
+									{
+										"0": "164086",
+										"1": "BUIL",
+										"2": "3025",
+										"3": "UO Project Appraisal",
+										"4": "2012",
+										"5": "2020",
+										"6": "57"
+									}
+								],
+								"schema": [
+									{
+										"key": "0",
+										"name": "CourseID",
+										"type": "bigint"
+									},
+									{
+										"key": "1",
+										"name": "SubjectArea",
+										"type": "string"
+									},
+									{
+										"key": "2",
+										"name": "CatalogNumber",
+										"type": "bigint"
+									},
+									{
+										"key": "3",
+										"name": "CourseName",
+										"type": "string"
+									},
+									{
+										"key": "4",
+										"name": "TermCode",
+										"type": "bigint"
+									},
+									{
+										"key": "5",
+										"name": "Year",
+										"type": "bigint"
+									},
+									{
+										"key": "6",
+										"name": "count",
+										"type": "bigint"
+									}
+								]
+							},
+							"isSummary": false,
+							"language": "scala"
+						},
+						"persist_state": {
+							"view": {
+								"type": "details",
+								"chartOptions": {
+									"chartType": "bar",
+									"aggregationType": "sum",
+									"categoryFieldKeys": [
+										"1"
+									],
+									"seriesFieldKeys": [
+										"0"
+									],
+									"isStacked": false
+								}
+							}
+						}
+					},
+					"a86442d7-3abc-49a8-bb25-c82c1e2494b4": {
+						"type": "Synapse.DataFrame",
+						"sync_state": {
+							"table": {
+								"rows": [
+									{
+										"0": "Submit Assessment 1: Part A (10%; Due Week 3)",
+										"1": "164085",
+										"2": "BUIL",
+										"3": "2027",
+										"4": "UO Construction Cost Planning",
+										"5": "2025",
+										"6": "2020",
+										"7": "2020-10-12 12:00:00",
+										"10": "20201012"
+									},
+									{
+										"0": "Submission Point - PSP Programming Assignment 3 Part B",
+										"1": "163541",
+										"2": "COMP",
+										"3": "1043",
+										"4": "UO Problem Solving and Programming",
+										"5": "2012",
+										"6": "2020",
+										"7": "2020-06-14 23:59:00",
+										"10": "20200614"
+									},
+									{
+										"0": "Part C: Trade Summary 2 (18%) and Part D: Tender Schedule and Cover Letter (12%) (Week 9)",
+										"1": "164101",
+										"2": "BUIL",
+										"3": "1024",
+										"4": "UO Building Estimating",
+										"5": "1914",
+										"6": "2019",
+										"7": "2019-09-02 12:00:00",
+										"10": "20190902"
+									},
+									{
+										"0": "Submit Assessment 1: Part B (25%; Due Week 7)",
+										"1": "163504",
+										"2": "BUIL",
+										"3": "1028",
+										"4": "UO Quantity Surveying Practice 1",
+										"5": "2012",
+										"6": "2020",
+										"7": "2020-05-25 12:00:00",
+										"10": "20200525"
+									},
+									{
+										"0": "Week 5 Challenge Question",
+										"1": "163506",
+										"2": "INFT",
+										"3": "1024",
+										"4": "UO Information Technology Fundamentals",
+										"5": "1905",
+										"6": "2019",
+										"7": "2019-02-18 12:00:00",
+										"10": "20190218"
+									},
+									{
+										"0": "SUBMIT your Assessment 1 - Part D & E: Systems, Construction, Maintenance and  Final Review (Week 10; 34%)",
+										"1": "163522",
+										"2": "CIVE",
+										"3": "1006",
+										"4": "UO Construction Materials",
+										"5": "1905",
+										"6": "2019"
+									},
+									{
+										"0": "Assessment 2 Part A - Submission",
+										"1": "163528",
+										"2": "COMP",
+										"3": "2033",
+										"4": "UO Data Structures",
+										"5": "2105",
+										"6": "2021",
+										"7": "2021-02-22 12:00:00",
+										"10": "20210222"
+									},
+									{
+										"0": "Assessment 2 - Part A: Introduction to Accident Database (15%)",
+										"1": "164089",
+										"2": "BUIL",
+										"3": "3023",
+										"4": "UO Construction Operations and Safety",
+										"5": "2014",
+										"6": "2020",
+										"7": "2020-08-17 12:00:00",
+										"10": "20200817"
+									},
+									{
+										"0": "Assessment 2 Part C Viva Voice",
+										"1": "164091",
+										"2": "BUIL",
+										"3": "3022",
+										"4": "UO Advanced Contract Administration",
+										"5": "2112",
+										"6": "2021",
+										"7": "2021-06-11 12:00:00",
+										"10": "20210611"
+									},
+									{
+										"0": "Assessment 2 Part B Viva Voce (20%)",
+										"1": "164091",
+										"2": "BUIL",
+										"3": "3022",
+										"4": "UO Advanced Contract Administration",
+										"5": "1925",
+										"6": "2019",
+										"7": "2019-11-29 23:00:00",
+										"10": "20191129"
+									},
+									{
+										"0": "Assessment 1",
+										"1": "163542",
+										"2": "INFS",
+										"3": "2040",
+										"4": "UO Systems Design",
+										"5": "1912",
+										"6": "2019",
+										"7": "2019-05-20 12:00:00",
+										"10": "20190520"
+									},
+									{
+										"0": "Project 2: Comparison of Classification Techniques",
+										"1": "164145",
+										"2": "INFS",
+										"3": "3081",
+										"4": "UO Predictive Analytics",
+										"5": "2005",
+										"6": "2020",
+										"7": "2020-03-22 00:00:00",
+										"10": "20200322"
+									},
+									{
+										"0": "Submit Assessment 1 - Part A: Design report & presentation (45%; Due Week 5)",
+										"1": "164082",
+										"2": "CIVE",
+										"3": "2016",
+										"4": "UO Structures 2",
+										"5": "1905",
+										"6": "2019",
+										"7": "2019-02-18 12:00:00",
+										"10": "20190218"
+									},
+									{
+										"0": "Assignment 2A",
+										"1": "163527",
+										"2": "INFT",
+										"3": "1023",
+										"4": "UO IT Project Management",
+										"5": "2012",
+										"6": "2020",
+										"7": "2020-05-25 12:00:00",
+										"10": "20200525"
+									},
+									{
+										"0": "SUBMIT your Assessment 1 - Part C: Construction & Maintenance (Week 10; 30%)",
+										"1": "163522",
+										"2": "CIVE",
+										"3": "1006",
+										"4": "UO Construction Materials",
+										"5": "2005",
+										"6": "2020"
+									},
+									{
+										"0": "Submit Assessment 1: Part B (30%; Due Week 6)",
+										"1": "164085",
+										"2": "BUIL",
+										"3": "2027",
+										"4": "UO Construction Cost Planning",
+										"5": "1925",
+										"6": "2019",
+										"7": "2019-11-04 12:00:00",
+										"10": "20191104"
+									},
+									{
+										"0": "Submit Assessment 2: Report - Part A - Reading Journal and Part B - Analytical Report (50%)",
+										"1": "163461",
+										"2": "BUIL",
+										"3": "1027",
+										"4": "UO Introduction to Construction Management",
+										"5": "2014",
+										"6": "2020"
+									},
+									{
+										"0": "Submit Assessment 2: Report - Analytical Report, with Reading Journal Extract as Appendix (50% Due Week 9)",
+										"1": "163461",
+										"2": "BUIL",
+										"3": "1027",
+										"4": "UO Introduction to Construction Management",
+										"5": "1914",
+										"6": "2019"
+									},
+									{
+										"0": "Assessment 1 Part A: Construction of Wall and Roof Model (20% Due Week 6)",
+										"1": "163441",
+										"2": "CIVE",
+										"3": "1005",
+										"4": "UO Construction 1",
+										"5": "1925",
+										"6": "2019"
+									},
+									{
+										"0": "Assignment 2A",
+										"1": "163527",
+										"2": "INFT",
+										"3": "1023",
+										"4": "UO IT Project Management",
+										"5": "2025",
+										"6": "2020",
+										"7": "2020-11-09 12:00:00",
+										"10": "20201109"
+									}
+								],
+								"schema": [
+									{
+										"key": "0",
+										"name": "AssessmentName",
+										"type": "string"
+									},
+									{
+										"key": "1",
+										"name": "CourseID",
+										"type": "bigint"
+									},
+									{
+										"key": "2",
+										"name": "SubjectArea",
+										"type": "string"
+									},
+									{
+										"key": "3",
+										"name": "CatalogNumber",
+										"type": "bigint"
+									},
+									{
+										"key": "4",
+										"name": "CourseName",
+										"type": "string"
+									},
+									{
+										"key": "5",
+										"name": "TermCode",
+										"type": "bigint"
+									},
+									{
+										"key": "6",
+										"name": "Year",
+										"type": "bigint"
+									},
+									{
+										"key": "7",
+										"name": "InitialDueDateFormed",
+										"type": "timestamp"
+									},
+									{
+										"key": "8",
+										"name": "GlobalExtensionDueDateFormed",
+										"type": "timestamp"
+									},
+									{
+										"key": "9",
+										"name": "GlobalDueDate",
+										"type": "date"
+									},
+									{
+										"key": "10",
+										"name": "DateKey",
+										"type": "int"
+									}
+								]
+							},
+							"isSummary": false,
+							"language": "scala"
+						},
+						"persist_state": {
+							"view": {
+								"type": "details",
+								"chartOptions": {
+									"chartType": "bar",
+									"aggregationType": "sum",
+									"categoryFieldKeys": [
+										"0"
+									],
+									"seriesFieldKeys": [
+										"1"
+									],
+									"isStacked": false
+								}
+							}
+						}
+					},
+					"2932d888-0343-4f70-bd17-3d30094e4b4d": {
+						"type": "Synapse.DataFrame",
+						"sync_state": {
+							"table": {
+								"rows": [
+									{
+										"0": "Assessment 2 Project Presentation (15%)",
+										"1": "1007",
+										"2": "170266",
+										"3": "UO Sustainable Engineering Practice",
+										"4": "External, UniSA Online, Online",
+										"5": "2 days, 19 hours, 6 minutes, 26 seconds",
+										"6": "F2",
+										"7": "0.0",
+										"8": "9/06/2021 3:53",
+										"9": "CCXHBBBXA",
+										"10": "11/06/2021 23:00",
+										"11": "ENGG",
+										"12": "2112",
+										"13": "2021",
+										"14": {
+											"$oid": "61303fb95f04836f445f1eb1"
+										},
+										"15": "2021-06-11 23:00:00"
+									},
+									{
+										"0": "Assessment 2 Project Presentation (15%)",
+										"1": "1007",
+										"2": "170266",
+										"3": "UO Sustainable Engineering Practice",
+										"4": "External, UniSA Online, Online",
+										"5": "5 days, 14 hours, 46 minutes, 15 seconds",
+										"6": "HD",
+										"7": "100.0",
+										"8": "6/06/2021 8:13",
+										"9": "CCXHLBBGW",
+										"10": "11/06/2021 23:00",
+										"11": "ENGG",
+										"12": "2112",
+										"13": "2021",
+										"14": {
+											"$oid": "61303fb95f04836f445f1ecb"
+										},
+										"15": "2021-06-11 23:00:00"
+									},
+									{
+										"0": "Assessment 2 Project Presentation (15%)",
+										"1": "1007",
+										"2": "170266",
+										"3": "UO Sustainable Engineering Practice",
+										"4": "External, UniSA Online, Online",
+										"5": "0 days, 3 hours, 48 minutes, 44 seconds",
+										"6": "F2",
+										"7": "0.0",
+										"8": "11/06/2021 19:11",
+										"9": "CXXXHHLXG",
+										"10": "11/06/2021 23:00",
+										"11": "ENGG",
+										"12": "2112",
+										"13": "2021",
+										"14": {
+											"$oid": "61303fb95f04836f445f1ead"
+										},
+										"15": "2021-06-11 23:00:00"
+									},
+									{
+										"0": "Assessment 2 Project Presentation (15%)",
+										"1": "1007",
+										"2": "170266",
+										"3": "UO Sustainable Engineering Practice",
+										"4": "External, UniSA Online, Online",
+										"5": "0 days, 0 hours, 5 minutes, 7 seconds",
+										"6": "D",
+										"7": "76.90000153",
+										"8": "11/06/2021 23:05",
+										"9": "CCXHHGGCX",
+										"10": "11/06/2021 23:00",
+										"11": "ENGG",
+										"12": "2112",
+										"13": "2021",
+										"14": {
+											"$oid": "61303fb95f04836f445f1ec1"
+										},
+										"15": "2021-06-11 23:00:00"
+									},
+									{
+										"0": "Assessment 2 Project Presentation (15%)",
+										"1": "1007",
+										"2": "170266",
+										"3": "UO Sustainable Engineering Practice",
+										"4": "External, UniSA Online, Online",
+										"5": "0 days, 7 hours, 37 minutes, 30 seconds",
+										"6": "C",
+										"7": "66.5",
+										"8": "11/06/2021 15:22",
+										"9": "CCXHLLXDW",
+										"10": "11/06/2021 23:00",
+										"11": "ENGG",
+										"12": "2112",
+										"13": "2021",
+										"14": {
+											"$oid": "61303fb95f04836f445f1eb5"
+										},
+										"15": "2021-06-11 23:00:00"
+									},
+									{
+										"0": "Assessment 2 Project Presentation (15%)",
+										"1": "1007",
+										"2": "170266",
+										"3": "UO Sustainable Engineering Practice",
+										"4": "External, UniSA Online, Online",
+										"5": "0 days, 0 hours, 5 minutes, 7 seconds",
+										"6": "F2",
+										"7": "0.0",
+										"8": "11/06/2021 23:05",
+										"9": "CCXHHHZGX",
+										"10": "11/06/2021 23:00",
+										"11": "ENGG",
+										"12": "2112",
+										"13": "2021",
+										"14": {
+											"$oid": "61303fb95f04836f445f1eaf"
+										},
+										"15": "2021-06-11 23:00:00"
+									},
+									{
+										"0": "Assessment 2 Project Presentation (15%)",
+										"1": "1007",
+										"2": "170266",
+										"3": "UO Sustainable Engineering Practice",
+										"4": "External, UniSA Online, Online",
+										"5": "0 days, 0 hours, 12 minutes, 28 seconds",
+										"6": "C",
+										"7": "65.69999695",
+										"8": "11/06/2021 22:47",
+										"9": "CCXHXGGWA",
+										"10": "11/06/2021 23:00",
+										"11": "ENGG",
+										"12": "2112",
+										"13": "2021",
+										"14": {
+											"$oid": "61303fb95f04836f445f1eb6"
+										},
+										"15": "2021-06-11 23:00:00"
+									},
+									{
+										"0": "Assessment 2 Project Presentation (15%)",
+										"1": "1007",
+										"2": "170266",
+										"3": "UO Sustainable Engineering Practice",
+										"4": "External, UniSA Online, Online",
+										"5": "0 days, 3 hours, 48 minutes, 44 seconds",
+										"6": "HD",
+										"7": "86.59999847",
+										"8": "11/06/2021 19:11",
+										"9": "CCXHHWWLA",
+										"10": "11/06/2021 23:00",
+										"11": "ENGG",
+										"12": "2112",
+										"13": "2021",
+										"14": {
+											"$oid": "61303fb95f04836f445f1ec7"
+										},
+										"15": "2021-06-11 23:00:00"
+									},
+									{
+										"0": "Assessment 2 Project Presentation (15%)",
+										"1": "1007",
+										"2": "170266",
+										"3": "UO Sustainable Engineering Practice",
+										"4": "External, UniSA Online, Online",
+										"5": "0 days, 22 hours, 21 minutes, 55 seconds",
+										"6": "F1",
+										"7": "45.0",
+										"8": "11/06/2021 0:38",
+										"9": "CCXHLCWXG",
+										"10": "11/06/2021 23:00",
+										"11": "ENGG",
+										"12": "2112",
+										"13": "2021",
+										"14": {
+											"$oid": "61303fb95f04836f445f1eb7"
+										},
+										"15": "2021-06-11 23:00:00"
+									},
+									{
+										"0": "Assessment 2 Project Presentation (15%)",
+										"1": "1007",
+										"2": "170266",
+										"3": "UO Sustainable Engineering Practice",
+										"4": "External, UniSA Online, Online",
+										"5": "0 days, 3 hours, 48 minutes, 44 seconds",
+										"6": "HD",
+										"7": "87.5",
+										"8": "11/06/2021 19:11",
+										"9": "CCXHHDGZG",
+										"10": "11/06/2021 23:00",
+										"11": "ENGG",
+										"12": "2112",
+										"13": "2021",
+										"14": {
+											"$oid": "61303fb95f04836f445f1ec8"
+										},
+										"15": "2021-06-11 23:00:00"
+									},
+									{
+										"0": "Assessment 2 Project Presentation (15%)",
+										"1": "1007",
+										"2": "170266",
+										"3": "UO Sustainable Engineering Practice",
+										"4": "External, UniSA Online, Online",
+										"5": "0 days, 22 hours, 21 minutes, 55 seconds",
+										"6": "F1",
+										"7": "45.0",
+										"8": "11/06/2021 0:38",
+										"9": "CCXHBCHDA",
+										"10": "11/06/2021 23:00",
+										"11": "ENGG",
+										"12": "2112",
+										"13": "2021",
+										"14": {
+											"$oid": "61303fb95f04836f445f1eb2"
+										},
+										"15": "2021-06-11 23:00:00"
+									},
+									{
+										"0": "Assessment 2 Project Presentation (15%)",
+										"1": "1007",
+										"2": "170266",
+										"3": "UO Sustainable Engineering Practice",
+										"4": "External, UniSA Online, Online",
+										"5": "0 days, 0 hours, 12 minutes, 28 seconds",
+										"6": "P1",
+										"7": "59.79999924",
+										"8": "11/06/2021 22:47",
+										"9": "CCXHLZLLX",
+										"10": "11/06/2021 23:00",
+										"11": "ENGG",
+										"12": "2112",
+										"13": "2021",
+										"14": {
+											"$oid": "61303fb95f04836f445f1eb8"
+										},
+										"15": "2021-06-11 23:00:00"
+									},
+									{
+										"0": "Assessment 2 Project Presentation (15%)",
+										"1": "1007",
+										"2": "170266",
+										"3": "UO Sustainable Engineering Practice",
+										"4": "External, UniSA Online, Online",
+										"5": "NaN",
+										"6": "F2",
+										"7": "0.0",
+										"8": "NaN",
+										"9": "CCXCWBZZA",
+										"10": "11/06/2021 23:00",
+										"11": "ENGG",
+										"12": "2112",
+										"13": "2021",
+										"14": {
+											"$oid": "61303fb95f04836f445f1eac"
+										},
+										"15": "2021-06-11 23:00:00"
+									},
+									{
+										"0": "Assessment 2 Project Presentation (15%)",
+										"1": "1007",
+										"2": "170266",
+										"3": "UO Sustainable Engineering Practice",
+										"4": "External, UniSA Online, Online",
+										"5": "0 days, 7 hours, 37 minutes, 30 seconds",
+										"6": "C",
+										"7": "70.69999695",
+										"8": "11/06/2021 15:22",
+										"9": "CCXHLHXZH",
+										"10": "11/06/2021 23:00",
+										"11": "ENGG",
+										"12": "2112",
+										"13": "2021",
+										"14": {
+											"$oid": "61303fb95f04836f445f1ebe"
+										},
+										"15": "2021-06-11 23:00:00"
+									},
+									{
+										"0": "Assessment 2 Project Presentation (15%)",
+										"1": "1007",
+										"2": "170266",
+										"3": "UO Sustainable Engineering Practice",
+										"4": "External, UniSA Online, Online",
+										"5": "2 days, 19 hours, 6 minutes, 26 seconds",
+										"6": "C",
+										"7": "66.80000305",
+										"8": "9/06/2021 3:53",
+										"9": "CCXHBXAGW",
+										"10": "11/06/2021 23:00",
+										"11": "ENGG",
+										"12": "2112",
+										"13": "2021",
+										"14": {
+											"$oid": "61303fb95f04836f445f1eba"
+										},
+										"15": "2021-06-11 23:00:00"
+									},
+									{
+										"0": "Assessment 2 Project Presentation (15%)",
+										"1": "1007",
+										"2": "170266",
+										"3": "UO Sustainable Engineering Practice",
+										"4": "External, UniSA Online, Online",
+										"5": "0 days, 3 hours, 2 minutes, 20 seconds",
+										"6": "D",
+										"7": "75.0",
+										"8": "11/06/2021 19:57",
+										"9": "CCXHZWXXD",
+										"10": "11/06/2021 23:00",
+										"11": "ENGG",
+										"12": "2112",
+										"13": "2021",
+										"14": {
+											"$oid": "61303fb95f04836f445f1ec0"
+										},
+										"15": "2021-06-11 23:00:00"
+									},
+									{
+										"0": "Assessment 2 Project Presentation (15%)",
+										"1": "1007",
+										"2": "170266",
+										"3": "UO Sustainable Engineering Practice",
+										"4": "External, UniSA Online, Online",
+										"5": "NaN",
+										"6": "F2",
+										"7": "0.0",
+										"8": "NaN",
+										"9": "CCXHXAHCD",
+										"10": "11/06/2021 23:00",
+										"11": "ENGG",
+										"12": "2112",
+										"13": "2021",
+										"14": {
+											"$oid": "61303fb95f04836f445f1eae"
+										},
+										"15": "2021-06-11 23:00:00"
+									},
+									{
+										"0": "Assessment 2 Project Presentation (15%)",
+										"1": "1007",
+										"2": "170266",
+										"3": "UO Sustainable Engineering Practice",
+										"4": "External, UniSA Online, Online",
+										"5": "0 days, 3 hours, 48 minutes, 44 seconds",
+										"6": "HD",
+										"7": "89.30000305",
+										"8": "11/06/2021 19:11",
+										"9": "CCXHBBXZB",
+										"10": "11/06/2021 23:00",
+										"11": "ENGG",
+										"12": "2112",
+										"13": "2021",
+										"14": {
+											"$oid": "61303fb95f04836f445f1ec9"
+										},
+										"15": "2021-06-11 23:00:00"
+									},
+									{
+										"0": "Assessment 2 Project Presentation (15%)",
+										"1": "1007",
+										"2": "170266",
+										"3": "UO Sustainable Engineering Practice",
+										"4": "External, UniSA Online, Online",
+										"5": "0 days, 2 hours, 17 minutes, 43 seconds",
+										"6": "HD",
+										"7": "91.59999847",
+										"8": "11/06/2021 20:42",
+										"9": "CCXHHGHZL",
+										"10": "11/06/2021 23:00",
+										"11": "ENGG",
+										"12": "2112",
+										"13": "2021",
+										"14": {
+											"$oid": "61303fb95f04836f445f1eca"
+										},
+										"15": "2021-06-11 23:00:00"
+									},
+									{
+										"0": "Assessment 2 Project Presentation (15%)",
+										"1": "1007",
+										"2": "170266",
+										"3": "UO Sustainable Engineering Practice",
+										"4": "External, UniSA Online, Online",
+										"5": "0 days, 22 hours, 31 minutes, 34 seconds",
+										"6": "HD",
+										"7": "95.0",
+										"8": "11/06/2021 0:28",
+										"9": "CCXHLLLLG",
+										"10": "11/06/2021 23:00",
+										"11": "ENGG",
+										"12": "2112",
+										"13": "2021",
+										"14": {
+											"$oid": "61303fb95f04836f445f1ed2"
+										},
+										"15": "2021-06-11 23:00:00"
+									},
+									{
+										"0": "Assessment 2 Project Presentation (15%)",
+										"1": "1007",
+										"2": "170266",
+										"3": "UO Sustainable Engineering Practice",
+										"4": "External, UniSA Online, Online",
+										"5": "0 days, 0 hours, 12 minutes, 28 seconds",
+										"6": "C",
+										"7": "65.69999695",
+										"8": "11/06/2021 22:47",
+										"9": "CCXZHBCLB",
+										"10": "11/06/2021 23:00",
+										"11": "ENGG",
+										"12": "2112",
+										"13": "2021",
+										"14": {
+											"$oid": "61303fb95f04836f445f1eb3"
+										},
+										"15": "2021-06-11 23:00:00"
+									},
+									{
+										"0": "Assessment 2 Project Presentation (15%)",
+										"1": "1007",
+										"2": "170266",
+										"3": "UO Sustainable Engineering Practice",
+										"4": "External, UniSA Online, Online",
+										"5": "0 days, 3 hours, 48 minutes, 44 seconds",
+										"6": "F2",
+										"7": "0.0",
+										"8": "11/06/2021 19:11",
+										"9": "CCXHBBZCL",
+										"10": "11/06/2021 23:00",
+										"11": "ENGG",
+										"12": "2112",
+										"13": "2021",
+										"14": {
+											"$oid": "61303fb95f04836f445f1eb0"
+										},
+										"15": "2021-06-11 23:00:00"
+									},
+									{
+										"0": "Assessment 2 Project Presentation (15%)",
+										"1": "1007",
+										"2": "170266",
+										"3": "UO Sustainable Engineering Practice",
+										"4": "External, UniSA Online, Online",
+										"5": "0 days, 22 hours, 21 minutes, 55 seconds",
+										"6": "F2",
+										"7": "0.0",
+										"8": "11/06/2021 0:38",
+										"9": "CCXZGABZW",
+										"10": "11/06/2021 23:00",
+										"11": "ENGG",
+										"12": "2112",
+										"13": "2021",
+										"14": {
+											"$oid": "61303fb95f04836f445f1eb4"
+										},
+										"15": "2021-06-11 23:00:00"
+									},
+									{
+										"0": "Assessment 2 Project Presentation (15%)",
+										"1": "1007",
+										"2": "170266",
+										"3": "UO Sustainable Engineering Practice",
+										"4": "External, UniSA Online, Online",
+										"5": "0 days, 2 hours, 17 minutes, 43 seconds",
+										"6": "HD",
+										"7": "93.40000153",
+										"8": "11/06/2021 20:42",
+										"9": "CCXZZXCHW",
+										"10": "11/06/2021 23:00",
+										"11": "ENGG",
+										"12": "2112",
+										"13": "2021",
+										"14": {
+											"$oid": "61303fb95f04836f445f1ed3"
+										},
+										"15": "2021-06-11 23:00:00"
+									},
+									{
+										"0": "Assessment 2 Project Presentation (15%)",
+										"1": "1007",
+										"2": "170266",
+										"3": "UO Sustainable Engineering Practice",
+										"4": "External, UniSA Online, Online",
+										"5": "2 days, 19 hours, 6 minutes, 26 seconds",
+										"6": "C",
+										"7": "68.19999695",
+										"8": "9/06/2021 3:53",
+										"9": "CCXHLLAXG",
+										"10": "11/06/2021 23:00",
+										"11": "ENGG",
+										"12": "2112",
+										"13": "2021",
+										"14": {
+											"$oid": "61303fb95f04836f445f1ebc"
+										},
+										"15": "2021-06-11 23:00:00"
+									},
+									{
+										"0": "Assessment 2 Project Presentation (15%)",
+										"1": "1007",
+										"2": "170266",
+										"3": "UO Sustainable Engineering Practice",
+										"4": "External, UniSA Online, Online",
+										"5": "0 days, 2 hours, 17 minutes, 43 seconds",
+										"6": "HD",
+										"7": "93.40000153",
+										"8": "11/06/2021 20:42",
+										"9": "CCXHBXCCZ",
+										"10": "11/06/2021 23:00",
+										"11": "ENGG",
+										"12": "2112",
+										"13": "2021",
+										"14": {
+											"$oid": "61303fb95f04836f445f1ece"
+										},
+										"15": "2021-06-11 23:00:00"
+									},
+									{
+										"0": "Assessment 2 Project Presentation (15%)",
+										"1": "1007",
+										"2": "170266",
+										"3": "UO Sustainable Engineering Practice",
+										"4": "External, UniSA Online, Online",
+										"5": "0 days, 7 hours, 37 minutes, 30 seconds",
+										"6": "C",
+										"7": "71.40000153",
+										"8": "11/06/2021 15:22",
+										"9": "CCXHZCXBA",
+										"10": "11/06/2021 23:00",
+										"11": "ENGG",
+										"12": "2112",
+										"13": "2021",
+										"14": {
+											"$oid": "61303fb95f04836f445f1ec2"
+										},
+										"15": "2021-06-11 23:00:00"
+									},
+									{
+										"0": "Assessment 2 Project Presentation (15%)",
+										"1": "1007",
+										"2": "170266",
+										"3": "UO Sustainable Engineering Practice",
+										"4": "External, UniSA Online, Online",
+										"5": "0 days, 7 hours, 37 minutes, 30 seconds",
+										"6": "C",
+										"7": "71.40000153",
+										"8": "11/06/2021 15:22",
+										"9": "CCXHLHWZB",
+										"10": "11/06/2021 23:00",
+										"11": "ENGG",
+										"12": "2112",
+										"13": "2021",
+										"14": {
+											"$oid": "61303fb95f04836f445f1ec3"
+										},
+										"15": "2021-06-11 23:00:00"
+									},
+									{
+										"0": "Assessment 2 Project Presentation (15%)",
+										"1": "1007",
+										"2": "170266",
+										"3": "UO Sustainable Engineering Practice",
+										"4": "External, UniSA Online, Online",
+										"5": "0 days, 0 hours, 12 minutes, 28 seconds",
+										"6": "C",
+										"7": "67.0",
+										"8": "11/06/2021 22:47",
+										"9": "CCXHZZXBD",
+										"10": "11/06/2021 23:00",
+										"11": "ENGG",
+										"12": "2112",
+										"13": "2021",
+										"14": {
+											"$oid": "61303fb95f04836f445f1eb9"
+										},
+										"15": "2021-06-11 23:00:00"
+									},
+									{
+										"0": "Assessment 2 Project Presentation (15%)",
+										"1": "1007",
+										"2": "170266",
+										"3": "UO Sustainable Engineering Practice",
+										"4": "External, UniSA Online, Online",
+										"5": "0 days, 7 hours, 37 minutes, 30 seconds",
+										"6": "C",
+										"7": "70.0",
+										"8": "11/06/2021 15:22",
+										"9": "CCXHHABHG",
+										"10": "11/06/2021 23:00",
+										"11": "ENGG",
+										"12": "2112",
+										"13": "2021",
+										"14": {
+											"$oid": "61303fb95f04836f445f1ebd"
+										},
+										"15": "2021-06-11 23:00:00"
+									},
+									{
+										"0": "Assessment 2 Project Presentation (15%)",
+										"1": "1007",
+										"2": "170266",
+										"3": "UO Sustainable Engineering Practice",
+										"4": "External, UniSA Online, Online",
+										"5": "0 days, 0 hours, 5 minutes, 7 seconds",
+										"6": "D",
+										"7": "79.0",
+										"8": "11/06/2021 23:05",
+										"9": "CCXHLDBLH",
+										"10": "11/06/2021 23:00",
+										"11": "ENGG",
+										"12": "2112",
+										"13": "2021",
+										"14": {
+											"$oid": "61303fb95f04836f445f1ec4"
+										},
+										"15": "2021-06-11 23:00:00"
+									},
+									{
+										"0": "Assessment 2 Project Presentation (15%)",
+										"1": "1007",
+										"2": "170266",
+										"3": "UO Sustainable Engineering Practice",
+										"4": "External, UniSA Online, Online",
+										"5": "0 days, 0 hours, 12 minutes, 28 seconds",
+										"6": "C",
+										"7": "67.0",
+										"8": "11/06/2021 22:47",
+										"9": "CCXHZHGDD",
+										"10": "11/06/2021 23:00",
+										"11": "ENGG",
+										"12": "2112",
+										"13": "2021",
+										"14": {
+											"$oid": "61303fb95f04836f445f1ebb"
+										},
+										"15": "2021-06-11 23:00:00"
+									},
+									{
+										"0": "Assessment 2 Project Presentation (15%)",
+										"1": "1007",
+										"2": "170266",
+										"3": "UO Sustainable Engineering Practice",
+										"4": "External, UniSA Online, Online",
+										"5": "0 days, 0 hours, 5 minutes, 7 seconds",
+										"6": "C",
+										"7": "72.5",
+										"8": "11/06/2021 23:05",
+										"9": "CCXHCBGDC",
+										"10": "11/06/2021 23:00",
+										"11": "ENGG",
+										"12": "2112",
+										"13": "2021",
+										"14": {
+											"$oid": "61303fb95f04836f445f1ec5"
+										},
+										"15": "2021-06-11 23:00:00"
+									},
+									{
+										"0": "Assessment 2 Project Presentation (15%)",
+										"1": "1007",
+										"2": "170266",
+										"3": "UO Sustainable Engineering Practice",
+										"4": "External, UniSA Online, Online",
+										"5": "2 days, 19 hours, 6 minutes, 26 seconds",
+										"6": "C",
+										"7": "68.19999695",
+										"8": "9/06/2021 3:53",
+										"9": "CCXHHLDDD",
+										"10": "11/06/2021 23:00",
+										"11": "ENGG",
+										"12": "2112",
+										"13": "2021",
+										"14": {
+											"$oid": "61303fb95f04836f445f1ebf"
+										},
+										"15": "2021-06-11 23:00:00"
+									},
+									{
+										"0": "Assessment 2 Project Presentation (15%)",
+										"1": "1007",
+										"2": "170266",
+										"3": "UO Sustainable Engineering Practice",
+										"4": "External, UniSA Online, Online",
+										"5": "0 days, 3 hours, 48 minutes, 44 seconds",
+										"6": "HD",
+										"7": "86.59999847",
+										"8": "11/06/2021 19:11",
+										"9": "CCXHBCHGC",
+										"10": "11/06/2021 23:00",
+										"11": "ENGG",
+										"12": "2112",
+										"13": "2021",
+										"14": {
+											"$oid": "61303fb95f04836f445f1ec6"
+										},
+										"15": "2021-06-11 23:00:00"
+									}
+								],
+								"schema": [
+									{
+										"key": "0",
+										"name": "AssessmentName",
+										"type": "string"
+									},
+									{
+										"key": "1",
+										"name": "CatalogNumber",
+										"type": "bigint"
+									},
+									{
+										"key": "2",
+										"name": "CourseID",
+										"type": "bigint"
+									},
+									{
+										"key": "3",
+										"name": "CourseName",
+										"type": "string"
+									},
+									{
+										"key": "4",
+										"name": "Course Offering Description",
+										"type": "string"
+									},
+									{
+										"key": "5",
+										"name": "Early / Late",
+										"type": "string"
+									},
+									{
+										"key": "6",
+										"name": "Grade",
+										"type": "string"
+									},
+									{
+										"key": "7",
+										"name": "Grade Numeric",
+										"type": "double"
+									},
+									{
+										"key": "8",
+										"name": "Last Submission Time",
+										"type": "string"
+									},
+									{
+										"key": "9",
+										"name": "Student ID",
+										"type": "string"
+									},
+									{
+										"key": "10",
+										"name": "Student's Due Date",
+										"type": "string"
+									},
+									{
+										"key": "11",
+										"name": "SubjectArea",
+										"type": "string"
+									},
+									{
+										"key": "12",
+										"name": "TermCode",
+										"type": "bigint"
+									},
+									{
+										"key": "13",
+										"name": "Year",
+										"type": "bigint"
+									},
+									{
+										"key": "14",
+										"name": "_id",
+										"type": "StructType(StructField($oid,StringType,true))"
+									},
+									{
+										"key": "15",
+										"name": "DueTime",
+										"type": "timestamp"
+									}
+								]
+							},
+							"isSummary": false,
+							"language": "scala"
+						},
+						"persist_state": {
+							"view": {
+								"type": "details",
+								"chartOptions": {
+									"chartType": "bar",
+									"aggregationType": "sum",
+									"categoryFieldKeys": [
+										"0"
+									],
+									"seriesFieldKeys": [
+										"1"
+									],
+									"isStacked": false
+								}
+							}
+						}
+					},
+					"f53fd4ce-45aa-48e4-bba6-5cfb5091b9ed": {
+						"type": "Synapse.DataFrame",
+						"sync_state": {
+							"table": {
+								"rows": [
+									{
+										"0": "Submission Point Assessment 2.3",
+										"1": "170254",
+										"2": "ENGG",
+										"3": "1005",
+										"4": "UO Engineering Design and Innovation",
+										"5": "2105",
+										"6": "2021",
+										"11": "51",
+										"13": "2021-03-15 12:00:00"
+									},
+									{
+										"0": "Submission Point - Assessment 2 (EWB Group Project Report)",
+										"1": "170266",
+										"2": "ENGG",
+										"3": "1007",
+										"4": "UO Sustainable Engineering Practice",
+										"5": "2112",
+										"6": "2021",
+										"11": "42949672964",
+										"13": "2021-06-04 12:00:00"
+									},
+									{
+										"0": "Assessment 2 Project Presentation (15%)",
+										"1": "170266",
+										"2": "ENGG",
+										"3": "1007",
+										"4": "UO Sustainable Engineering Practice",
+										"5": "2112",
+										"6": "2021",
+										"11": "8589934642",
+										"13": "2021-06-11 23:00:00"
+									},
+									{
+										"0": "Submission Point - Continuous Assessment 1.1",
+										"1": "170266",
+										"2": "ENGG",
+										"3": "1007",
+										"4": "UO Sustainable Engineering Practice",
+										"5": "2112",
+										"6": "2021",
+										"11": "34359738421",
+										"13": "2021-05-03 12:00:00"
+									},
+									{
+										"0": "Challenge Question 5 (Week 8)",
+										"1": "163506",
+										"2": "INFT",
+										"3": "1024",
+										"4": "UO Information Technology Fundamentals",
+										"5": "2005",
+										"6": "2020",
+										"11": "60129542153",
+										"13": "0020-03-10 12:00:00"
+									},
+									{
+										"0": "Submission Point - Continuous Assessment 1.1",
+										"1": "170266",
+										"2": "ENGG",
+										"3": "1007",
+										"4": "UO Sustainable Engineering Practice",
+										"5": "2025",
+										"6": "2020",
+										"11": "51539607566",
+										"13": "2020-10-19 12:00:00"
+									},
+									{
+										"0": "Submission Point - Assessment 2.1",
+										"1": "170254",
+										"2": "ENGG",
+										"3": "1005",
+										"4": "UO Engineering Design and Innovation",
+										"5": "2105",
+										"6": "2021",
+										"11": "51539607568",
+										"13": "2021-03-01 12:00:00"
+									},
+									{
+										"0": "Challenge Question 3 (Week 5)",
+										"1": "163506",
+										"2": "INFT",
+										"3": "1024",
+										"4": "UO Information Technology Fundamentals",
+										"5": "2005",
+										"6": "2020",
+										"11": "60129542144",
+										"13": "0020-02-17 12:00:00"
+									},
+									{
+										"0": "Continuous Assessment 1.4 - Submission Point",
+										"1": "170256",
+										"2": "MENG",
+										"3": "1014",
+										"4": "UO Engineering Mechanics",
+										"5": "2025",
+										"6": "2020",
+										"11": "34359738386",
+										"13": "2020-11-16 12:00:00"
+									},
+									{
+										"0": "SUBMIT Assessment 2 Part A - Problem Solving Exercise (25%)",
+										"1": "170257",
+										"2": "MATH",
+										"3": "1076",
+										"4": "UO Essential Mathematics 1: Algebra and Trigonometry",
+										"5": "2025",
+										"6": "2020",
+										"11": "34359738424",
+										"13": "2020-10-26 12:00:00"
+									},
+									{
+										"0": "Assessment 2 Project Presentation (15%)",
+										"1": "170266",
+										"2": "ENGG",
+										"3": "1007",
+										"4": "UO Sustainable Engineering Practice",
+										"5": "2025",
+										"6": "2020",
+										"11": "36",
+										"13": "2020-11-27 12:00:00"
+									},
+									{
+										"0": "Challenge Question 1 (Week 2)",
+										"1": "163506",
+										"2": "INFT",
+										"3": "1024",
+										"4": "UO Information Technology Fundamentals",
+										"5": "2005",
+										"6": "2020",
+										"11": "42949672961",
+										"13": "0020-01-28 12:00:00"
+									},
+									{
+										"0": "Challenge Question 4 (Week 7)",
+										"1": "163506",
+										"2": "INFT",
+										"3": "1024",
+										"4": "UO Information Technology Fundamentals",
+										"5": "2005",
+										"6": "2020",
+										"11": "51539607592",
+										"13": "0020-03-02 12:00:00"
+									},
+									{
+										"0": "Submission Point - Continuous Assessment 1.2",
+										"1": "170266",
+										"2": "ENGG",
+										"3": "1007",
+										"4": "UO Sustainable Engineering Practice",
+										"5": "2025",
+										"6": "2020",
+										"11": "62",
+										"13": "2020-11-27 12:00:00"
+									},
+									{
+										"0": "Submission Point - Continuous Assessment 1.2",
+										"1": "170266",
+										"2": "ENGG",
+										"3": "1007",
+										"4": "UO Sustainable Engineering Practice",
+										"5": "2112",
+										"6": "2021",
+										"11": "34359738397",
+										"13": "2021-06-11 12:00:00"
+									},
+									{
+										"0": "Submission Point - Assessment 2",
+										"1": "170266",
+										"2": "ENGG",
+										"3": "1007",
+										"4": "UO Sustainable Engineering Practice",
+										"5": "2025",
+										"6": "2020",
+										"11": "25769803843",
+										"13": "2020-11-20 12:00:00"
+									},
+									{
+										"0": "SUBMIT Assessment 2 Part B - Research Project (25%)",
+										"1": "170257",
+										"2": "MATH",
+										"3": "1076",
+										"4": "UO Essential Mathematics 1: Algebra and Trigonometry",
+										"5": "2025",
+										"6": "2020",
+										"11": "17179869195",
+										"13": "2020-11-16 12:00:00"
+									},
+									{
+										"0": "SUBMIT Assessment 2 Part B - Research Project (25%)",
+										"1": "170257",
+										"2": "MATH",
+										"3": "1076",
+										"4": "UO Essential Mathematics 1: Algebra and Trigonometry",
+										"5": "2105",
+										"6": "2021",
+										"11": "25769803832",
+										"13": "2021-03-09 12:00:00"
+									},
+									{
+										"0": "SUBMIT Assessment 2 Part A - Problem Solving Exercise (25%)",
+										"1": "170257",
+										"2": "MATH",
+										"3": "1076",
+										"4": "UO Essential Mathematics 1: Algebra and Trigonometry",
+										"5": "2105",
+										"6": "2021",
+										"11": "42949673008",
+										"13": "2021-02-15 12:00:00"
+									},
+									{
+										"0": "Challenge Question 2 (Week 3)",
+										"1": "163506",
+										"2": "INFT",
+										"3": "1024",
+										"4": "UO Information Technology Fundamentals",
+										"5": "2005",
+										"6": "2020",
+										"11": "60129542148",
+										"13": "0020-02-03 12:00:00"
+									},
+									{
+										"0": "Continuous Assessment 1.4 - Submission Point",
+										"1": "170256",
+										"2": "MENG",
+										"3": "1014",
+										"4": "UO Engineering Mechanics",
+										"5": "2112",
+										"6": "2021",
+										"11": "60129542145",
+										"13": "2021-05-31 12:00:00"
+									},
+									{
+										"0": "Submission Point Assessment 2.2",
+										"1": "170254",
+										"2": "ENGG",
+										"3": "1005",
+										"4": "UO Engineering Design and Innovation",
+										"5": "2105",
+										"6": "2021",
+										"11": "25769803790",
+										"13": "2021-03-19 12:00:00"
+									}
+								],
+								"schema": [
+									{
+										"key": "0",
+										"name": "AssessmentName",
+										"type": "string"
+									},
+									{
+										"key": "1",
+										"name": "CourseID",
+										"type": "bigint"
+									},
+									{
+										"key": "2",
+										"name": "SubjectArea",
+										"type": "string"
+									},
+									{
+										"key": "3",
+										"name": "CatalogNumber",
+										"type": "bigint"
+									},
+									{
+										"key": "4",
+										"name": "CourseName",
+										"type": "string"
+									},
+									{
+										"key": "5",
+										"name": "TermCode",
+										"type": "bigint"
+									},
+									{
+										"key": "6",
+										"name": "Year",
+										"type": "bigint"
+									},
+									{
+										"key": "7",
+										"name": "InitialDueTime",
+										"type": "timestamp"
+									},
+									{
+										"key": "8",
+										"name": "GlobalExtensionDueTime",
+										"type": "timestamp"
+									},
+									{
+										"key": "9",
+										"name": "InitialDueDateSK",
+										"type": "int"
+									},
+									{
+										"key": "10",
+										"name": "GlobalExtensionDueSK",
+										"type": "int"
+									},
+									{
+										"key": "11",
+										"name": "AssignmentSK",
+										"type": "bigint"
+									},
+									{
+										"key": "12",
+										"name": "DueTime",
+										"type": "timestamp"
+									},
+									{
+										"key": "13",
+										"name": "DueTimeAltered",
+										"type": "timestamp"
+									}
+								]
+							},
+							"isSummary": false,
+							"language": "scala"
+						},
+						"persist_state": {
+							"view": {
+								"type": "details",
+								"chartOptions": {
+									"chartType": "bar",
+									"aggregationType": "sum",
+									"categoryFieldKeys": [
+										"0"
+									],
+									"seriesFieldKeys": [
+										"1"
+									],
+									"isStacked": false
+								}
+							}
+						}
+					}
+				}
+			},
+			"kernelspec": {
+				"name": "synapse_pyspark",
+				"display_name": "Synapse PySpark"
+			},
+			"language_info": {
+				"name": "python"
+			},
+			"a365ComputeOptions": {
+				"id": "/subscriptions/551f35f8-5023-4513-ae40-48f2e9f65fc6/resourceGroups/DUS02mem/providers/Microsoft.Synapse/workspaces/studentanalytics/bigDataPools/batched",
+				"name": "batched",
+				"type": "Spark",
+				"endpoint": "https://studentanalytics.dev.azuresynapse.net/livyApi/versions/2019-11-01-preview/sparkPools/batched",
+				"auth": {
+					"type": "AAD",
+					"authResource": "https://dev.azuresynapse.net"
+				},
+				"sparkVersion": "2.4",
+				"nodeCount": 3,
+				"cores": 4,
+				"memory": 28,
+				"extraHeader": null
+			}
+		},
+		"cells": [
+			{
+				"cell_type": "code",
+				"source": [
+					"from pyspark.sql.functions import *"
+				],
+				"attachments": null,
+				"execution_count": 2
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"resourceDF = spark.read.load('abfss://datalake@dus02store.dfs.core.windows.net/fromAtlas/learnonline.json', format='json')"
+				],
+				"attachments": null,
+				"execution_count": 2
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"resourceDF.count()"
+				],
+				"attachments": null,
+				"execution_count": 5
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"resourceDF = resourceDF.groupBy(['Year', 'ActivityResourceName', 'ActivityResourceType', 'AssessmentMethod', 'CatalogNumber',\r\n",
+					"                                'CourseID', 'CourseName', 'SubjectArea', 'TermCode']).count()"
+				],
+				"attachments": null,
+				"execution_count": 4
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"resourceDF = resourceDF.withColumn('ResourceSK', monotonically_increasing_id()).write.mode(\"overwrite\").saveAsTable(\"unisadw.DimCourseResource\")"
+				],
+				"attachments": null,
+				"execution_count": 6
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"courseDF = spark.read.load('abfss://datalake@dus02store.dfs.core.windows.net/fromAtlas/coursesitevisits.json', format='json')"
+				],
+				"attachments": null,
+				"execution_count": 7
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"courseDF.printSchema()"
+				],
+				"attachments": null,
+				"execution_count": 11
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"courseDF = courseDF.withColumnRenamed('Catalog Number', 'CatalogNumber')\r\n",
+					"courseDF = courseDF.withColumnRenamed('Course ID', 'CourseID')\r\n",
+					"courseDF = courseDF.withColumnRenamed('Course Name', 'CourseName')\r\n",
+					"courseDF = courseDF.withColumnRenamed('Subject Area', 'SubjectArea')\r\n",
+					"courseDF = courseDF.withColumnRenamed('Term Code', 'TermCode')"
+				],
+				"attachments": null,
+				"execution_count": 10
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"courseDF = courseDF.groupBy(['CourseID', 'SubjectArea', 'CatalogNumber', 'CourseName', 'TermCode', 'Year']).count()"
+				],
+				"attachments": null,
+				"execution_count": 12
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					},
+					"collapsed": false
+				},
+				"source": [
+					"display(courseDF.limit(20))"
+				],
+				"attachments": null,
+				"execution_count": 14
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"courseDF.withColumn('CourseSK', monotonically_increasing_id()).write.mode(\"overwrite\").saveAsTable(\"unisadw.DimCourse\")"
+				],
+				"attachments": null,
+				"execution_count": 15
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					},
+					"collapsed": false
+				},
+				"source": [
+					"AssignmentDF = spark.sql(\"SELECT * FROM `default`.`dimassignment`\")\r\n",
+					"display(AssignmentDF.limit(20))"
+				],
+				"attachments": null,
+				"execution_count": 22
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"AssignmentDF = AssignmentDF.withColumnRenamed('InitialDueDateFormed', 'InitialDueTime')\r\n",
+					"AssignmentDF = AssignmentDF.withColumnRenamed('GlobalExtensionDueDateFormed', 'GlobalExtensionDueTime')\r\n",
+					"AssignmentDF = AssignmentDF.withColumnRenamed('DateKey', 'InitialDueDateSK')"
+				],
+				"attachments": null,
+				"execution_count": 23
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"AssignmentDF.printSchema()"
+				],
+				"attachments": null,
+				"execution_count": 26
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"DateDF = spark.read.load('abfss://datalake@dus02store.dfs.core.windows.net/local/QID1109_20210913_202220_1.parq', format='parquet')\r\n",
+					"TimeDF = spark.read.load('abfss://datalake@dus02store.dfs.core.windows.net/local/DimTime.parq', format='parquet')"
+				],
+				"attachments": null,
+				"execution_count": 19
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"AssignmentDF = AssignmentDF.join(DateDF, AssignmentDF.GlobalDueDate == DateDF.FullDateAlternateKey, 'left')\\\r\n",
+					"                            .select('AssessmentName', 'CourseID', 'SubjectArea', 'CatalogNumber', 'CourseName', 'TermCode', 'Year', 'InitialDueTime',\r\n",
+					"                                    'GlobalExtensionDueTime', 'InitialDueDateSK', DateDF.DateKey.alias('GlobalExtensionDueSK'))\\\r\n",
+					"                            .withColumn('AssignmentSK', monotonically_increasing_id())"
+				],
+				"attachments": null,
+				"execution_count": 25
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"subvgradeDF = spark.read.load('abfss://datalake@dus02store.dfs.core.windows.net/fromAtlas/submissionvgrades.json', format='json')\r\n",
+					"\r\n",
+					"subvgradeDF = subvgradeDF.withColumnRenamed('Assessment Name', 'AssessmentName')\r\n",
+					"subvgradeDF = subvgradeDF.withColumnRenamed('Course ID', 'CourseID')\r\n",
+					"subvgradeDF = subvgradeDF.withColumnRenamed('Subject Area', 'SubjectArea')\r\n",
+					"subvgradeDF = subvgradeDF.withColumnRenamed('Catalog Number', 'CatalogNumber')\r\n",
+					"subvgradeDF = subvgradeDF.withColumnRenamed('Course Name', 'CourseName')\r\n",
+					"subvgradeDF = subvgradeDF.withColumnRenamed('Term Code', 'TermCode')\r\n",
+					"subvgradeDF = subvgradeDF.withColumn(\"DueTime\", to_timestamp(col(\"Student's Due Date\"), \"dd/MM/yyyy HH:mm\"))"
+				],
+				"attachments": null,
+				"execution_count": 7
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					},
+					"collapsed": false
+				},
+				"source": [
+					"display(subvgradeDF.where((subvgradeDF.CourseName=='UO Sustainable Engineering Practice') & (subvgradeDF.AssessmentName == 'Assessment 2 Project Presentation (15%)') & (subvgradeDF.TermCode == 2112)))"
+				],
+				"attachments": null,
+				"execution_count": 8
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"subvgradeDF = subvgradeDF.groupBy(['AssessmentName', 'CourseID', 'SubjectArea', 'CatalogNumber', 'CourseName', 'TermCode', 'Year']).agg(min('DueTime'))\r\n",
+					"subvgradeDF = subvgradeDF.withColumnRenamed('min(DueTime)', 'DueTimeAltered')\r\n",
+					""
+				],
+				"attachments": null,
+				"execution_count": 9
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"AssignmentDF = spark.sql(\"SELECT * FROM `default`.`dimassignmentinprogress`\")"
+				],
+				"attachments": null,
+				"execution_count": 10
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"AssignmentDF = AssignmentDF.join(subvgradeDF, ['AssessmentName', 'CourseID', 'SubjectArea', 'CatalogNumber', 'CourseName', 'TermCode', 'Year'])\\\r\n",
+					"                            .select('AssessmentName', 'CourseID', 'SubjectArea', 'CatalogNumber', 'CourseName', 'TermCode', 'Year',\r\n",
+					"                                    AssignmentDF.InitialDueTime, AssignmentDF.GlobalExtensionDueTime, AssignmentDF.InitialDueDateSK,\r\n",
+					"                                    AssignmentDF.GlobalExtensionDueSK, AssignmentDF.AssignmentSK, AssignmentDF.DueTime, \r\n",
+					"                                    subvgradeDF.DueTimeAltered)"
+				],
+				"attachments": null,
+				"execution_count": 11
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					},
+					"collapsed": false
+				},
+				"source": [
+					"display(AssignmentDF.where(isnull(AssignmentDF.DueTime)))"
+				],
+				"attachments": null,
+				"execution_count": 13
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"AssignmentDF.write.mode(\"overwrite\").saveAsTable(\"default.DimAssignment\")"
+				],
+				"attachments": null,
+				"execution_count": 14
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"latesubDF = spark.sql(\"SELECT * FROM `default`.`latesubmerged`\")"
+				],
+				"attachments": null,
+				"execution_count": 15
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					""
+				],
+				"attachments": null,
+				"execution_count": null
+			}
+		]
+	}
+}

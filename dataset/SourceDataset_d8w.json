@@ -1,0 +1,16 @@
+{
+	"name": "SourceDataset_d8w",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "MongoDbAtlas3",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "MongoDbAtlasCollection",
+		"schema": [],
+		"typeProperties": {
+			"collection": "learnonline"
+		}
+	},
+	"type": "Microsoft.Synapse/workspaces/datasets"
+}

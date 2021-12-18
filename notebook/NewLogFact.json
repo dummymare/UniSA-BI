@@ -1,0 +1,4616 @@
+{
+	"name": "NewLogFact",
+	"properties": {
+		"nbformat": 4,
+		"nbformat_minor": 2,
+		"bigDataPool": {
+			"referenceName": "batched",
+			"type": "BigDataPoolReference"
+		},
+		"sessionProperties": {
+			"driverMemory": "28g",
+			"driverCores": 4,
+			"executorMemory": "28g",
+			"executorCores": 4,
+			"numExecutors": 2,
+			"conf": {
+				"spark.dynamicAllocation.enabled": "false",
+				"spark.dynamicAllocation.minExecutors": "2",
+				"spark.dynamicAllocation.maxExecutors": "2"
+			}
+		},
+		"metadata": {
+			"saveOutput": true,
+			"synapse_widget": {
+				"version": "0.1",
+				"state": {
+					"c713b816-6324-4545-a613-aca61642d488": {
+						"type": "Synapse.DataFrame",
+						"sync_state": {
+							"table": {
+								"rows": [
+									{
+										"0": "Label",
+										"1": "130117"
+									},
+									{
+										"0": "Course",
+										"1": "7001363"
+									},
+									{
+										"0": "Interactive Content",
+										"1": "552370"
+									},
+									{
+										"0": "SCORM package",
+										"1": "1712"
+									},
+									{
+										"0": "Glossary",
+										"1": "4489"
+									},
+									{
+										"0": "Chat",
+										"1": "3629"
+									},
+									{
+										"0": "URL",
+										"1": "80546"
+									},
+									{
+										"0": "Scheduler",
+										"1": "27738"
+									},
+									{
+										"0": "Choice",
+										"1": "12787"
+									},
+									{
+										"0": "Book",
+										"1": "11704"
+									},
+									{
+										"0": "Quiz",
+										"1": "1502440"
+									},
+									{
+										"0": "Workshop",
+										"1": "16076"
+									},
+									{
+										"0": "Other",
+										"1": "41698"
+									},
+									{
+										"0": "Wiki",
+										"1": "7125"
+									},
+									{
+										"0": "File",
+										"1": "921190"
+									},
+									{
+										"0": "External tool",
+										"1": "3035"
+									},
+									{
+										"0": "Page",
+										"1": "143321"
+									},
+									{
+										"0": "{\"$numberDouble\"",
+										"1": "8439"
+									},
+									{
+										"0": "Dialogue",
+										"1": "13719"
+									},
+									{
+										"0": "Group self-selection",
+										"1": "6406"
+									},
+									{
+										"0": "Folder",
+										"1": "108015"
+									},
+									{
+										"0": "Lesson",
+										"1": "77101"
+									},
+									{
+										"0": "Forum",
+										"1": "2600327"
+									},
+									{
+										"0": "UniSA Learning Progress",
+										"1": "9815"
+									},
+									{
+										"0": "Zoom meeting",
+										"1": "39347"
+									},
+									{
+										"0": "Database",
+										"1": "42393"
+									},
+									{
+										"0": "Feedback",
+										"1": "12534"
+									},
+									{
+										"0": "Assignment",
+										"1": "1495996"
+									}
+								],
+								"schema": [
+									{
+										"key": "0",
+										"name": "ActivityType",
+										"type": "string"
+									},
+									{
+										"key": "1",
+										"name": "count",
+										"type": "bigint"
+									}
+								]
+							},
+							"isSummary": false,
+							"language": "scala"
+						},
+						"persist_state": {
+							"view": {
+								"type": "details",
+								"chartOptions": {
+									"chartType": "bar",
+									"aggregationType": "sum",
+									"categoryFieldKeys": [
+										"0"
+									],
+									"seriesFieldKeys": [
+										"1"
+									],
+									"isStacked": false
+								}
+							}
+						}
+					},
+					"526e4285-8a03-45b7-99a5-3987d6329f3f": {
+						"type": "Synapse.DataFrame",
+						"sync_state": {
+							"table": {
+								"rows": [
+									{
+										"0": "15579"
+									}
+								],
+								"schema": [
+									{
+										"key": "0",
+										"name": "count(DISTINCT ActivityName)",
+										"type": "bigint"
+									}
+								]
+							},
+							"isSummary": false,
+							"language": "scala"
+						},
+						"persist_state": {
+							"view": {
+								"type": "details",
+								"chartOptions": {
+									"chartType": "bar",
+									"aggregationType": "sum",
+									"categoryFieldKeys": [],
+									"seriesFieldKeys": [
+										"0"
+									],
+									"isStacked": false
+								}
+							}
+						}
+					},
+					"f0ac29d9-f2ad-49e7-b830-09e13aac744a": {
+						"type": "Synapse.DataFrame",
+						"sync_state": {
+							"table": {
+								"rows": [
+									{
+										"0": " UO Building Estimating",
+										"1": "808881"
+									},
+									{
+										"0": " 2.2 Project Tendering",
+										"1": "5530"
+									},
+									{
+										"0": " Learning Activity",
+										"1": "204693"
+									},
+									{
+										"0": " Q&amp;A Estimation of Earthworks",
+										"1": "1659"
+									},
+									{
+										"0": " 2.1 Demolition, site clearing and earthworks",
+										"1": "6794"
+									},
+									{
+										"0": " Building Site Hazard Identification and Risk Assessment",
+										"1": "557"
+									},
+									{
+										"0": " Week 3 Activities Forum",
+										"1": "7746"
+									},
+									{
+										"0": " Announcements",
+										"1": "220660"
+									},
+									{
+										"0": " Quiz 1 (10%; Week 2)",
+										"1": "33101"
+									},
+									{
+										"0": " Part E",
+										"1": "28046"
+									}
+								],
+								"schema": [
+									{
+										"key": "0",
+										"name": "ActivityName",
+										"type": "string"
+									},
+									{
+										"key": "1",
+										"name": "count",
+										"type": "bigint"
+									}
+								]
+							},
+							"isSummary": false,
+							"language": "scala"
+						},
+						"persist_state": {
+							"view": {
+								"type": "details",
+								"chartOptions": {
+									"chartType": "bar",
+									"aggregationType": "sum",
+									"categoryFieldKeys": [
+										"0"
+									],
+									"seriesFieldKeys": [
+										"1"
+									],
+									"isStacked": false
+								}
+							}
+						}
+					},
+					"a9e1630d-bf7f-47eb-9cca-fd2c676bd67d": {
+						"type": "Synapse.DataFrame",
+						"sync_state": {
+							"table": {
+								"rows": [
+									{
+										"0": "Learning Activity: Ground Problems (6 questions)"
+									},
+									{
+										"0": "SUBMIT Assessment 2 Part C: Risk Analysis (Excel file) &  Executive Summary (Word Document) (20%)"
+									},
+									{
+										"0": "Table 1: Outline of selected site and proposed new building"
+									},
+									{
+										"0": "Week 5.3 LIVE CLASS (11): Sheets generation in Revit Q&A (27.10.2019)"
+									},
+									{
+										"0": "New Learning Resource (Adelaide Botanical High School)"
+									},
+									{
+										"0": "Quiz 2: Material Properties & Fire-engineered Design (10% Due Week 4)"
+									},
+									{
+										"0": "CostX Files: Practice Answers - Part B"
+									},
+									{
+										"0": "Week 11 Practical S"
+									},
+									{
+										"0": "Quiz: Chapter 9 on Exception Handling (Week 8)"
+									},
+									{
+										"0": "UniSA Payroll Calendar 2018"
+									},
+									{
+										"0": "Construction Materials: Maintenance"
+									},
+									{
+										"0": "3.2 Slides and notes - Design for Fire: Material Selection"
+									},
+									{
+										"0": "7.2 Slides: Design Development and Contract Contingency"
+									},
+									{
+										"0": "Learning Activity: 4.3 NPV Exercise"
+									},
+									{
+										"0": "8.1 Learning Activity: ASMM Clause and unit"
+									},
+									{
+										"0": "Week 8 Q&A Forum"
+									},
+									{
+										"0": "OVERVIEW ¿ ACTIVE FIRE SAFETY SYSTEMS - in different Australian states"
+									},
+									{
+										"0": "Practical 10 Normalisation 1.0.2"
+									},
+									{
+										"0": "UO Database Fundamentals (Sample Exam 4) (Ref: SP32020)"
+									},
+									{
+										"0": "8.3 Slides & Notes: Building Cores for MSBs"
+									},
+									{
+										"0": "Slides and Notes - 10.1 International Trade ¿ Benefits and Costs"
+									},
+									{
+										"0": "Online Exams Preparation & Mandatory Training (RPnow)"
+									},
+									{
+										"0": "1.1 Slides & Notes - Fire Safety Overview"
+									},
+									{
+										"0": "Assessment 2 - Part A: Introduction to Accident Database (15%)"
+									},
+									{
+										"0": "Construction Management and Quantity & Building Surveying: Library help and guide"
+									},
+									{
+										"0": "Revit Q&A Meeting 1 (22.05.2019)"
+									},
+									{
+										"0": "Week4 Practical S"
+									},
+									{
+										"0": "UO Programming Fundamentals (Final Exam) (Ref: SP42019)"
+									},
+									{
+										"0": "All quizzes listed"
+									},
+									{
+										"0": "S2 Week 5 - Topic 5 - Column Design"
+									},
+									{
+										"0": "Practice activity: Building Option 1A - Part C"
+									},
+									{
+										"0": "Slides and Notes: QSP Topic 8.1 - Windows  Doors"
+									},
+									{
+										"0": "Quiz 3: Electrical systems and contract, BIM and clash detection  (Week 8; 17.5%)"
+									},
+									{
+										"0": "UO Business Intelligence (Final Exam) (Ref: SP42019)"
+									},
+									{
+										"0": "10.2 Slides & Notes: Roofing Systems"
+									},
+									{
+										"0": "Learning Task 4.3 Build Visuals Using the Q&A Feature"
+									},
+									{
+										"0": "Forum: MSDS"
+									},
+									{
+										"0": "CostX Files: Practice Answers - Week 7"
+									},
+									{
+										"0": "SQL - Text (String) Calculations"
+									},
+									{
+										"0": "Answer to the Question Set 5: Arrays"
+									},
+									{
+										"0": "Project Assessments 2.1 - 2.4 Discussion (Q&A)"
+									},
+									{
+										"0": "Learning Activity: 4.2 NPV Exercise"
+									},
+									{
+										"0": "Gartner¿s Pace-Layered Strategy Quiz"
+									},
+									{
+										"0": "Forum: New Materials"
+									},
+									{
+										"0": "Week 10 Q&A Forum"
+									},
+									{
+										"0": "CostX Files: Practice Answers - Part E Hurdle Building Type 1"
+									},
+									{
+										"0": "UO Quantitative Methods for Business (Secondary Exam) (Ref: SP42019)"
+									},
+									{
+										"0": "Week 8 LIVE CLASS (14): Construction Documents Q&A (24.05.2021)"
+									},
+									{
+										"0": "3.3 Slides & Notes: Pre-Cast Walls"
+									},
+									{
+										"0": "Database: Steps in Extensive Processing"
+									},
+									{
+										"0": "Learning Activity: Setting Up CostX"
+									},
+									{
+										"0": "SEDHY001 UO Structures 1 Supplementary Assessment Details 2020 SP6 Harrison Sedgwick"
+									},
+									{
+										"0": "Excel example: Creating a Chart"
+									},
+									{
+										"0": "1.2 Slides: Value for money"
+									},
+									{
+										"0": "3.3 Slides: Functional and Non-Functional Areas"
+									},
+									{
+										"0": "Quiz: Chapter 2 & 3 on Console IO and Flow of Control (Week 2)"
+									},
+									{
+										"0": "Zoom drop in week - 8 : Quality and Risk theme"
+									},
+									{
+										"0": "Learning Activity: Soil reactivity (5 questions)"
+									},
+									{
+										"0": "Discussion Forum - Database Modelling & Design"
+									},
+									{
+										"0": "9.2  Slides & Notes: Technical Aspects  Cladding Types"
+									},
+									{
+										"0": "Week11 Optimisation"
+									},
+									{
+										"0": "UO Database Fundamentals (Secondary Exam) ¿ Part B (Ref: SP32021)"
+									},
+									{
+										"0": "Week 10: Operating, Maintenance & Post-Occupancy (24.11.2020)"
+									},
+									{
+										"0": "UO Problem Solving and Programming (Sample Exam 2) (Ref: SP62020)"
+									},
+									{
+										"0": "Slides and Notes: Revision of Vectors and Trigonometry"
+									},
+									{
+										"0": "Answer to the Question Set 4: Defining Classes Part 2"
+									},
+									{
+										"0": "Topic 8 concepts"
+									},
+									{
+										"0": "Week 4 PrePracANS"
+									},
+									{
+										"0": "Week 8: Shop Drawings & Offsite Fabrication (draft review) (10.11.2020)"
+									},
+									{
+										"0": "Week 8 - ActivitiesSOLUTIONS"
+									},
+									{
+										"0": "String Functions - MSDN"
+									},
+									{
+										"0": "Week11 Index"
+									},
+									{
+										"0": "Learning Task 8.3: review resources on Fixing Instructions"
+									},
+									{
+										"0": "Week 7 Submission"
+									},
+									{
+										"0": "Discussion Forum - Questions and Challenges: File I/O"
+									},
+									{
+										"0": "Week 9 practice results"
+									},
+									{
+										"0": "Week 5.2 LIVE CLASS (9): Sheets generation in Revit (2) (22.10.2020))"
+									},
+									{
+										"0": "1.3 Slides & Notes: Reading Industrial Drawings and Plans"
+									},
+									{
+										"0": "Assessment 1 Part B: Written Report and Works Schedule (20% Due Week 7)"
+									},
+									{
+										"0": "Normalisation explained simply"
+									},
+									{
+										"0": "Submit Assessment 2: Part D (12%; Due Week 9)"
+									},
+									{
+										"0": "Quiz 2: Hydraulics, Air conditioning (Week 6; 13.34%)"
+									},
+									{
+										"0": "6.2 Slides: Complex and Smart Buildings"
+									},
+									{
+										"0": "HURDLE Assessment: Part A - Hurdle Building Type 1"
+									},
+									{
+										"0": "Assessment 2 Part A Q&A Forum"
+									},
+									{
+										"0": "Mock Exam: Paper 2"
+									},
+									{
+										"0": "UO Engineering Mechanics (Secondary Exam) (Ref: SP32021)-Chisweto,Wadzanai Brian"
+									},
+									{
+										"0": "Week 9.1: Assessment 2-B: Construction Hand drawing (1) (Monday 31/05/2021, 8:00 pm)"
+									},
+									{
+										"0": "UO Programming Fundamentals (Secondary Exam) (Access Plan) (Ref: SP42020)"
+									},
+									{
+										"0": "Quiz 2: Air Conditioning Systems, Calculations and Hydraulic Services  (Week 6; 10%)"
+									},
+									{
+										"0": "Week 2 - Discussion and Q&A forum"
+									},
+									{
+										"0": "UO Database Fundamentals (Final Exam) ¿ Part B (Ref: SP32021)"
+									},
+									{
+										"0": "Replaced by the H5P Activity: Activity 2A - Knowledge Check Questions"
+									},
+									{
+										"0": "UO Programming Fundamentals (Live Programming Test 1) (Ref: SP12020)"
+									},
+									{
+										"0": "HURDLE Assessment: Part B - Hurdle Building Type 1"
+									},
+									{
+										"0": "Week 5.2 Learning Activity Forum - SPACE GASS Truss Forum"
+									},
+									{
+										"0": "Slides & notes - Comparing Nodes"
+									},
+									{
+										"0": "S2 Week 10 topic 2: Design factors - part 2"
+									},
+									{
+										"0": "3.1 Slides: Functional Unit Costs"
+									},
+									{
+										"0": "3.4 Slides: Functional Analysis for Cost Planning"
+									},
+									{
+										"0": "Week 8: Self-Review Quiz (4 questions)"
+									},
+									{
+										"0": "Assessment 2 Part A - Q&A Forum"
+									},
+									{
+										"0": "Week 7.2 LIVE CLASS (13): Assessment 2-A: Construction Documents (3) (5.11.2020)"
+									},
+									{
+										"0": "Practice activity: Part B - Building Type 1"
+									},
+									{
+										"0": "Quiz 4: BIM & Software; Electrical Systems, Commissioning; Shop Drawings (Week 9; 10%)"
+									},
+									{
+										"0": "Answer to the Question Set 10: Interfaces and Inner Classes"
+									},
+									{
+										"0": "Continuous Assessment Week 5 & 6 Practical Submission Point"
+									},
+									{
+										"0": "Assessment 1: Project Part B: Thermal Comfort (10%; Submit Week 10)"
+									},
+									{
+										"0": "UO Quantitative Methods for Business Part A (Final Exam) (Ref: SP12021)"
+									},
+									{
+										"0": "HURDLE Assessment: Week 2 work on Building P"
+									},
+									{
+										"0": "Week 6 - Activities"
+									},
+									{
+										"0": "Assessment 1: Part A2 - Mathematics and Physics Quiz Attempt 2 (12%)"
+									},
+									{
+										"0": "Practice Activity: Part D - Building Type 1"
+									},
+									{
+										"0": "Week 6 submission"
+									},
+									{
+										"0": "Week 6 LIVE CLASS (10):  (29.10.2020)"
+									},
+									{
+										"0": "Week 9 LIVE CLASS (14): Construction Hand drawings Q&A (21.11.2019)"
+									},
+									{
+										"0": "Self-Check Quiz: Week 2"
+									},
+									{
+										"0": "UO Introduction to Engineering Physics (Final Exam) (Ref: SP1 2021)"
+									},
+									{
+										"0": "Week 7 Q&A Forum"
+									},
+									{
+										"0": "Q&A - Project Management"
+									},
+									{
+										"0": "SA Quiz 3 - Chapter 4 & 5 (Week 8)"
+									},
+									{
+										"0": "6.2 Slides: Averages, Norms, and Deviations"
+									},
+									{
+										"0": "UO Engineering Mechanics (Secondary Exam) (Ref: SP32021)"
+									},
+									{
+										"0": "StudentEnrolmentUML 2016 SP2"
+									},
+									{
+										"0": "HazardSystem"
+									},
+									{
+										"0": "Assessment 2-Quiz A: Q&A"
+									},
+									{
+										"0": "Week 1 & 2 Drop in session"
+									},
+									{
+										"0": "Assessment 2: Assignment Scenario 2 Forum"
+									},
+									{
+										"0": "Learning  Activity: Soil Profile"
+									},
+									{
+										"0": "Learning Task 7.2: Quiz on Lining instructions"
+									},
+									{
+										"0": "Week 8 LIVE CLASS (11): Construction Documents Q&A (28.05.2020)"
+									},
+									{
+										"0": "UO Database Fundamentals (Secondary Exam) ¿ Part A (Ref: SP32020)"
+									},
+									{
+										"0": "UO Engineering Mechanics (Secondary Exam) (Ref: SP62020)"
+									},
+									{
+										"0": "Quiz 2: Hydraulics, Air conditioning (Week 5; 10%)"
+									},
+									{
+										"0": "Image differences pixel number revit"
+									},
+									{
+										"0": "Week 0: Pre-teaching Week"
+									},
+									{
+										"0": "SUBMIT Assessment 2 - Part A - Building Assessment & Part B - Performance Solutions for Liam Humphries"
+									},
+									{
+										"0": "Learning Task 9.1 Read Topic 1, Chapter 7, Section 7.8 Issues of Legality, Privacy and Ethics pp. 300¿303"
+									},
+									{
+										"0": "CostX Files: Practice Answers - Part B revised"
+									},
+									{
+										"0": "6.2 Slides & Notes: types of MSB"
+									},
+									{
+										"0": "Textbook 2013 to 2017 & Study Guide comparisons"
+									},
+									{
+										"0": "Prac-Wk2-PT-b-NetRep.pka"
+									},
+									{
+										"0": "Submit Assessment 2: Part A: Building & Fire Scenario (25% Due Week 6)"
+									},
+									{
+										"0": "SA Quiz 4 - Chapter B & 10 (Week 10)"
+									},
+									{
+										"0": "OFFICE - Learning Activity 9.2: Drawings  Specifications"
+									},
+									{
+										"0": "CostX Files: Practice Answers - Part B Hurdle Building Type 1"
+									},
+									{
+										"0": "Submit Assessment 2: Part B: Passive Fire Protection (10% Due Week 8)"
+									},
+									{
+										"0": "UO Database Fundamentals (Special Final Exam) ¿ Part A (Ref: SP32021)"
+									},
+									{
+										"0": "Assessment 2 Part 2 Q&A Forum"
+									},
+									{
+										"0": "Learning Activity: Structural Steelwork"
+									},
+									{
+										"0": "2.2.3 Learning Activity: Take Off Quantities Quiz"
+									},
+									{
+										"0": "Extra Truss Analysis Example"
+									},
+									{
+										"0": "Week 4.1 Live class meeting (1): Roof, room tag, schedules (12.10.2020)"
+									},
+									{
+										"0": "Continuous Assessment Week 7 & 8 Practical Submission Point"
+									},
+									{
+										"0": "Learning Task 3.1 Read Chapter 2, Section 2.8 of Business Intelligence: A Managerial Approach"
+									},
+									{
+										"0": "Viva Q & A"
+									},
+									{
+										"0": "UO Database Fundamentals (Secondary Exam) ¿ Part B (Ref: SP42020)"
+									},
+									{
+										"0": "4.3 Slides & Notes: Concrete Floor Construction"
+									},
+									{
+										"0": "Quiz 3: Electrical, Construction and Psychrometrics (Week 7; 10%)"
+									},
+									{
+										"0": "Self-Check Quiz: Week 8"
+									},
+									{
+										"0": "Assignment Two Q & A Forum"
+									},
+									{
+										"0": "Chapter X: Fire Protection Systems"
+									},
+									{
+										"0": "UO Predictive Analytics (Final Exam) (Ref: SP42020)"
+									},
+									{
+										"0": "6.3 Slides: Cost Control of Engineering Services"
+									},
+									{
+										"0": "Wk4 Examples 2016 SP2"
+									},
+									{
+										"0": "SUBMIT your Assessment 1 - Part A: Construction Documents (Week 4; 20%)"
+									},
+									{
+										"0": "Zoom meeting week 3: assessment 2 (report)"
+									},
+									{
+										"0": "Assessment 1: Part A1 - Mathematics and Physics Quiz Attempt 1 (3%)"
+									},
+									{
+										"0": "normalizationnotes"
+									},
+									{
+										"0": "Assessment 1: Part A - BQ Quiz 1 (15%; Due Week 4)"
+									},
+									{
+										"0": "UO Predictive Analytics (Secondary Exam) (Ref: SP12020)"
+									},
+									{
+										"0": "Week 3: Drop-in Zoom meeting  (3) (28.01.2021)"
+									},
+									{
+										"0": "Week 2 Q&A Forum"
+									},
+									{
+										"0": "DBMS Structure ¿ Design Discussion"
+									},
+									{
+										"0": "SUBMIT Assessment 2: Part C Energy Efficiency (Week 8; 10%)"
+									},
+									{
+										"0": "Transcript: Problem Solving Process"
+									},
+									{
+										"0": "Quiz - Self-Review Environment and Material Properties"
+									},
+									{
+										"0": "Quiz 3: passive Fire Protection  (10% Due Week 7)"
+									},
+									{
+										"0": "Assessment 2 Quiz 1 - Q&A"
+									},
+									{
+										"0": "Assessment 1 Part A (Q&A)"
+									},
+									{
+										"0": "Continuous Assessment Q&A Forum"
+									},
+									{
+										"0": "Learning Task 8.1 Topic 3, Chapter 6 on Governing Digital Data pp. 365¿367"
+									},
+									{
+										"0": "PART A: My Construction Company and Trade Summary 1 (Week 5, 20%)"
+									},
+									{
+										"0": "Slides & notes - The Standard Normal Distribution"
+									},
+									{
+										"0": "Submit Assessment 1: Part B (30%; Due Week 6)"
+									},
+									{
+										"0": "Practical - Challenges & Questions"
+									},
+									{
+										"0": "SUBMIT Assessment 2: Part B Ventilation (Week 6; 10%)"
+									},
+									{
+										"0": "UO Problem Solving and Programming (Sample Exam 5) (Ref: SP32020)"
+									},
+									{
+										"0": "Learning Activity: The scope of the AS 1684"
+									},
+									{
+										"0": "Assessment 1 Part C - Q&A"
+									},
+									{
+										"0": "UO Quantitative Methods for Business (Final Exam) (Ref: SP12021)"
+									},
+									{
+										"0": "Assessment 2 Quiz 1 (Q&A)"
+									},
+									{
+										"0": "Submit Assessment 2: Part A Construction of Roof Model and Part B: Works Schedule (40% Due Week 7)"
+									},
+									{
+										"0": "Submit Assessment 2: Part C: Active Fire Protection and Performance (25% Due Week 10)"
+									},
+									{
+										"0": "Mock Exam: paper 1"
+									},
+									{
+										"0": "Learning Activity: Apply the perspectives"
+									},
+									{
+										"0": "SUBMIT Assessment 2: (OLD) Part C Energy Efficiency (Week 8; 10%)"
+									},
+									{
+										"0": "Discussion Forum - Questions and Challenges: Arrays"
+									},
+									{
+										"0": "Learning Task 7.5: Data joining in Tableau"
+									},
+									{
+										"0": "SP5 Indexes"
+									},
+									{
+										"0": "Week 5 PracticalANS"
+									},
+									{
+										"0": "Learning Activity: 8.2 Sensitivity Analysis Exercise"
+									},
+									{
+										"0": "Week 4- Discussion and Q&A forum"
+									},
+									{
+										"0": "Week 2.1: Introduction to Autodesk Revit & assessment 1 (Monday 12/04/2021, 8:30 pm)"
+									},
+									{
+										"0": "Submit Assessment 1: Video Presentation and Audio (40% Due Week 7)"
+									},
+									{
+										"0": "Assessment 1 Quiz 2 - Q&A Forum"
+									},
+									{
+										"0": "Week 7- Discussion and Q&A forum"
+									},
+									{
+										"0": "UO Programming Fundamentals (Secondary Exam) (Ref: SP12020)"
+									},
+									{
+										"0": "3.2 Slides: Functional Briefs"
+									},
+									{
+										"0": "Week 8 - Activities"
+									},
+									{
+										"0": "Submission Point Assessment 1c: Programming (Query Processing)"
+									},
+									{
+										"0": "Assessment 1 - Part B: Written report & presentation (45%; Due Week 5)"
+									},
+									{
+										"0": "Week 3 PrePrac Questions"
+									},
+									{
+										"0": "Normalisation ¿ Challenges & Questions"
+									},
+									{
+										"0": "Discussion Forum - Problem Solving Exercise (Database Modelling & Design)"
+									},
+									{
+										"0": "Week 4.1 Live class meeting (1): Roof, doors, windows and furnishing (16.10.2019)"
+									},
+									{
+										"0": "Further notes ¿ BUIL 1024 ¿ Assessment 2 Part B"
+									},
+									{
+										"0": "5.3 Slides & Notes: General Masonry Construction"
+									},
+									{
+										"0": "SUBMIT your Assessment 1 - Part B & C: Processing, Structural Properties, Environmental Properties & Specifications (Week 6; 24%)"
+									},
+									{
+										"0": "Check your knowledge: Data Analytics"
+									},
+									{
+										"0": "9.3 Slides & Notes: Comparing Cladding Systems"
+									},
+									{
+										"0": "UO IT Fundamentals (Secondary Exam) Access Plan Part A (Ref: SP42019)"
+									},
+									{
+										"0": "Characteristic objects - A Design Choice - Explore this with your peers & tutor"
+									},
+									{
+										"0": "Learning Task 9.2.1: Quiz Instructions"
+									},
+									{
+										"0": "UO Network Fundamentals (Final Exam) (Ref: SP32020)"
+									},
+									{
+										"0": "UML Translation Video"
+									},
+									{
+										"0": "Assessment 2: Part A - BQ Quiz 1 (15%) (Option 2)"
+									},
+									{
+										"0": "Learning Task 8.4 Gartner¿s Pace-Layered Strategy"
+									},
+									{
+										"0": "3.1 Slides & Notes: Types of Concrete Walls"
+									},
+									{
+										"0": "Slides  and Notes: QSP Topic 4.1 - Billing"
+									},
+									{
+										"0": "SUBMIT your Assessment 2: Parts A & B (Week 8; 30%)"
+									},
+									{
+										"0": "IceCreams"
+									},
+									{
+										"0": "Assessment 2B Q&A Forum"
+									},
+									{
+										"0": "Slides and Notes: 1.2 Introduction to Cost X"
+									},
+									{
+										"0": "7.4 Slides & Notes: Concrete frames and composite frames"
+									},
+									{
+										"0": "UO Database Fundamentals (Special Final Exam) ¿ Part A (Ref: SP62020)"
+									},
+									{
+										"0": "Assessment 2: Truss Analysis and Design Report Test (35%, Week 10)"
+									},
+									{
+										"0": "Learning Activity: Roof Bracing"
+									},
+									{
+										"0": "Continuous Assessments 1.1-1.6 discussion (Q&A)"
+									},
+									{
+										"0": "Notes: Stored Procedures"
+									},
+									{
+										"0": "UO Programming Fundamentals (Secondary Exam) (Access Plan ¿ Part A) (Ref: SP12020)"
+									},
+									{
+										"0": "Simpsons Database (SP2)"
+									},
+									{
+										"0": "7.4 Slides: Functional Analysis for Cost Planning"
+									},
+									{
+										"0": "CostX Files: Practice Answers - Part D Hurdle Building Type 1"
+									},
+									{
+										"0": "IceCreamExamples"
+									},
+									{
+										"0": "Submit Assessment 1 - Part B: Regulation of Defective Residential Building Work (25%)"
+									},
+									{
+										"0": "Learning Activity ¿ Discuss the past and current trends in the construction industry in Australia"
+									},
+									{
+										"0": "Topic 10 Videos"
+									},
+									{
+										"0": "SUBMIT your Assessment 2 - Part A: Construction Documents (Week 8; 20%)"
+									},
+									{
+										"0": "Assessment 2 Part B - Q&A Forum"
+									},
+									{
+										"0": "Learning Activity 4.2 - Part 1 of 2 - Formative"
+									},
+									{
+										"0": "Submit Assessment 2: Report - Part A - Reading Journal and Part B - Analytical Report (50%)"
+									},
+									{
+										"0": "Topic 4 concepts - Data Manipulation Language"
+									},
+									{
+										"0": "UO Database Fundamentals (Secondary Exam) ¿ Part B (Ref: SP62020)"
+									},
+									{
+										"0": "Autodesk Revit Q&A Forum"
+									},
+									{
+										"0": "Normalisation"
+									},
+									{
+										"0": "Part A: Discuss where 6 floor finishes types may be utilised. Give an example for each finish."
+									},
+									{
+										"0": "UO Quantitative Methods for Business Part B (Final Exam) (Ref: SP12021)"
+									},
+									{
+										"0": "Week 10 LIVE CLASS (17): Construction Hand drawings Review & end of course celebration (23.11.2020)"
+									},
+									{
+										"0": "CostX Files: Practice Answers - Part C"
+									},
+									{
+										"0": "UO Predictive Analytics (Final Exam) (Access Plan ¿ Part B) (Ref: SP12020)"
+									},
+									{
+										"0": "UO Problem Solving and Programming (Final Exam) (Access Plan) - Part A (Ref: SP62020)"
+									},
+									{
+										"0": "Slides and Notes: Components of a Force"
+									},
+									{
+										"0": "Assessment 2 Part A: 1 Intro & 2 Locate Sites and Plans (5% due Week 2)"
+									},
+									{
+										"0": "Building for growth: An Analysis of the Australian Building and Construction Industries"
+									},
+									{
+										"0": "Luby Supplementary Assessment"
+									},
+									{
+										"0": "Topic 3 concepts"
+									},
+									{
+										"0": "Example Questions - Virtual Laboratory 1 & 2"
+									},
+									{
+										"0": "Assessment 2:  PART A: BRIEF REPORT ADVICE (45% Week 10)"
+									},
+									{
+										"0": "Week5 Slides S"
+									},
+									{
+										"0": "Week 3.1 Live Class (1) : Mass modelling in Revit (2) (20.04.2020)"
+									},
+									{
+										"0": "SUBMIT Assessment 2: Part B Ventilation (Week 5; 10%)"
+									},
+									{
+										"0": "MATH 1075 SP1 2021 Part A Final Exam Answer Sheet"
+									},
+									{
+										"0": "UO Problem Solving and Programming (Secondary Exam) (Ref: SP62020)"
+									},
+									{
+										"0": "Mac Book users only: Tutorial for using Autodesk Revit Via Virtual Box (17.10.2019)"
+									},
+									{
+										"0": "learning task 8.1: Resources"
+									},
+									{
+										"0": "Virtual Labs 1 & 2 Assessments Discussion (Q & A)"
+									},
+									{
+										"0": "YOURHOME-Materials-AutoclaveAeratedConcrete"
+									},
+									{
+										"0": "Concept Video Handout: Functions - part II"
+									},
+									{
+										"0": "UO Business Intelligence (Secondary Exam) (Ref: SP42020)"
+									},
+									{
+										"0": "Continuous Assessment Week 3 & 4 Practical Submission Point"
+									},
+									{
+										"0": "Assignment Help and Guides: Library help"
+									},
+									{
+										"0": "UO Information Technology Fundamentals (Secondary Exam) (Ref: SP42020)"
+									},
+									{
+										"0": "UO Business Intelligence (Final Exam) (Ref: SP12019)"
+									},
+									{
+										"0": "Pairs for Assessment 2: Project"
+									},
+									{
+										"0": "Submit Assessment 1: Part A Construction of Roof Model and Part B: Works Schedule (40% Due Week 7)"
+									},
+									{
+										"0": "Week 1 content discussion (Q&A)"
+									},
+									{
+										"0": "SUBMIT your Assessment 1 - Part A: Introduction & History of construction materials (Week 1; 10%)"
+									},
+									{
+										"0": "Construction Materials: Properties: Verification"
+									},
+									{
+										"0": "Part B: Thermal comfort +Part C:VentilationPart +D: Energy Efficiency+Part E: Acoustics and Lighting + Part F: Introduction and conclusion"
+									},
+									{
+										"0": "Answer to the Question Set 8: Exception Handling"
+									},
+									{
+										"0": "Learning Activity: Design Factors (Subgrade strength) (4 questions)"
+									},
+									{
+										"0": "Activity 3O - Week 3 Review Quiz: Rearrangements"
+									},
+									{
+										"0": "SUBMIT your Assessment 2 - Part C - Review & Reflection on Team Progress (Week 10; 5%)"
+									},
+									{
+										"0": "Quiz 3: BIM & Software; Electrical Systems, Commissioning; Shop Drawings (Week 8; 13.34%)"
+									},
+									{
+										"0": "Phase 2: User Stories  Conceptual Scenarios Template"
+									},
+									{
+										"0": "HURDLE Assessment: Part D - Hurdle Building Type 1"
+									},
+									{
+										"0": "Learning Task 8.3 Read Topic 4, Chapter 14 on Applying Data Gov. in Ecommerce pp. 384¿388"
+									},
+									{
+										"0": "Assessment 1 Q&A Forum"
+									},
+									{
+										"0": "Slides & Notes - Activity on Node (AoN) Diagrams"
+									},
+									{
+										"0": "True or False: There is a negative cross price elasticity between 3D scanners and BIM. Explain your answer and add a graph"
+									},
+									{
+										"0": "Submit Assessment 2: Part E (10%; Due Week 9)"
+									},
+									{
+										"0": "Week 3.3 Live Class (3) : Revit Q&A  (14.10.2019)"
+									},
+									{
+										"0": "Learning Activity: Materials-related injuries - post here"
+									},
+									{
+										"0": "UO Problem Solving and Programming (Sample Exam 1) (Ref: SP62020)"
+									},
+									{
+										"0": "Week 7: Contract Documents, BIM & Clash Detection (03.11.2020)"
+									},
+									{
+										"0": "UO Business Intelligence (Final Exam) (Ref: SP42020)"
+									},
+									{
+										"0": "Week 9 Database: Emergency lighting and signage"
+									},
+									{
+										"0": "Learning Activity: 6.1 IRR Exercise"
+									},
+									{
+										"0": "Slide deck from Week 2 Drop-in Session ¿ Empathy"
+									},
+									{
+										"0": "SUBMIT your Assessment 1 - Part D & E: Systems, Construction, Maintenance and  Final Review (Week 10; 34%)"
+									},
+									{
+										"0": "5.1 Slides: The Cost of Design Decisions"
+									},
+									{
+										"0": "Using AD/AS model Explain in which direction do the two polices change the aggregate demand."
+									},
+									{
+										"0": "SUBMIT your Assessment 1 - Part B - Construction Connection Details & Conclusion (Week 4; 17.5%)"
+									},
+									{
+										"0": "Week 9 content discussion (Q&A)"
+									},
+									{
+										"0": "Suggestions for amendments for next term"
+									},
+									{
+										"0": "Week 4 - Activities"
+									},
+									{
+										"0": "UO Predictive Analytics (Sample Final Exam) (Ref: SP12020)"
+									},
+									{
+										"0": "Learning Activity - ASMM & Rules Governing Measurement of Substructure"
+									},
+									{
+										"0": "Week 9 Q&A Forum"
+									},
+									{
+										"0": "Week 9 Drop-in session ppt"
+									},
+									{
+										"0": "Slides & notes - Rescheduling Projects"
+									},
+									{
+										"0": "Submit Assessment 2: Part B (15%; Due Week 4)"
+									},
+									{
+										"0": "Formative Version of Mathematics and Physics Quiz Attempt 1 - DOES NOT COUNT TOWARDS COURSE GRADE"
+									},
+									{
+										"0": "Submission Point - Part 2: Dashboard"
+									},
+									{
+										"0": "Assessment 2 Part 1 Q&A Forum"
+									},
+									{
+										"0": "TriggerExamples"
+									},
+									{
+										"0": "UO Database Fundamentals (Final Exam) ¿ Part A (Ref: SP62020)"
+									},
+									{
+										"0": "Topic 6 Videos"
+									},
+									{
+										"0": "Learning Activity: Retaining structures (5 questions)"
+									},
+									{
+										"0": "Has been replaced by the H5P activity: Activity 5A - Knowledge Check Questions"
+									},
+									{
+										"0": "Assessment 1b: Post-it note application - Submit point"
+									},
+									{
+										"0": "2.3 Slides & Notes: Fabrication and erection"
+									},
+									{
+										"0": "SUBMIT your Assessment 1 - Part B: Structural, Fire & Environmental properties (Week 6; 20%)"
+									},
+									{
+										"0": "UO Programming Fundamentals (Live Programming Test 2) (Ref: SP12020)"
+									},
+									{
+										"0": "UO Network Fundamentals (Final Exam) (Ref: SP32019)"
+									},
+									{
+										"0": "HURDLE Assessment: Part E - Hurdle Building Type 1"
+									},
+									{
+										"0": "Assessment 2 Part B: Substructure (15% Due Week 4)"
+									},
+									{
+										"0": "Graphs Parts A & B - Quiz"
+									},
+									{
+										"0": "Assessment 1: Project Part E: Acoustics and Lighting (10%; Submit Week 10)"
+									},
+									{
+										"0": "Assessment 2 Q&A Forum"
+									},
+									{
+										"0": "Slides & notes - Introduction to Network Diagrams"
+									},
+									{
+										"0": "Transcript: An Introduction to Programming"
+									},
+									{
+										"0": "Learning Task 7.1 Review Chapter 5 of Business Intelligence: A Managerial Approach"
+									},
+									{
+										"0": "HURDLE Assessment: Week 3 work on Building P"
+									},
+									{
+										"0": "Complex M:N Join Statement ¿ Questions & Challenges"
+									},
+									{
+										"0": "Assessment 2: Part B - Online Quiz (20%; Due Week 10)"
+									},
+									{
+										"0": "Learning Task 9.2: Hot Water Services"
+									},
+									{
+										"0": "UO Essential Mathematics 2: Calculus (Secondary Exam) (Ref: SP3 2021)"
+									},
+									{
+										"0": "UO IT Fundamentals (Final Exam) Access Plan Part B (Ref: SP42019)"
+									},
+									{
+										"0": "Practical Q&A Forum"
+									},
+									{
+										"0": "Slides and Notes: 2.1 - ASMM"
+									},
+									{
+										"0": "2.1.1 Learning Activity: Using ASMM Quiz"
+									},
+									{
+										"0": "Self-Check Quiz: Week 6"
+									},
+									{
+										"0": "Week 3 Practical S"
+									},
+									{
+										"0": "3.1 Slides: Introduction to Building Elements"
+									},
+									{
+										"0": "Basic Index Theory (Youtube)URL"
+									},
+									{
+										"0": "Week 5 PrePracQuestions"
+									},
+									{
+										"0": "Sets & Maps - Quiz"
+									},
+									{
+										"0": "Assessment 1 Part B Q&A Forum"
+									},
+									{
+										"0": "Learning Task 4.1 Read Chapter 1, section 1.5 to 1.6 of Business Intelligence: A Managerial Approach"
+									},
+									{
+										"0": "Learning Activity: What is soil and how is it formed? (5 questions)"
+									},
+									{
+										"0": "S2 Week 10 topic 2: Design factors - part 1"
+									},
+									{
+										"0": "Excel file: Student Engagement record"
+									},
+									{
+										"0": "SUBMIT Assessment 2: (OLD) Part D Lighting and Acoustics (Week 10; 10%)"
+									},
+									{
+										"0": "UO Programming Fundamentals (Sample Final Exam) (Ref: SP42020)"
+									},
+									{
+										"0": "Week 4 content discussion (Q&A)"
+									},
+									{
+										"0": "HURDLE Assessment: Submit Week 4 work on Building P"
+									},
+									{
+										"0": "Inheritance & Relational Schemas"
+									},
+									{
+										"0": "Assessment 1-Part A: Q&A"
+									},
+									{
+										"0": "Week 6: Self-Review Quiz (6 questions)"
+									},
+									{
+										"0": "LTIFR Scenarios 1 and 2"
+									},
+									{
+										"0": "Week 5 content discussion (Q&A)"
+									},
+									{
+										"0": "SUBMIT your Assessment 2 - Part A: Construction Documents (Week 8; 35%)"
+									},
+									{
+										"0": "UO Problem Solving and Programming (Sample Exam 7) (Ref: SP62020)"
+									},
+									{
+										"0": "UO Big Data Analytics (Secondary Exam) (Ref: SP12021)"
+									},
+									{
+										"0": "Part B: Quiz"
+									},
+									{
+										"0": "UO Problem Solving and Programming (Sample Exam 4) (Ref: SP62020)"
+									},
+									{
+										"0": "UO Problem Solving and Programming (Final Exam) (Ref: SP62019)"
+									},
+									{
+										"0": "Aggregate examples"
+									},
+									{
+										"0": "SUBMIT Assessment 2 - Part A: Background & Analysis of Firm (30%; Week 6)"
+									},
+									{
+										"0": "Concept video handout: Control Structures - for loop"
+									},
+									{
+										"0": "Part C: List three major types of heavy duty pavements and examine the properties and construction detailing of each and compare in note form their application and various advantages and /or disadvantages."
+									},
+									{
+										"0": "SUBMIT Assessment 1 - Part A: Design and Documentation (Week 5; 20%)"
+									},
+									{
+										"0": "UO Quantitative Methods for Business (Final Exam) (Ref: SP12020)"
+									},
+									{
+										"0": "Construction Requirements and Safety Plans Task Instructions"
+									},
+									{
+										"0": "Learning Activity 7.2: Answer"
+									},
+									{
+										"0": "HURDLE Assessment: Submit Week 7 work on Building P"
+									},
+									{
+										"0": "Concrete works"
+									},
+									{
+										"0": "UO Predictive Analytics (Final Exam) (Ref: SP12020)"
+									},
+									{
+										"0": "4.1 Slides: Introduction to Building Elements"
+									},
+									{
+										"0": "Week 9: Self-Review Quiz (5 questions)"
+									},
+									{
+										"0": "Functional Dependencies"
+									},
+									{
+										"0": "Assessment 1 Part B: Construct a Wall and Roof Model - (15% Due Week 5)"
+									},
+									{
+										"0": "UO Programming Fundamentals (Live Programming Test 4) (Ref: SP12020)"
+									},
+									{
+										"0": "Learning Activity: Rafter Design (10 questions)"
+									},
+									{
+										"0": "Deleting data: Challenges & Questions"
+									},
+									{
+										"0": "Assessment 2 - Part B: Accident Database Analysis (35%)"
+									},
+									{
+										"0": "Week 9.1 LIVE CLASS (15): Hand drawing (16.11.2020)"
+									},
+									{
+										"0": "Week 4.2: Model detailing in Revit (2) (15.10.2020)"
+									},
+									{
+										"0": "UO Network Fundamentals (Secondary Exam) (Ref: SP32019)"
+									},
+									{
+										"0": "Self-Check Quiz: Week 5"
+									},
+									{
+										"0": "UO Problem Solving and Programming (Sample Exam 1) (Ref: SP32020)"
+									},
+									{
+										"0": "Learning Activity: Designing Purlins"
+									},
+									{
+										"0": "2.1 Slides & Notes: Framing Design Components"
+									},
+									{
+										"0": "Discussion Forum - Questions and Challenges: Defining Classes Part 1"
+									},
+									{
+										"0": "Week 7 Learning Activity Forum: Exits and Escape Paths for the Bean Bar Cafe and Jamal's Gym"
+									},
+									{
+										"0": "Week 4.2: LIVE CLASS MEETING (2) (30.04.2020)"
+									},
+									{
+										"0": "2017 SP2"
+									},
+									{
+										"0": "UO Problem Solving and Programming (Final Exam) (Access Plan) - Part B (Ref: SP62020)"
+									},
+									{
+										"0": "Learning Activity: Deep footing (5 questions)"
+									},
+									{
+										"0": "Week 1 Q&A Forum"
+									},
+									{
+										"0": "Assessment 2 Part B: 3 Substructure (15%, due end of Week 4)"
+									},
+									{
+										"0": "Week 7: Self-Review Quiz"
+									},
+									{
+										"0": "Week 6: Electrical Systems (27.10.2020)"
+									},
+									{
+										"0": "UO Programming Concepts (Final Exam) (Ref: SP32021)"
+									},
+									{
+										"0": "Learning Activity: Wall Bracing (3 questions)"
+									},
+									{
+										"0": "Transcript: Python Standard Library"
+									},
+									{
+										"0": "3.2 Construction Professionals - Slides and Notes:"
+									},
+									{
+										"0": "UO IT Fundamentals (Final Exam) Access Plan Part B (Ref: SP12020)"
+									},
+									{
+										"0": "Week 10 LIVE CLASS (17): Construction Hand drawings Review & end of course celebration (10.06.2021)"
+									},
+									{
+										"0": "7.3 Slides: Cost Control of Engineering Services"
+									},
+									{
+										"0": "Submit Assessment 1: Part C (20%; Due Week 9)"
+									},
+									{
+										"0": "Practice activity: Part C - Building Type 1"
+									},
+									{
+										"0": "Slides and Notes: Structures and loads"
+									},
+									{
+										"0": "UO Quantitative Methods for Business (Secondary Exam) (Ref: SP12021)"
+									},
+									{
+										"0": "Lecture files - ppt & Pdfs (back Up)"
+									},
+									{
+										"0": "Week7a L"
+									},
+									{
+										"0": "Learning Activity:  Pavements and Pavement Materials (5 questions)"
+									},
+									{
+										"0": "Amendments & clarifications Part A"
+									},
+									{
+										"0": "Week 8 LIVE CLASS (13): Construction Documents Q&A (14.11.2019)"
+									},
+									{
+										"0": "UO Predictive Analytics (Secondary Exam) (Ref: SP1 2021)"
+									},
+									{
+										"0": "Week9 SPs"
+									},
+									{
+										"0": "Boyce-Codd Normal Form"
+									},
+									{
+										"0": "5.2 Slides: Averages, Norms, and Deviations"
+									},
+									{
+										"0": "SUBMIT your Assessment 2 - Part B.1 - Review & Reflection on Team Progress (Week 10; 15%)"
+									},
+									{
+										"0": "Learning  Activity: Soil Classification"
+									},
+									{
+										"0": "UO Programming Fundamentals (Final Exam) (Ref: SP12020)"
+									},
+									{
+										"0": "Week 9 Drop in session"
+									},
+									{
+										"0": "UO Problem Solving and Programming (Sample Exam 2) (Ref: SP32021)"
+									},
+									{
+										"0": "Week 7 LIVE CLASS (12): Construction Documents Q&A (9.11.2019)"
+									},
+									{
+										"0": "Answer to the Question Set 7: Polymorphism and Abstract Classes"
+									},
+									{
+										"0": "Assessment 1 Quiz 3 - Q&A Forum"
+									},
+									{
+										"0": "Submit Assessment 2: Stages 2,3 & 4 (30%; Due Week 10)"
+									},
+									{
+										"0": "UO Problem Solving and Programming (Sample Exam 4) (Ref: SP32020)"
+									},
+									{
+										"0": "UO IT Fundamentals (Final Exam) (Ref: SP42019)"
+									},
+									{
+										"0": "UO Problem Solving and Programming (Sample Exam 8) (Ref: SP32020)"
+									},
+									{
+										"0": "Share your reading journal entry for Halicioglu, Arditi, & Gunhan, 2012"
+									},
+									{
+										"0": "3.4 Slides & Notes: In-Situ Walls"
+									},
+									{
+										"0": "Assessment 2A Q&A Forum"
+									},
+									{
+										"0": "Has been replaced by the H5P activity: Activity 10B - Knowledge Check Quiz"
+									},
+									{
+										"0": "Week 9 LIVE CLASS (13): Construction Hand drawings Q&A (04.06.2020)"
+									},
+									{
+										"0": "Clustered vs. Nonclustered Index Structures in SQL Server [HD, 720p]"
+									},
+									{
+										"0": "Fire Safety of Concrete Buildings: Cement Concrete & Aggregates Australia"
+									},
+									{
+										"0": "CreateSimpsonsExample 2016 SP2"
+									},
+									{
+										"0": "UO Programming Fundamentals (Secondary Exam) (Ref: SP42020)"
+									},
+									{
+										"0": "UO Programming Fundamentals (Live Programming Test 8) (Ref: SP12020)"
+									},
+									{
+										"0": "Assessments Q & A Forum"
+									},
+									{
+										"0": "Learning Task - 7.2 - Let¿s go deeper with functions¿"
+									},
+									{
+										"0": "Week 10- Discussion and Q&A forum"
+									},
+									{
+										"0": "QSP Tutorial 3.4: Measuring a Raft Slab Using CostX"
+									},
+									{
+										"0": "Worked example of using different types of IndexesURL"
+									},
+									{
+										"0": "Clustered and Non-Clustered Indexes explained"
+									},
+									{
+										"0": "Assessment 1-Part D: Q&A"
+									},
+									{
+										"0": "8.2  Slides & Notes: Pre-stressed Concrete  Rapid Construction"
+									},
+									{
+										"0": "Submit Assessment 2: Part E (12%; Due Week 10)"
+									},
+									{
+										"0": "Week 5 content Q & A"
+									},
+									{
+										"0": "Drawings & Specifications Meeting (12.05.2019)"
+									},
+									{
+										"0": "Quiz 1: Briefing, Design and Regulatory Compliance (Week 3; 10%)"
+									},
+									{
+										"0": "SUBMIT Assessment 1 - Parts B, C, D, E & F: Project - Residential House Analysis Report (Week 10; 60%)"
+									},
+									{
+										"0": "Quiz 4: Building Information Modelling: 4D and 5D BIM (10% Due Week 10)"
+									},
+									{
+										"0": "CostX Files: Practice Answers - Week 8"
+									},
+									{
+										"0": "Week 3 PPT"
+									},
+									{
+										"0": "Week 4: Self-Review Quiz (1 question)"
+									},
+									{
+										"0": "Assessment 1 - Part B - Defective Residential Building Work & Part C - Offer and Acceptance"
+									},
+									{
+										"0": "7.2 Slides: Complex and Smart Buildings"
+									},
+									{
+										"0": "HURDLE Assessment: Week 9 work on Building P"
+									},
+									{
+										"0": "6.1 Slides: Various Forms of Building Cost Data"
+									},
+									{
+										"0": "Learning Task 5.1 Read Chapter 4, Section 4.1-4.4 of Business Intelligence: A Managerial Approach"
+									},
+									{
+										"0": "Week 3 PrePrac ANS"
+									},
+									{
+										"0": "Assessment 2-Quiz C: Q&A"
+									},
+									{
+										"0": "Assessment 1 Part A - FAQs"
+									},
+									{
+										"0": "Predicates ¿ challenges & questions."
+									},
+									{
+										"0": "Learning Activity: Estimating Methods"
+									},
+									{
+										"0": "SA Quiz 2 ¿ Chapt 2 & 3"
+									},
+									{
+										"0": "Zoom recording 18/3/19 Assngt 1-3 & Exam"
+									},
+									{
+										"0": "2.2.3 Learning Activity: Using Dim Paper to Prepare a BQ"
+									},
+									{
+										"0": "CostX Files: Practice Answers - Week 5"
+									},
+									{
+										"0": "Assessment 1 Part A Q&A Forum"
+									},
+									{
+										"0": "Assignment 1 Q&A Forum"
+									},
+									{
+										"0": "Construction Materials: Properties: Performance specification"
+									},
+									{
+										"0": "Quiz: Chapter 7 on Inheritance (Week 6)"
+									},
+									{
+										"0": "Submission Point: Prescriptive Analytics"
+									},
+									{
+										"0": "Week 7.1 LIVE CLASS (12):Week 7.1: Assessment 2-A: Construction Documents (2) (17.05.2021)"
+									},
+									{
+										"0": "HURDLE Assessment: Submit Week 10 work on Building P"
+									},
+									{
+										"0": "Activity 10B image"
+									},
+									{
+										"0": "5.2 Slides: Height and Shape"
+									},
+									{
+										"0": "Topic 4 Videos"
+									},
+									{
+										"0": "Categorising Course Emails CIVE1007"
+									},
+									{
+										"0": "FLASHOVER AND BACKDRAFT: A Primer"
+									},
+									{
+										"0": "Assessment 2 Quiz 2 Q&A Forum"
+									},
+									{
+										"0": "Luby Mitchell LUBMY003 89045 Supplementary Assessment Mitchell Luby 110270670"
+									},
+									{
+										"0": "Week 3 Drop in session"
+									},
+									{
+										"0": "SUBMIT your Assessment 1 - Part A: Introduction & History, Extraction and processing of construction materials (Week 4; 20%)"
+									},
+									{
+										"0": "2.2.2 Learning Activity: Working with Dimension Paper Quiz"
+									},
+									{
+										"0": "Slides and Notes: 7.2 - ASMM Rules"
+									},
+									{
+										"0": "Submit Assessment 1 - Part A - CONCEPT REPONSES (15%)"
+									},
+									{
+										"0": "Slides and Notes: 8.1 - Windows  Doors"
+									},
+									{
+										"0": "CostX Files: Practice Answers - Week 9"
+									},
+									{
+										"0": "Quiz D - Materials and Products"
+									},
+									{
+										"0": "Calculate with EXCEL"
+									},
+									{
+										"0": "SA Quiz 3 - Chapter 4 & 5"
+									},
+									{
+										"0": "CostX Files: Practice Answers - Part E"
+									},
+									{
+										"0": "UO Quantitative Methods for Business (Final Exam) (Part B) (Ref: SP12021)"
+									},
+									{
+										"0": "Week 9- Discussion and Q&A forum"
+									},
+									{
+										"0": "Week 3 Practical Results"
+									},
+									{
+										"0": "Construction Materials: Disposal"
+									},
+									{
+										"0": "Submission Point Assessment 2: Problem Solving Exercise (Database Modelling & Design)"
+									},
+									{
+										"0": "Tutor Q&A forum"
+									},
+									{
+										"0": "Online Exam Q&A Forum"
+									},
+									{
+										"0": "LARSY006 UO Structures 1 Supplementary Assessment Details 2020 SP6 Samuel Larosa"
+									},
+									{
+										"0": "Tutor Documents"
+									},
+									{
+										"0": "Reading: Smith J, Jagger D, Love P & Olatunje OA 2016, Table 4.3, in Building Cost Planning for the Design Team, London: Routledge pp 118"
+									},
+									{
+										"0": "Learning Activity: Fire Process"
+									},
+									{
+										"0": "Transcript: User Controlled Inputs & Outputs"
+									},
+									{
+										"0": "Activity 1O - Weekly Review Quiz - Polynomials: expansion and factorisation"
+									},
+									{
+										"0": "UO Database Fundamentals (Final Exam) ¿ Part A (Ref: SP32021)"
+									},
+									{
+										"0": "Table 2: Planning the proposed site layout"
+									},
+									{
+										"0": "Week 8 Activity Forum: Sequencing Activity"
+									},
+									{
+										"0": "UO Network Fundamentals (Secondary Exam) (Ref: SP32020)"
+									},
+									{
+										"0": "UO Business Intelligence (Final Exam) (Ref: SP1 2021)"
+									},
+									{
+										"0": "Continuous Assessment Week 8 Practical Submission Point"
+									},
+									{
+										"0": "Topic 10 concepts"
+									},
+									{
+										"0": "Learning Activity: Purlin Design"
+									},
+									{
+										"0": "NCC: Building Code of Australia - Website link"
+									},
+									{
+										"0": "Week 4 PrePracQuestions"
+									},
+									{
+										"0": "Week 4.3 : Revit Q&A Meeting (3) (20.10.2019)"
+									},
+									{
+										"0": "UO Database Fundamentals (Final Exam) ¿ Part B (Ref: SP32020)"
+									},
+									{
+										"0": "Assessment Q & A Forum"
+									},
+									{
+										"0": "Week 2: Self-Review Quiz (5 questions)"
+									},
+									{
+										"0": "Week 2 content Q &A"
+									},
+									{
+										"0": "Assessment 1 Part A: Bridge Visit Report (15%; Due Week 3)"
+									},
+									{
+										"0": "Learning Activity: Purlin (5 questions)"
+									},
+									{
+										"0": "Learning Task 6.5 Case Study: Predicting Customer Buying Patterns - The Target Story"
+									},
+									{
+										"0": "SUBMIT Assessment 1 - Part A: AIR CONDITIONING SYSTEMS, CALCULATIONS & HYDRAULIC SERVICES  (Week 5; 25%)"
+									},
+									{
+										"0": "8.1 Slides & Notes: Suspended Flooring Concepts"
+									},
+									{
+										"0": "Slides and Notes: QSP Topic 1.2 - Introduction to Cost X"
+									},
+									{
+										"0": "Assessment 2: Part B - BQ Quiz 2 (25%; Due Week 10) (copy)"
+									},
+									{
+										"0": "Learning Module: Resource Smoothing"
+									},
+									{
+										"0": "HURDLE Assessment: Submit Week 5 work on Building P"
+									},
+									{
+										"0": "Part C: Trade Summary 2 (18%) and Part D: Tender Schedule and Cover Letter (12%) (Week 9)"
+									},
+									{
+										"0": "Quiz: Algebra and re-arranging equations"
+									},
+									{
+										"0": "SUBMIT Assessment 1 - Part C: Interrogating a BIM Model (Week 10; 25%)"
+									},
+									{
+										"0": "10.2 Slides: Cost Planning Enviornmentally Smart Buildings"
+									},
+									{
+										"0": "Learning Activity: Concrete works"
+									},
+									{
+										"0": "Week 9 Learning Activity Forum : Fire safety in special use buildings discussion - Theatres and proscenium curtains"
+									},
+									{
+										"0": "Selecting data: Challenges & Questions"
+									},
+									{
+										"0": "CostX Files: Practice Answers - Week 6"
+									},
+									{
+										"0": "Slides & Notes - Work Breakdown Structure"
+									},
+									{
+										"0": "Week 7.2 LIVE CLASS (13): Assessment 2-A: Construction Documents (3) (20.05.2021)"
+									},
+									{
+										"0": "Part B: Internal rate of return (IRR) Questions (20%)"
+									},
+									{
+										"0": "Assessment 2: Part A - BQ Quiz 1 (15%; Due Week 4)"
+									},
+									{
+										"0": "UO Programming Fundamentals (Final Exam) (Access Plan ¿ Part A) (Ref: SP42020)"
+									},
+									{
+										"0": "UO IT Fundamentals (Final Exam) Access Plan Part B (Ref: SP12021)"
+									},
+									{
+										"0": "UO Programming Fundamentals (Final Exam) (Access Plan ¿ Part A) (Ref: SP12020)"
+									},
+									{
+										"0": "SUBMIT Assessment 2: Part A Solar radiation and Thermal Comfort (Week 4; 10%)"
+									},
+									{
+										"0": "Construction Materials: Properties: Tolerances"
+									},
+									{
+										"0": "5.1 Slides: Various Forms of Building Cost Data"
+									},
+									{
+										"0": "UO Problem Solving and Programming (Sample Exam 4) (Ref: SP32021)"
+									},
+									{
+										"0": "Packet Tracer ¿ Introduction to Packet Tracer"
+									},
+									{
+										"0": "Week 8 content discussion (Q&A)"
+									},
+									{
+										"0": "8.1.1 Learning Activity: ASMM Clause and unit"
+									},
+									{
+										"0": "1.4 Slides & Notes: Preliminaries, Site Investigations  Review of Soils"
+									},
+									{
+										"0": "Learning Activity: Structure Elements (1 question)"
+									},
+									{
+										"0": "Learning Activity: Regulating for Building Efficiency and Green Ratings"
+									},
+									{
+										"0": "Weeks 3 & 4 Practical Activity Answer"
+									},
+									{
+										"0": "PART B: Trade Summary 2 (Week 8, 15%)"
+									},
+									{
+										"0": "UO IT Fundamentals (Secondary Exam) (Ref: SP12021)"
+									},
+									{
+										"0": "Zoom Session 2 -Solver & Linear Programming in Excel"
+									},
+									{
+										"0": "Slides and Notes: QSP Topic 7.2 - ASMM Rules"
+									},
+									{
+										"0": "Learning Task 4.2 Build Visuals Using the Q&A Feature"
+									},
+									{
+										"0": "Assessment 2:  PART A: BRIEF REPORT ADVICE"
+									},
+									{
+										"0": "Quiz: Check your answers to the Rearranging Equation problems"
+									},
+									{
+										"0": "Learning Activity: Roof & Wall Bracing (3 questions)"
+									},
+									{
+										"0": "UO Database Fundamentals (Sample Exam 2) (Ref: SP32020)"
+									},
+									{
+										"0": "Week 6 content discussion (Q&A)"
+									},
+									{
+										"0": "Slides and Notes: QSP Topic 9.1 - Finishes"
+									},
+									{
+										"0": "Q&A - Mission Impossible"
+									},
+									{
+										"0": "Submission Point Assessment 3: Programming (Query Processing)"
+									},
+									{
+										"0": "Z?eljeznic?ki most, Mursko Sredis?c´e (Croatia).1"
+									},
+									{
+										"0": "SUBMIT Assessment 2 - Part A - Building Assessment & Part B - Performance Solutions for Andrea Moharana"
+									},
+									{
+										"0": "UO Big Data Analytics (Final Exam) (Ref: SP12021)"
+									},
+									{
+										"0": "UO Essential Mathematics 2: Calculus (Final Exam) (Ref: SP32021)"
+									},
+									{
+										"0": "Week 2 - ActivitiesSOLUTIONS"
+									},
+									{
+										"0": "Assessment 1 - Part B: Spaghetti Bridge Written Report & Video Presentation; Due Week 7"
+									},
+									{
+										"0": "Revit Q&A Meeting 3 (29.05.2019)"
+									},
+									{
+										"0": "Assessment 2: Assignment Scenario 1 Forum"
+									},
+									{
+										"0": "Learning Activity 8.2: Answer"
+									},
+									{
+										"0": "Assessment 2-Quiz B: Q&A"
+									},
+									{
+										"0": "Additional MSDN Resources"
+									},
+									{
+										"0": "Part B: List five items how a slab could fail.   Select any two and provide further discussion on why they could fail and what precaution should be taken to prevent this occurrence."
+									},
+									{
+										"0": "4.4 Slides: Calculating Perimeter-on-Plan"
+									},
+									{
+										"0": "UO Network Fundamentals (Final Exam) (Ref: SP32021)"
+									},
+									{
+										"0": "Learning Task 9.2.2: Hot Water Services Instructions"
+									},
+									{
+										"0": "Additional example: Deployment diagrams"
+									},
+									{
+										"0": "Learning activity: Compare two cost plans"
+									},
+									{
+										"0": "eReading: Vertical safe separation distance between openings in multi-storey buildings having a fire resistant spandrel"
+									},
+									{
+										"0": "Quiz 1: Deterministic Scheduling (10% Due Week 3)"
+									},
+									{
+										"0": "Assignment One Q & A Forum"
+									},
+									{
+										"0": "9.1 Slides & Notes: Cladding Design"
+									},
+									{
+										"0": "Week 5.2 LIVE CLASS (10): Sheets generation in Revit (2) (25.10.2019)"
+									},
+									{
+										"0": "Week 8 LIVE CLASS (14): Construction Documents Q&A (09.10.2020)"
+									},
+									{
+										"0": "UO Programming Fundamentals (Final Exam) (Access Plan ¿ Part B) (Ref: SP42020)"
+									},
+									{
+										"0": "Concept Completion 2 (Weeks 4, 5 & 6)"
+									},
+									{
+										"0": "UO Programming Fundamentals (Secondary Exam) (Access Plan ¿ Part B) (Ref: SP12020)"
+									},
+									{
+										"0": "UO Problem Solving and Programming (Final Exam) (Ref: SP32021)"
+									},
+									{
+										"0": "Activity 3O - Week 3 Review Quiz: Solutions in Interval Notation"
+									},
+									{
+										"0": "SUBMIT Assessment 1 - Part C: BIM Model Interrogation  (Week 10; 25%)"
+									},
+									{
+										"0": "SQL - CASE Statements"
+									},
+									{
+										"0": "Submit Assessment 1 - Part B - CASE STUDY RESPONSES (25%)"
+									},
+									{
+										"0": "Assessment 2: Project (60% Due Week 10)"
+									},
+									{
+										"0": "Week 3: Self-Review Quiz (3 questions)"
+									},
+									{
+										"0": "Week10"
+									},
+									{
+										"0": "Quiz 4: Active Systems & Egress  (10% Due Week 9)"
+									},
+									{
+										"0": "Discussion Forum - Questions and Challenges: Basic Java"
+									},
+									{
+										"0": "Topic 5 Videos Part 1 - FamilyGuy &CounterfeitNotes"
+									},
+									{
+										"0": "how to export an image from revit"
+									},
+									{
+										"0": "RLB Digest 2017: Adelaide"
+									},
+									{
+										"0": "Slides and Notes: 7.1 - Plasterboard Lining"
+									},
+									{
+										"0": "Self-Check Quiz: Week 7"
+									},
+									{
+										"0": "eReading: Mind The Gap: The Dilemma Of Flexible Fire Barriers"
+									},
+									{
+										"0": "Download: Soils and foundations case study"
+									},
+									{
+										"0": "Submission Point - Part 1: Business Proposal"
+									},
+									{
+										"0": "Learning Task 5.4 Use Case: Global Superstore"
+									},
+									{
+										"0": "Learning Activity: Find POP Ratio"
+									},
+									{
+										"0": "Week 8 Submission"
+									},
+									{
+										"0": "Discussion Forum - Questions and Challenges: Defining Classes Part 2"
+									},
+									{
+										"0": "Week11 Triggers"
+									},
+									{
+										"0": "4.2 Slides: Building Elements ¿ Measurement Rules"
+									},
+									{
+										"0": "CostX Files: Practice Answers - Part C Hurdle Building Type 1"
+									},
+									{
+										"0": "Week 7 content discussion (Q&A)"
+									},
+									{
+										"0": "UO Programming Fundamentals (Secondary Exam) (Ref: SP42019)"
+									},
+									{
+										"0": "UO Problem Solving and Programming (Final Exam) (Special) (Ref: SP62020)"
+									},
+									{
+										"0": "1.1 Slides: The role of the Quantity Surveyor"
+									},
+									{
+										"0": "Assessment 1 Part A: Construction of Wall and Roof Model (20% Due Week 6)"
+									},
+									{
+										"0": "RyanV Supplementary Assessment"
+									},
+									{
+										"0": "Continuous Assessment Quiz Q&A Forum"
+									},
+									{
+										"0": "Exploring the basic SELECT statement"
+									},
+									{
+										"0": "SUBMIT Assessment 2 Part B: IRR Calculations (Excel file) (20%)"
+									},
+									{
+										"0": "UO Big Data Analytics (Final Exam) (Ref: SP42020)"
+									},
+									{
+										"0": "Week 2 - Activities"
+									},
+									{
+										"0": "1.3 Slides: The Methods and Techniques of Cost Planning"
+									},
+									{
+										"0": "Continuous Assessment Week 1 & 2 Practical Submission Point"
+									},
+									{
+										"0": "Concept Completion 3 (Weeks 7 & 8)"
+									},
+									{
+										"0": "Web Dev topic questions and answers - Week 6 A"
+									},
+									{
+										"0": "Learning Task 6.5 Case Study: Target Discussion Forum"
+									},
+									{
+										"0": "Advice for future students"
+									},
+									{
+										"0": "UO Programming Concepts (Secondary Exam) (Ref: SP32021)"
+									},
+									{
+										"0": "UO IT Fundamentals (Secondary Exam) Access Plan Part B (Ref: SP42019)"
+									},
+									{
+										"0": "CostX Files: Practice Answers - Week 4"
+									},
+									{
+										"0": "Complex WHERE clauses & Logical Conditions: Challenges & Questions"
+									},
+									{
+										"0": "Inserting data: Challenges & Questions"
+									},
+									{
+										"0": "Practice activity: Building Option 1A - Part B"
+									},
+									{
+										"0": "Continuous Assessment Week 2 Practical Submission Point"
+									},
+									{
+										"0": "Assessment 2a: Team interface design - Submit point"
+									},
+									{
+										"0": "Assessment 1: Part B - BQ Quiz 2 (25%; Due Week 10)"
+									},
+									{
+										"0": "Quiz 3: Resource allocation, Cash flow and Time/cost (crashing) (10% Due Week 8)"
+									},
+									{
+										"0": "UO Problem Solving and Programming (Secondary Exam) (Ref: SP32020)"
+									},
+									{
+										"0": "Submit Assessment 1: Part A (10%; Due Week 3)"
+									},
+									{
+										"0": "Week 5 Learning Activity Forum - Truss Postcard"
+									},
+									{
+										"0": "Assessment 2 Quiz 1 Q&A Forum"
+									},
+									{
+										"0": "Week 5.1 LIVE CLASS (8): Sheets generation in Revit (1) (19.10.2020)"
+									},
+									{
+										"0": "Slides & notes - PERT Explanation"
+									},
+									{
+										"0": "7.2 Slides & Notes: Underpinning for MSBs"
+									},
+									{
+										"0": "UO Database Fundamentals (Special Final Exam) ¿ Part B (Ref: SP32021)"
+									},
+									{
+										"0": "6.1 Climate change & greenhouse gases, Electricity supply sector"
+									},
+									{
+										"0": "4.4 Slides & Notes: Concrete Floor Finishes"
+									},
+									{
+										"0": "SUBMIT Assessment 2: Truss Analysis and Design Report Test (35%)"
+									},
+									{
+										"0": "UO Predictive Analytics (Final Exam) (Ref: SP1 2021) (copy)"
+									},
+									{
+										"0": "Introduction to Querying Databases"
+									},
+									{
+										"0": "Learning Activity: 6.2 IRR Exercise"
+									},
+									{
+										"0": "selleys"
+									},
+									{
+										"0": "Assessment 2 Part C: Superstructure Part D: Services and Finishes and Entire House Study Report (40% Due Week 10)"
+									},
+									{
+										"0": "HURDLE Assessment: Part C - Hurdle Building Type 1"
+									},
+									{
+										"0": "Topic 5 Videos Part 2 - Joins In ANY Outer"
+									},
+									{
+										"0": "4.2 Slides & Notes: Concrete Floor Joints"
+									},
+									{
+										"0": "UO IT Fundamentals (Secondary Exam) (Ref: SP42019)"
+									},
+									{
+										"0": "Learning Task 8.2 Read Topic 2, Chapter 3 on Data Governance pp. 329¿332"
+									},
+									{
+										"0": "Week 3.1 Live Class (1) : Mass modelling in Revit (1) (09.10.2019)"
+									},
+									{
+										"0": "Learning Task 8.1: Quiz on \"Wet Areas\" Instructions"
+									},
+									{
+										"0": "Concrete works - EXCEL with REMARKS"
+									},
+									{
+										"0": "Submission Point: Data Aggregation and Graphing"
+									},
+									{
+										"0": "Slides & Notes - Fast tracking and crashing"
+									},
+									{
+										"0": "Week 10 content discussion (Q&A)"
+									},
+									{
+										"0": "UO Problem Solving and Programming (Sample Exam 7) (Ref: SP32020)"
+									},
+									{
+										"0": "Learning Task 9.1 Read Chapter 8, Section 8.5 of Business Intelligence: A Managerial Approach"
+									},
+									{
+										"0": "UO Business Intelligence (Final Exam) (Ref: SP12020)"
+									},
+									{
+										"0": "UO IT Fundamentals (Final Exam) Access Plan Part A (Ref: SP42019)"
+									},
+									{
+										"0": "5.2 Slides & Notes: Engineered Timber Products"
+									},
+									{
+										"0": "UO Quantitative Methods for Business (Secondary Exam) (Ref: SP32020)"
+									},
+									{
+										"0": "Week 5.2: Sheets generation in Revit (2) (Thursday 06/05/2021, 7:30 pm)"
+									},
+									{
+										"0": "Learning Activity: Slope Instability (5 questions)"
+									},
+									{
+										"0": "QSP Tutorial 3.3: Setting Up of CostX for Measurement of a Raft Slab"
+									},
+									{
+										"0": "Zoom session 1 on weeks 1 & 2 with Excel presented by Chris Jeffs"
+									},
+									{
+										"0": "Quiz 2: Air Conditioning Systems, Calculations and Hydraulic Services  (Week 6; 12.5%)"
+									},
+									{
+										"0": "Week 1 content Q & A"
+									},
+									{
+										"0": "UO Problem Solving and Programming (Sample Exam 6) (Ref: SP32020)"
+									},
+									{
+										"0": "Learning Activity: Contact IT Helpdesk to delete"
+									},
+									{
+										"0": "Learning Activity: Pavements and Pavement Materials (5 questions)"
+									},
+									{
+										"0": "SUBMIT Assessment 1 - Part B: Verandah Design (30%; Week 4)"
+									},
+									{
+										"0": "learning task 8.2: Resources"
+									},
+									{
+										"0": "SA Quiz 1 - Week 1  & Chapt A"
+									},
+									{
+										"0": "UO Problem Solving and Programming (Sample Exam 8) (Ref: SP62020)"
+									},
+									{
+										"0": "SUBMIT Assessment 2: Attempt 2 Part C Energy Efficiency (Week 8; 10%)"
+									},
+									{
+										"0": "HURDLE Assessment: Week 1 work on Building P"
+									},
+									{
+										"0": "Concept 6.1: Duress - Notes"
+									},
+									{
+										"0": "Transcript: If Statements"
+									},
+									{
+										"0": "10.1  Slides & Notes: Roof Designs"
+									},
+									{
+										"0": "Revit Q&A Meeting 4 (02.06.2019)"
+									},
+									{
+										"0": "Part C: Risk Analysis (20%)"
+									},
+									{
+										"0": "Submission Point Assessment 1b: Database Modelling & Design"
+									},
+									{
+										"0": "Review: Section J of the NCC , volume 2 - ABCB"
+									},
+									{
+										"0": "Week 6 Q&A Forum"
+									},
+									{
+										"0": "Assessment 2: Part B - BQ Quiz 2 (25%; Due Week 10)"
+									},
+									{
+										"0": "Week 6 content Q & A"
+									},
+									{
+										"0": "Submit Assessment 2: Report - Analytical Report, with Reading Journal Extract as Appendix (50% Due Week 9)"
+									},
+									{
+										"0": "Submission Point (Supplementary Assessment)- Continuous Assessment 1.1 & 1.2"
+									},
+									{
+										"0": "Self Review Exercise - Quiz: Support Reactions 2"
+									},
+									{
+										"0": "UO Quantitative Methods for Business (Final Exam) (Ref: SP42019)"
+									},
+									{
+										"0": "180907 UO CC CourseOutline"
+									},
+									{
+										"0": "Learning Activity: Column Design 2"
+									},
+									{
+										"0": "\tWeek 5.1: Sheets generation in Revit (1) (Monday 03/05/2021, 8:30 pm)"
+									},
+									{
+										"0": "Submit Assessment 1: Part B (25%; Due Week 7)"
+									},
+									{
+										"0": "UO Database Fundamentals (Final Exam) ¿ Part B (Ref: SP62020)"
+									},
+									{
+										"0": "Assessment 1-Part B: Q&A"
+									},
+									{
+										"0": "4.1 Slides: The Cost of Design Decisions"
+									},
+									{
+										"0": "UO Quantitative Methods for Business (Final Exam) (Ref: SP12019)"
+									},
+									{
+										"0": "Assessment 1 Part B - Q&A"
+									},
+									{
+										"0": "Part A: My role as a building estimator (18%; Week 3)"
+									},
+									{
+										"0": "Course Q&A forum"
+									},
+									{
+										"0": "1000 pixels"
+									},
+									{
+										"0": "Submit Assessment 1: Part C (25%; Due Week 10)"
+									},
+									{
+										"0": "Week 10: Self-Review Quiz (4 questions)"
+									},
+									{
+										"0": "Week 5 Submission"
+									},
+									{
+										"0": "JOHCY031 UO Structures 1 Supplementary Assessment Details 2020 SP6 Christopher Johnson"
+									},
+									{
+										"0": "Submit Assessment 2: Stage 1 - Lab report (10%; Due Week 7)"
+									},
+									{
+										"0": "Submit Assessment 2: Part C (12%; Due Week 7)"
+									},
+									{
+										"0": "180810 UO CA Course Outline"
+									},
+									{
+										"0": "UO Database Fundamentals (Final Exam) ¿ (Ref: SP32020)"
+									},
+									{
+										"0": "Assessment 2 Quiz 2 (Q&A)"
+									},
+									{
+										"0": "UO Quantitative Methods for Business (Secondary Exam) (Ref: SP42020)"
+									},
+									{
+										"0": "Slides & Notes: QSP 6.1 - Stud Construction  ASMM"
+									},
+									{
+										"0": "SUBMIT your Assessment 1 - Part C: Reflection (Week 10; 10%)"
+									},
+									{
+										"0": "10.3 Slides: Regulating and Rating for Building Sustainability"
+									},
+									{
+										"0": "Views in MS-SQL Server (Youtube)"
+									},
+									{
+										"0": "Submit Assessment 2: Part A (12%; Due Week 2)"
+									},
+									{
+										"0": "10.2.3 - Why must building¿s long-term cost impacts be considered in the early stages of design?"
+									},
+									{
+										"0": "UO Mathematical Methods for Engineers 2 (Final Exam) (Ref: SP32021)"
+									},
+									{
+										"0": "Week 3.2 Mass modelling in Revit Q&A  (23.04.2020)"
+									},
+									{
+										"0": "Steel Frames Tolerances (04.09.2019)"
+									},
+									{
+										"0": "UO Database Fundamentals (Sample Exam 2) (Ref: SP62020)"
+									},
+									{
+										"0": "SA Quiz 1 - Topic 1 & Chapter A (Week 3)"
+									},
+									{
+										"0": "CostX Files: Practice Answers - Week 2"
+									},
+									{
+										"0": "Slides & notes -Project Management Basics"
+									},
+									{
+										"0": "Part E: Tender Pitch Video (6%; Week 10)"
+									},
+									{
+										"0": "180809 UO CC Course Outline"
+									},
+									{
+										"0": "Learning Activity: Identify Timber Framing Members"
+									},
+									{
+										"0": "Week 4 Q&A Forum"
+									},
+									{
+										"0": "The Australian Construction Industry: A culture of conflict"
+									},
+									{
+										"0": "Assessment 2: Report Template Example"
+									},
+									{
+										"0": "Learning Activity: Truss Analysis Quiz Response"
+									},
+									{
+										"0": "Learning activity: Time, Cost & Quality"
+									},
+									{
+										"0": "Slides  and Notes: 4.1 - Billing"
+									},
+									{
+										"0": "SUBMIT Assessment 2: Part C Energy Efficiency (Week 7; 10%)"
+									},
+									{
+										"0": "3.2 Slides: Building Elements ¿ Measurement Rules"
+									},
+									{
+										"0": "SUBMIT Assessment 2 Part A: NPV Calculations (Excel file) (20%)"
+									},
+									{
+										"0": "Assessment 1-Part C: Q&A"
+									},
+									{
+										"0": "Advice for New Students"
+									},
+									{
+										"0": "UO Database Fundamentals (Secondary Exam) ¿ Part A (Ref: SP42020)"
+									},
+									{
+										"0": "Self-Check Quiz: Week 3"
+									},
+									{
+										"0": "5.4 Slides & Notes: Reinforced Masonry Construction"
+									},
+									{
+										"0": "Web Dev topic questions and answers - Week 7 B"
+									},
+									{
+										"0": "UO Programming Concepts (International Final Exam)(Ref: SP32021)"
+									},
+									{
+										"0": "Week 9: Construction & Commissioning (17.11.2020)"
+									},
+									{
+										"0": "In order to design different members and also to determine the displacements, deformations and movements of structures, two main parameters called Stress and Strain need to be understood.? Define Stress and Strain."
+									},
+									{
+										"0": "Learning Activity: Footing (5 questions)"
+									},
+									{
+										"0": "Concept 4.3: Promissory Estoppel - Notes"
+									},
+									{
+										"0": "SUBMIT Assessment 2 Part C: Risk Analysis (Excel file) & Executive Summary (Word Document) (20%)"
+									},
+									{
+										"0": "Assessment 1 Part C Q&A Forum"
+									},
+									{
+										"0": "How to add Course Emails"
+									},
+									{
+										"0": "2.1.2 Learning Activity: Measuring a trench excavation"
+									},
+									{
+										"0": "Part A: Net Present Value (NPV) Questions (20%)"
+									},
+									{
+										"0": "Week 5: Self-Review Quiz (5 questions)"
+									},
+									{
+										"0": "7.2 Slides: Functional Briefs"
+									},
+									{
+										"0": "Assessment 2: Problem Solving Exercise Viva"
+									},
+									{
+										"0": "Assessment 1 Part A: House Study (40% Due Week 5)"
+									},
+									{
+										"0": "UO Quantitative Methods for Business (Secondary Exam) (Part A) (Ref: SP12021"
+									},
+									{
+										"0": "UO Programming Fundamentals (Secondary Exam) (Ref: SP32020)"
+									},
+									{
+										"0": "Week 3.2 Mass modelling in Revit Q&A  (22.04.2021)"
+									},
+									{
+										"0": "Forum: Environmental impact weightings"
+									},
+									{
+										"0": "Assessment 1 - Bridge Structures - Part B: Written Report (40%) and Part C: Video Presentation (10%); Due Week 7"
+									},
+									{
+										"0": "Submit Assessment 2: Report - Part A - Reading Journal Extract as Appendix and Part B - Analytical Report (50% Due Week 9)"
+									},
+									{
+										"0": "8.1 Slides: Below the Line¿ Costs"
+									},
+									{
+										"0": "Assessment 2 Part C & D: Entire House Study Report (40% due Friday Week 10)"
+									},
+									{
+										"0": "Slides & Notes - Resource Smoothing and Resource Levelling"
+									},
+									{
+										"0": "2.4 Slides & Notes: Elements"
+									},
+									{
+										"0": "Self-Check Quiz: Week 9"
+									},
+									{
+										"0": "SA Quiz 4 - Chapter B & 10"
+									},
+									{
+										"0": "SUBMIT your Assessment 1 - Part A: History & Extraction (Week 2; 12%)"
+									},
+									{
+										"0": "Assessment 1: Part A & B Discussion Forum"
+									},
+									{
+										"0": "Submit Assessment 2: Part D (10%; Due Week 8)"
+									},
+									{
+										"0": "UO Mathematical Methods for Engineers 2 (Secondary Exam) (Ref: SP32021)"
+									},
+									{
+										"0": "Week 4.1 Live class meeting (1): Roof, room tag, schedules (28.04.2020)"
+									},
+									{
+										"0": "Week2 Practical ¿ access SAS"
+									},
+									{
+										"0": "Week 3: Air Conditioning Systems and Calculations (1) (Tuesday 06/10/2020, 8:00 pm)"
+									},
+									{
+										"0": "SUBMIT your Assessment 1 - Part C: Structural, Fire & Environmental properties (Week 5; 20%)"
+									},
+									{
+										"0": "SP5 Triggers"
+									},
+									{
+										"0": "Submit Assessment 2: Part C (15%; Due Week 6)"
+									},
+									{
+										"0": "7.1 Slides & Notes: Multi-storey building frames"
+									},
+									{
+										"0": "Learning Activity: Life cycle costing"
+									},
+									{
+										"0": "Week 4 - ActivitiesSOLUTIONS"
+									},
+									{
+										"0": "8000 pixels"
+									},
+									{
+										"0": "UO Engineering Mechanics (Final Exam) (Ref: SP62020)"
+									},
+									{
+										"0": "Self-Check Quiz: Week 4"
+									},
+									{
+										"0": "UO Problem Solving and Programming (Sample Exam 5) (Ref: SP32021)"
+									},
+									{
+										"0": "SUBMIT Assessment 2: Part D Lighting and Acoustics (Week 10; 10%)"
+									},
+									{
+										"0": "UO Quantitative Methods for Business Access Plan Part B (Final Exam) (Ref: SP42020)"
+									},
+									{
+										"0": "OFFICE - Learning Activity 9.1: Drawings  Specifications"
+									},
+									{
+										"0": "CostX Software: STUDENT LICENCE APPLICATION FORM"
+									},
+									{
+										"0": "Assessment 1: Q&A (Common)"
+									},
+									{
+										"0": "Learning Activity: Effective stresses and soil strength"
+									},
+									{
+										"0": "Course Q&A Forum"
+									},
+									{
+										"0": "UO IT Fundamentals (Final Exam) (Ref: SP12021)"
+									},
+									{
+										"0": "Submit Assessment 2: Part A (10%; Due Week 2)"
+									},
+									{
+										"0": "Quiz 3: Resource scheduling, allocation, Cash flow and Time (10% Due Week 8)"
+									},
+									{
+										"0": "Assessment 2 Part A: Introduction and Preliminary Works (5% Due Week 2)"
+									},
+									{
+										"0": "UO IT Fundamentals (Final Exam) (Ref: SP12020)"
+									},
+									{
+										"0": "UO IT Fundamentals (Final Exam) Access Plan Part A (Ref: SP12020)"
+									},
+									{
+										"0": "7.3 Slides & Notes: Sequence of supply and erection"
+									},
+									{
+										"0": "Assessment Q&A Forum"
+									},
+									{
+										"0": "Quiz: Chapter 13 on Interfaces and Inner Classes (Week 10)"
+									},
+									{
+										"0": "UO Problem Solving and Programming (Special Final Exam) (Ref: SP32020)"
+									},
+									{
+										"0": "Practice activity: Building Option 1A - Part D"
+									},
+									{
+										"0": "UO Database Fundamentals (Final Exam) ¿ Part A (Ref: SP32020)"
+									},
+									{
+										"0": "SUBMIT your Assessment 1 - Part B : Extraction & Processing (Week 3; 10%)"
+									},
+									{
+										"0": "Loggem 2010"
+									},
+									{
+										"0": "Learning task 3.7 Case Study: Blastrac"
+									},
+									{
+										"0": "8.3 Slides: Escalation and Excluded Costs"
+									},
+									{
+										"0": "UO Problem Solving and Programming (Sample Exam 1) (Ref: SP32021)"
+									},
+									{
+										"0": "Assessment 1 Part C: Written Report (20% Due Week 6)"
+									},
+									{
+										"0": "Drop-in meeting about quiz 3 & assessment 1 -Parts B, C and D (23.05.2019)"
+									},
+									{
+										"0": "UO Database Fundamentals (Secondary Exam) ¿ Part A (Ref: SP62020)"
+									},
+									{
+										"0": "Assessment 1 Part C (Q&A)"
+									},
+									{
+										"0": "Week 3 Q&A Forum"
+									},
+									{
+										"0": "UO Engineering Mechanics (Secondary Exam) (Ref: SP32021)-Almutairi,Faisal Mohammed S"
+									},
+									{
+										"0": "3.1 Learning Activity - ASMM & Rules Governing Measurement of Substructure"
+									},
+									{
+										"0": "Learning Activity: Wet and dry trades"
+									},
+									{
+										"0": "Week 1 : Building Documents"
+									},
+									{
+										"0": "Learning Activity: Ground Improvement (5 questions)"
+									},
+									{
+										"0": "Week9 Views"
+									},
+									{
+										"0": "2.2.1  Learning Activity: Using Dim Paper to Prepare a BQ"
+									},
+									{
+										"0": "UO Engineering Mechanics (Final Exam) (Ref: SP3 2021)"
+									},
+									{
+										"0": "UO Programming Fundamentals (Sample Final Exam) (Ref: SP12020)"
+									},
+									{
+										"0": "Assessment 1a: PACT elements and presentation - Submit point"
+									},
+									{
+										"0": "Meet the Class: Postcard on Materials"
+									},
+									{
+										"0": "Learning Activity: Column Design 1 (4 questions)"
+									},
+									{
+										"0": "1"
+									},
+									{
+										"0": "Module 5 1.0.4"
+									},
+									{
+										"0": "Week 8 content Q & A"
+									},
+									{
+										"0": "SA Quiz 2 - Chapter 2 & 3 (Week 6)"
+									},
+									{
+										"0": "S2 Week 4 - Topic 3 - Truss Analysis"
+									},
+									{
+										"0": "Marjanovic Amanda MARAY104 89039 Supplementary Assessment"
+									},
+									{
+										"0": "7.1 Slides: Basics of Engineering Services"
+									},
+									{
+										"0": "Slides and Notes: QSP Topic 7.1 - Plasterboard Lining"
+									},
+									{
+										"0": "Learning Activity: Truss Analysis Quiz (1 question)"
+									},
+									{
+										"0": "Submit Assessment 1 - Part A: Design report & presentation (45%; Due Week 5)"
+									},
+									{
+										"0": "7.3 Slides: Functional and Non-Functional Areas"
+									},
+									{
+										"0": "Learning Task 6.1 Review Chapter 4, Section 4.5 of Business Intelligence: A Managerial Approach"
+									},
+									{
+										"0": "Week 5- Discussion and Q&A forum"
+									},
+									{
+										"0": "Slides and Notes: QSP Topic 2.1- ASMM"
+									},
+									{
+										"0": "Learning Activity: Demolition and Site Clearing"
+									},
+									{
+										"0": "STRCY014 UO Structures 1 Supplementary Assessment Details 2020 SP6 Christopher Streater"
+									},
+									{
+										"0": "UO Quantative Methods for Business (Secondary Exam) (Access Plan ¿ Part B) (Ref: SP42020)"
+									},
+									{
+										"0": "Week 7 content Q & A"
+									},
+									{
+										"0": "Answer Entry Practise"
+									},
+									{
+										"0": "Assessment 1 Quiz 1 - Q&A Forum"
+									},
+									{
+										"0": "LearningTask5-1 Client Scenario"
+									},
+									{
+										"0": "8.2 Slides: Design Development and Contract Contingency"
+									},
+									{
+										"0": "Quiz 3: Electrical systems and contract, BIM and clash detection  (Week 8; 10%)"
+									},
+									{
+										"0": "Learning Activity: Concrete Basics and Practices (12 questions)"
+									},
+									{
+										"0": "10.1 Slides: Environmentally Sustainable Design"
+									},
+									{
+										"0": "6.3 Slides & Notes: Prominent MSB"
+									},
+									{
+										"0": "Assessment 3: Programming Viva"
+									},
+									{
+										"0": "Week 6 LIVE CLASS (10): Revit Q&A (14.05.2020)"
+									},
+									{
+										"0": "Drop-in meeting about quiz 3 & assessment 1 (23.05.2019)"
+									},
+									{
+										"0": "6.1 Slides & Notes: Introduction to MSB"
+									},
+									{
+										"0": "Week 2 content discussion (Q&A)"
+									},
+									{
+										"0": "9.2 Slide: The Time Value of Money"
+									},
+									{
+										"0": "10.3 Slides & Notes: Roof Concrete, Glass  Interior Fitouts"
+									},
+									{
+										"0": "DB authorisation"
+									},
+									{
+										"0": "SUBMIT your Secondary Assessment"
+									},
+									{
+										"0": "Fire Separation Activity : Template for your response"
+									},
+									{
+										"0": "Database: Minimal Processing"
+									},
+									{
+										"0": "Week 3- Discussion and Q&A forum"
+									},
+									{
+										"0": "UO Business Intelligence (Secondary Exam) (Ref: SP42019)"
+									},
+									{
+										"0": "Week 3.2 Mass modelling in Revit Q&A  (08.10.2020)"
+									},
+									{
+										"0": "Assessment 1 - Part B: Spaghetti Bridge Written Report & Video Presentation; Due Week 7 (50%)"
+									},
+									{
+										"0": "UO Database Fundamentals (Secondary Exam) ¿ Part B (Ref: SP32020)"
+									},
+									{
+										"0": "Solar Absorbtance values Colorbond: Material & Colour Information"
+									},
+									{
+										"0": "2016 SPExamples"
+									},
+									{
+										"0": "7.1 Slides: Below the Line¿ Costs"
+									},
+									{
+										"0": "Week10 Demos SP5"
+									},
+									{
+										"0": "Packet Tracer ¿ Network Representation"
+									},
+									{
+										"0": "Drawings & Plan(not used)"
+									},
+									{
+										"0": "Learning Activity: The Cost of the nRAH"
+									},
+									{
+										"0": "Part 2 of 2: Claims"
+									},
+									{
+										"0": "UO Problem Solving and Programming (Secondary Exam) (Ref: SP32021)"
+									},
+									{
+										"0": "Week 1- Discussion and Q&A forum"
+									},
+									{
+										"0": "Exams & Revision specific Q & A"
+									},
+									{
+										"0": "HURDLE Assessment: Submit Week 8 work on Building P"
+									},
+									{
+										"0": "Week 2 - Practice with EXCEL answer file"
+									},
+									{
+										"0": "UO Programming Fundamentals (Live Programming Test 3) (Ref: SP12020)"
+									},
+									{
+										"0": "SQL Import Queries"
+									},
+									{
+										"0": "CostX Files: Practice Answers - Week 3"
+									},
+									{
+										"0": "7.3 Slides: Escalation and Excluded Costs"
+									},
+									{
+										"0": "UO Programming Fundamentals (Live Programming Test 5) (Ref: SP12020)"
+									},
+									{
+										"0": "Week 9 content Q & A"
+									},
+									{
+										"0": "BERDY013 UO Structures 1 Supplementary Assessment Details 2020 SP6 Dante Bernet"
+									},
+									{
+										"0": "Read drawings"
+									},
+									{
+										"0": "Discussion Forum - Questions and Challenges: Inheritance"
+									},
+									{
+										"0": "UO Predictive Analytics (Final Exam) (Ref: SP1 2021)"
+									},
+									{
+										"0": "UO Database Fundamentals (Secondary Exam) ¿ Part A (Ref: SP32021)"
+									},
+									{
+										"0": "4.3.1 Learning Activity: Analysis - Detailed response"
+									},
+									{
+										"0": "Learning Activity: 8.3 Break-Even Analysis Exercise"
+									},
+									{
+										"0": "Learning Task 5.5 Case Study: Cabelas Discussion Forum"
+									},
+									{
+										"0": "Self-Check Quiz: Week 1"
+									},
+									{
+										"0": "UO Problem Solving and Programming (Sample Exam 6) (Ref: SP62020)"
+									},
+									{
+										"0": "Notes: Views"
+									},
+									{
+										"0": "Learning Activity: Pricing Masonry"
+									},
+									{
+										"0": "Transcript: Objects (Part 2 - Paradigm)"
+									},
+									{
+										"0": "Quiz 1: Fire Chemistry (10% Due Week 3)"
+									},
+									{
+										"0": "Week 11 LoginAccount"
+									},
+									{
+										"0": "1.3 Slides: Time, Cost & Quality"
+									},
+									{
+										"0": "Learning Task 8.2: Analyse and evaluate Instructions"
+									},
+									{
+										"0": "UO Problem Solving and Programming (Sample Exam 8) (Ref: SP32021)"
+									},
+									{
+										"0": "SUBMIT Assessment 2: Part A Solar radiation and Thermal Comfort (Week 3; 10%)"
+									},
+									{
+										"0": "Forum: Proprietary colours"
+									},
+									{
+										"0": "Private Forum for Ass1PartB"
+									},
+									{
+										"0": "eReading: Stack effect in high-rise buildings: A review"
+									},
+									{
+										"0": "SUBMIT your Assessment 1 - Part C: Construction & Maintenance (Week 10; 30%)"
+									},
+									{
+										"0": "Assessment 2 Quiz 2 - Q&A"
+									},
+									{
+										"0": "Week 9.2 LIVE CLASS (16): Construction Hand drawings Q&A (03.06.2021)"
+									},
+									{
+										"0": "10.3 Directing a Project Process ¿ Authorise Project Closure Activity (PDF)"
+									},
+									{
+										"0": "Answer to the Question Set 9: File I/O"
+									},
+									{
+										"0": "UO Problem Solving and Programming (Final Exam) (Ref: SP32020)"
+									},
+									{
+										"0": "8. Formwork can be 50¿75% of the direct cost of a floor. How could you reduce the cost?"
+									},
+									{
+										"0": "Week 7.1 LIVE CLASS (12):Week 7.1: Assessment 2-A: Construction Documents (2) (2.11.2020)"
+									},
+									{
+										"0": "Assessment 2 Q&A forum"
+									},
+									{
+										"0": "Learning Activity: Wind Load (15 questions)"
+									},
+									{
+										"0": "Week 4.2: LIVE CLASS MEETING (2) (18.10.2019)"
+									},
+									{
+										"0": "UO Problem Solving and Programming (Final Exam) (Ref: SP62020)"
+									},
+									{
+										"0": "Web Dev topic questions and answers - Week 5 A"
+									},
+									{
+										"0": "Web Dev topic questions and answers - Week 7 A"
+									},
+									{
+										"0": "Quiz 1: Briefing, Design and Regulatory Compliance (Week 2; 13.34%)"
+									},
+									{
+										"0": "CostX Files: Practice Answers - Part A Hurdle Building Type 1"
+									},
+									{
+										"0": "Learning Activity: Pricing Roofing Works"
+									},
+									{
+										"0": "Week 5.2 LIVE CLASS (9): Sheets generation in Revit (2) (07.05.2020))"
+									},
+									{
+										"0": "Week 4 submission"
+									},
+									{
+										"0": "UO IT Fundamentals (Final Exam) Access Plan Part A (Ref: SP12021)"
+									},
+									{
+										"0": "6.1 Slides: Basics of Engineering Services"
+									},
+									{
+										"0": "Week 5.1 LIVE CLASS (9): Sheets generation in Revit (1) (23.10.2019)"
+									},
+									{
+										"0": "UO Problem Solving and Programming (Sample Exam 3) (Ref: SP32020)"
+									},
+									{
+										"0": "Project 2: Comparison of Classification Techniques"
+									},
+									{
+										"0": "Assessment 1-Part E: Q&A"
+									},
+									{
+										"0": "5.3 Slides: Calculating a Wall-to-Floor Ratio"
+									},
+									{
+										"0": "UO Problem Solving and Programming (Final Exam) (Access Plan - Part B) (Ref: SP62019)"
+									},
+									{
+										"0": "Replaced by the H5P activity: Activity 3B - Knowledge Check Questions"
+									},
+									{
+										"0": "SUBMIT Assessment 2 - Part A - Building Assessment & Part B - Performance Solutions"
+									},
+									{
+										"0": "UO Problem Solving and Programming (Sample Exam 3) (Ref: SP62020)"
+									},
+									{
+										"0": "Answer to the Question Set 1: Basic Java"
+									},
+									{
+										"0": "UO Problem Solving and Programming (Final Exam) (Access Plan - Part A) (Ref: SP62019)"
+									},
+									{
+										"0": "1.2 Slides & Notes: Communications and Teamwork"
+									},
+									{
+										"0": "Code Academy - Learn SQL"
+									},
+									{
+										"0": "Assessment 2-Quiz D: Q&A"
+									},
+									{
+										"0": "CostX Files: Practice Answers - Part D"
+									},
+									{
+										"0": "Week 5: Hydraulic Systems (20.10.2020)"
+									},
+									{
+										"0": "Week 3 Practical Activity"
+									},
+									{
+										"0": "Learning Activity: Pricing Internal Linings"
+									},
+									{
+										"0": "Week 3 content discussion (Q&A)"
+									},
+									{
+										"0": "UO Quantitative Methods for Business (Secondary Exam) (Ref: SP12020)"
+									},
+									{
+										"0": "Week 4 content Q & A"
+									},
+									{
+										"0": "CostX Files: Practice Answers - Week 1"
+									},
+									{
+										"0": "Learning Task 8.1 Topic 3, Chapter 6 (pp. 365¿367) of INFS2036 Business Intelligence"
+									},
+									{
+										"0": "HURDLE Assessment: Submit Week 6 work on Building P"
+									},
+									{
+										"0": "Normalisation Notes"
+									},
+									{
+										"0": "PART C: Tender Document and Tender Pitch Video (Week 10, 25%)"
+									},
+									{
+										"0": "UO Problem Solving and Programming (Sample Exam 2) (Ref: SP32020)"
+									},
+									{
+										"0": "Week 10 LIVE CLASS (14): Construction Hand drawings Review (11.06.2020)"
+									},
+									{
+										"0": "Quiz: Chapter 8 on Polymorphism and Abstract Classes (Week 7)"
+									},
+									{
+										"0": "Learning Activity: Measure and bill windows"
+									},
+									{
+										"0": "The Chicago Fire of 1871 and the 'Great Rebuilding'"
+									}
+								],
+								"schema": [
+									{
+										"key": "0",
+										"name": "ActivityName",
+										"type": "string"
+									}
+								]
+							},
+							"isSummary": false,
+							"language": "scala"
+						},
+						"persist_state": {
+							"view": {
+								"type": "details",
+								"chartOptions": {
+									"chartType": "bar",
+									"aggregationType": "count",
+									"categoryFieldKeys": [
+										"0"
+									],
+									"seriesFieldKeys": [
+										"0"
+									],
+									"isStacked": false
+								}
+							}
+						}
+					},
+					"4fdb1296-d3d6-428d-aacd-20ae6cb937ef": {
+						"type": "Synapse.DataFrame",
+						"sync_state": {
+							"table": {
+								"rows": [
+									{
+										"0": "Overview report",
+										"1": "317"
+									},
+									{
+										"0": "Course participation",
+										"1": "1017"
+									},
+									{
+										"0": "Forum summary report",
+										"1": "2"
+									},
+									{
+										"0": "Grade history",
+										"1": "8"
+									},
+									{
+										"0": "Book printing",
+										"1": "13"
+									},
+									{
+										"0": "Activity report",
+										"1": "247"
+									},
+									{
+										"0": "SCORM package",
+										"1": "1316"
+									},
+									{
+										"0": "Single view",
+										"1": "1809"
+									},
+									{
+										"0": "Glossary",
+										"1": "4438"
+									},
+									{
+										"0": "Chat",
+										"1": "3600"
+									},
+									{
+										"0": "URL",
+										"1": "74927"
+									},
+									{
+										"0": "Submission comments",
+										"1": "1562"
+									},
+									{
+										"0": "Scheduler",
+										"1": "27708"
+									},
+									{
+										"0": "Live logs",
+										"1": "176"
+									},
+									{
+										"0": "Extensions",
+										"1": "88969"
+									},
+									{
+										"0": "Online text submissions",
+										"1": "7128"
+									},
+									{
+										"0": "H5P",
+										"1": "547340"
+									},
+									{
+										"0": "Choice",
+										"1": "12049"
+									},
+									{
+										"0": "Lightbox Gallery",
+										"1": "33"
+									},
+									{
+										"0": "Book",
+										"1": "11454"
+									},
+									{
+										"0": "Quiz",
+										"1": "1555151"
+									},
+									{
+										"0": "Workshop",
+										"1": "15294"
+									},
+									{
+										"0": "Mahara portfolio",
+										"1": "79"
+									},
+									{
+										"0": "User report",
+										"1": "153250"
+									},
+									{
+										"0": "Wiki",
+										"1": "6842"
+									},
+									{
+										"0": "File",
+										"1": "799959"
+									},
+									{
+										"0": "Excel spreadsheet",
+										"1": "255"
+									},
+									{
+										"0": "External tool",
+										"1": "2920"
+									},
+									{
+										"0": "UniSA Media Library Video Assignment",
+										"1": "142"
+									},
+									{
+										"0": "Page",
+										"1": "131475"
+									},
+									{
+										"0": "Logs",
+										"1": "3921"
+									},
+									{
+										"0": "OpenDocument spreadsheet",
+										"1": "550"
+									},
+									{
+										"0": "Recycle bin",
+										"1": "9312"
+									},
+									{
+										"0": "File submissions",
+										"1": "84351"
+									},
+									{
+										"0": "Plain text file",
+										"1": "7"
+									},
+									{
+										"0": "Dialogue",
+										"1": "13588"
+									},
+									{
+										"0": "Group self-selection",
+										"1": "6326"
+									},
+									{
+										"0": "Folder",
+										"1": "106267"
+									},
+									{
+										"0": "System",
+										"1": "6842145"
+									},
+									{
+										"0": "Lesson",
+										"1": "76908"
+									},
+									{
+										"0": "Forum",
+										"1": "2680379"
+									},
+									{
+										"0": "Zoom meeting",
+										"1": "38706"
+									},
+									{
+										"0": "Database",
+										"1": "40802"
+									},
+									{
+										"0": "Feedback",
+										"1": "9215"
+									},
+									{
+										"0": "UniSA Media Library",
+										"1": "25"
+									},
+									{
+										"0": "Survey",
+										"1": "26"
+									},
+									{
+										"0": "Assignment",
+										"1": "1489536"
+									},
+									{
+										"0": "{\"$numberDouble\":\"NaN\"}",
+										"1": "9051"
+									},
+									{
+										"0": "Grader report",
+										"1": "15152"
+									}
+								],
+								"schema": [
+									{
+										"key": "0",
+										"name": "Component",
+										"type": "string"
+									},
+									{
+										"key": "1",
+										"name": "count",
+										"type": "bigint"
+									}
+								]
+							},
+							"isSummary": false,
+							"language": "scala"
+						},
+						"persist_state": {
+							"view": {
+								"type": "details",
+								"chartOptions": {
+									"chartType": "bar",
+									"aggregationType": "sum",
+									"categoryFieldKeys": [
+										"0"
+									],
+									"seriesFieldKeys": [
+										"1"
+									],
+									"isStacked": false
+								}
+							}
+						}
+					},
+					"d021b2a2-bfb9-4be4-ba71-a73fb85e3c53": {
+						"type": "Synapse.DataFrame",
+						"sync_state": {
+							"table": {
+								"rows": [
+									{
+										"0": "Reveal identities confirmation page viewed.",
+										"1": "1"
+									},
+									{
+										"0": "Feedback viewed",
+										"1": "92803"
+									},
+									{
+										"0": "Submission viewed.",
+										"1": "13"
+									},
+									{
+										"0": "Course module viewed",
+										"1": "264848"
+									},
+									{
+										"0": "Batch set workflow state viewed.",
+										"1": "2084"
+									},
+									{
+										"0": "Grading form viewed",
+										"1": "76227"
+									},
+									{
+										"0": "Feedback updated",
+										"1": "72"
+									},
+									{
+										"0": "Batch set marker allocation viewed",
+										"1": "3256"
+									},
+									{
+										"0": "Course module instance list viewed",
+										"1": "118944"
+									},
+									{
+										"0": "The allocated marker has been updated.",
+										"1": "34822"
+									},
+									{
+										"0": "The submission has been graded.",
+										"1": "67444"
+									},
+									{
+										"0": "The submissions have been unlocked for a user.",
+										"1": "641"
+									},
+									{
+										"0": "The submission has been graded via offline feedback.",
+										"1": "228"
+									},
+									{
+										"0": "The user duplicated their submission.",
+										"1": "29"
+									},
+									{
+										"0": "The identities have been revealed.",
+										"1": "5"
+									},
+									{
+										"0": "Grading table viewed",
+										"1": "131085"
+									},
+									{
+										"0": "Submission form viewed.",
+										"1": "72641"
+									},
+									{
+										"0": "The user has accepted the statement of the submission.",
+										"1": "42155"
+									},
+									{
+										"0": "The state of the workflow has been updated.",
+										"1": "66479"
+									},
+									{
+										"0": "The status of the submission has been updated.",
+										"1": "487"
+									},
+									{
+										"0": "The submissions have been locked for a user.",
+										"1": "3819"
+									},
+									{
+										"0": "A submission has been submitted.",
+										"1": "42184"
+									},
+									{
+										"0": "The status of the submission has been viewed.",
+										"1": "468728"
+									},
+									{
+										"0": "Remove submission confirmation viewed.",
+										"1": "541"
+									}
+								],
+								"schema": [
+									{
+										"key": "0",
+										"name": "Event name",
+										"type": "string"
+									},
+									{
+										"key": "1",
+										"name": "count",
+										"type": "bigint"
+									}
+								]
+							},
+							"isSummary": false,
+							"language": "scala"
+						},
+						"persist_state": {
+							"view": {
+								"type": "details",
+								"chartOptions": {
+									"chartType": "bar",
+									"aggregationType": "sum",
+									"categoryFieldKeys": [
+										"0"
+									],
+									"seriesFieldKeys": [
+										"1"
+									],
+									"isStacked": false
+								}
+							}
+						}
+					},
+					"567cc143-9d10-498f-a3cd-822c81ec5050": {
+						"type": "Synapse.DataFrame",
+						"sync_state": {
+							"table": {
+								"rows": [
+									{
+										"0": "Course module created",
+										"1": "8973"
+									},
+									{
+										"0": "Calendar event deleted",
+										"1": "1618"
+									},
+									{
+										"0": "Question updated",
+										"1": "3014"
+									},
+									{
+										"0": "Capability assigned",
+										"1": "104"
+									},
+									{
+										"0": "Course section created",
+										"1": "30237"
+									},
+									{
+										"0": "Course viewed",
+										"1": "5768068"
+									},
+									{
+										"0": "Badge created",
+										"1": "2"
+									},
+									{
+										"0": "Question category moved",
+										"1": "40"
+									},
+									{
+										"0": "Grade item created",
+										"1": "1842"
+									},
+									{
+										"0": "Role assigned",
+										"1": "18202"
+									},
+									{
+										"0": "Course module updated",
+										"1": "91296"
+									},
+									{
+										"0": "User graded",
+										"1": "259756"
+									},
+									{
+										"0": "Grouping deleted",
+										"1": "80"
+									},
+									{
+										"0": "Grade item updated",
+										"1": "10480"
+									},
+									{
+										"0": "Course activity completion updated",
+										"1": "276714"
+									},
+									{
+										"0": "User unenrolled from course",
+										"1": "5359"
+									},
+									{
+										"0": "Questions exported",
+										"1": "67"
+									},
+									{
+										"0": "Calendar event updated",
+										"1": "54120"
+									},
+									{
+										"0": "Group created",
+										"1": "1015"
+									},
+									{
+										"0": "Questions imported",
+										"1": "9"
+									},
+									{
+										"0": "Course created",
+										"1": "168"
+									},
+									{
+										"0": "Group unassigned from grouping",
+										"1": "192"
+									},
+									{
+										"0": "Calendar event created",
+										"1": "8328"
+									},
+									{
+										"0": "Group member removed",
+										"1": "6634"
+									},
+									{
+										"0": "Question category updated",
+										"1": "238"
+									},
+									{
+										"0": "Course module instance list viewed",
+										"1": "27"
+									},
+									{
+										"0": "Course summary viewed",
+										"1": "38"
+									},
+									{
+										"0": "User list viewed",
+										"1": "3522"
+									},
+									{
+										"0": "Grouping updated",
+										"1": "11"
+									},
+									{
+										"0": "Question deleted",
+										"1": "4841"
+									},
+									{
+										"0": "Capability unassigned",
+										"1": "84"
+									},
+									{
+										"0": "Course section updated",
+										"1": "33932"
+									},
+									{
+										"0": "Tag added to an item",
+										"1": "1001"
+									},
+									{
+										"0": "Course backup created",
+										"1": "216"
+									},
+									{
+										"0": "Question moved",
+										"1": "534"
+									},
+									{
+										"0": "Grade deleted",
+										"1": "128980"
+									},
+									{
+										"0": "Group updated",
+										"1": "396"
+									},
+									{
+										"0": "Course user report viewed",
+										"1": "147"
+									},
+									{
+										"0": "User profile viewed",
+										"1": "53323"
+									},
+									{
+										"0": "Group member added",
+										"1": "25906"
+									},
+									{
+										"0": "Course content deleted",
+										"1": "154"
+									},
+									{
+										"0": "Question category deleted",
+										"1": "47"
+									},
+									{
+										"0": "Grouping created",
+										"1": "1193"
+									},
+									{
+										"0": "Group deleted",
+										"1": "704"
+									},
+									{
+										"0": "Enrolment instance updated",
+										"1": "1"
+									},
+									{
+										"0": "Role unassigned",
+										"1": "5512"
+									},
+									{
+										"0": "User enrolled in course",
+										"1": "17836"
+									},
+									{
+										"0": "Tag removed from an item",
+										"1": "25"
+									},
+									{
+										"0": "Question created",
+										"1": "1536"
+									},
+									{
+										"0": "Course module deleted",
+										"1": "4604"
+									},
+									{
+										"0": "Group assigned to grouping",
+										"1": "3589"
+									},
+									{
+										"0": "Question category created",
+										"1": "580"
+									},
+									{
+										"0": "Course restored",
+										"1": "182"
+									},
+									{
+										"0": "Enrolment instance created",
+										"1": "850"
+									},
+									{
+										"0": "Question category viewed",
+										"1": "4084"
+									},
+									{
+										"0": "Question viewed",
+										"1": "1466"
+									},
+									{
+										"0": "Notes viewed",
+										"1": "4"
+									},
+									{
+										"0": "Course updated",
+										"1": "264"
+									}
+								],
+								"schema": [
+									{
+										"key": "0",
+										"name": "Event name",
+										"type": "string"
+									},
+									{
+										"key": "1",
+										"name": "count",
+										"type": "bigint"
+									}
+								]
+							},
+							"isSummary": false,
+							"language": "scala"
+						},
+						"persist_state": {
+							"view": {
+								"type": "details",
+								"chartOptions": {
+									"chartType": "bar",
+									"aggregationType": "sum",
+									"categoryFieldKeys": [
+										"0"
+									],
+									"seriesFieldKeys": [
+										"1"
+									],
+									"isStacked": false
+								}
+							}
+						}
+					},
+					"72606952-9aed-4efc-89d2-e364e0db774d": {
+						"type": "Synapse.DataFrame",
+						"sync_state": {
+							"table": {
+								"rows": [
+									{
+										"0": "Assignment",
+										"1": "The user with id '15261' viewed the instance list for the module 'assign' in the course with id '397'.",
+										"2": "Course: UO Building Estimating",
+										"3": "Course module instance list viewed",
+										"4": "CCXZACDBC",
+										"5": "9/06/20, 13:13",
+										"6": {
+											"$oid": "616145b3a9a196e5801dd2fa"
+										},
+										"7": "NEWLogBUIL 1024_SP4 2019.csv"
+									},
+									{
+										"0": "Quiz",
+										"1": "The user with id '15261' viewed the instance list for the module 'quiz' in the course with id '397'.",
+										"2": "Course: UO Building Estimating",
+										"3": "Course module instance list viewed",
+										"4": "CCXZACDBC",
+										"5": "9/06/20, 13:12",
+										"6": {
+											"$oid": "616145b3a9a196e5801dd2fb"
+										},
+										"7": "NEWLogBUIL 1024_SP4 2019.csv"
+									},
+									{
+										"0": "Forum",
+										"1": "The user with id '15261' viewed the 'forum' activity with course module id '45179'.",
+										"2": "Forum: Announcements",
+										"3": "Course module viewed",
+										"4": "CCXZACDBC",
+										"5": "9/06/20, 13:12",
+										"6": {
+											"$oid": "616145b3a9a196e5801dd2fc"
+										},
+										"7": "NEWLogBUIL 1024_SP4 2019.csv"
+									},
+									{
+										"0": "System",
+										"1": "The user with id '15261' viewed the course with id '397'.",
+										"2": "Course: UO Building Estimating",
+										"3": "Course viewed",
+										"4": "CCXZACDBC",
+										"5": "9/06/20, 13:12",
+										"6": {
+											"$oid": "616145b3a9a196e5801dd2fd"
+										},
+										"7": "NEWLogBUIL 1024_SP4 2019.csv"
+									},
+									{
+										"0": "Forum",
+										"1": "The user with id '15261' has viewed the discussion with id '62478' in the forum with course module id '45180'.",
+										"2": "Forum: Course Q&amp;A Forum",
+										"3": "Discussion viewed",
+										"4": "CCXZACDBC",
+										"5": "9/06/20, 13:12",
+										"6": {
+											"$oid": "616145b3a9a196e5801dd2fe"
+										},
+										"7": "NEWLogBUIL 1024_SP4 2019.csv"
+									},
+									{
+										"0": "Forum",
+										"1": "The user with id '15261' viewed the 'forum' activity with course module id '45180'.",
+										"2": "Forum: Course Q&amp;A Forum",
+										"3": "Course module viewed",
+										"4": "CCXZACDBC",
+										"5": "9/06/20, 13:12",
+										"6": {
+											"$oid": "616145b3a9a196e5801dd2ff"
+										},
+										"7": "NEWLogBUIL 1024_SP4 2019.csv"
+									},
+									{
+										"0": "System",
+										"1": "The user with id '15261' viewed the course with id '397'.",
+										"2": "Course: UO Building Estimating",
+										"3": "Course viewed",
+										"4": "CCXZACDBC",
+										"5": "9/06/20, 13:12",
+										"6": {
+											"$oid": "616145b3a9a196e5801dd300"
+										},
+										"7": "NEWLogBUIL 1024_SP4 2019.csv"
+									},
+									{
+										"0": "System",
+										"1": "The user with id '15261' viewed the section number '39' of the course with id '397'.",
+										"2": "Course: UO Building Estimating",
+										"3": "Course viewed",
+										"4": "CCXZACDBC",
+										"5": "20/02/20, 21:09",
+										"6": {
+											"$oid": "616145b3a9a196e5801dd301"
+										},
+										"7": "NEWLogBUIL 1024_SP4 2019.csv"
+									},
+									{
+										"0": "File",
+										"1": "The user with id '15261' viewed the 'resource' activity with course module id '49096'.",
+										"2": "File: 3.1 Concrete Works",
+										"3": "Course module viewed",
+										"4": "CCXZACDBC",
+										"5": "20/02/20, 21:08",
+										"6": {
+											"$oid": "616145b3a9a196e5801dd302"
+										},
+										"7": "NEWLogBUIL 1024_SP4 2019.csv"
+									},
+									{
+										"0": "System",
+										"1": "The user with id '15261' viewed the section number '39' of the course with id '397'.",
+										"2": "Course: UO Building Estimating",
+										"3": "Course viewed",
+										"4": "CCXZACDBC",
+										"5": "20/02/20, 21:08",
+										"6": {
+											"$oid": "616145b3a9a196e5801dd303"
+										},
+										"7": "NEWLogBUIL 1024_SP4 2019.csv"
+									}
+								],
+								"schema": [
+									{
+										"key": "0",
+										"name": "Component",
+										"type": "string"
+									},
+									{
+										"key": "1",
+										"name": "Description",
+										"type": "string"
+									},
+									{
+										"key": "2",
+										"name": "Event context",
+										"type": "string"
+									},
+									{
+										"key": "3",
+										"name": "Event name",
+										"type": "string"
+									},
+									{
+										"key": "4",
+										"name": "Student ID",
+										"type": "string"
+									},
+									{
+										"key": "5",
+										"name": "Time",
+										"type": "string"
+									},
+									{
+										"key": "6",
+										"name": "_id",
+										"type": "StructType(StructField($oid,StringType,true))"
+									},
+									{
+										"key": "7",
+										"name": "filename",
+										"type": "string"
+									}
+								]
+							},
+							"isSummary": false,
+							"language": "scala"
+						},
+						"persist_state": {
+							"view": {
+								"type": "details",
+								"chartOptions": {
+									"chartType": "bar",
+									"aggregationType": "count",
+									"categoryFieldKeys": [
+										"0"
+									],
+									"seriesFieldKeys": [
+										"0"
+									],
+									"isStacked": false
+								}
+							}
+						}
+					}
+				}
+			},
+			"enableDebugMode": false,
+			"kernelspec": {
+				"name": "synapse_pyspark",
+				"display_name": "Synapse PySpark"
+			},
+			"language_info": {
+				"name": "python"
+			},
+			"a365ComputeOptions": {
+				"id": "/subscriptions/551f35f8-5023-4513-ae40-48f2e9f65fc6/resourceGroups/DUS02mem/providers/Microsoft.Synapse/workspaces/studentanalytics/bigDataPools/batched",
+				"name": "batched",
+				"type": "Spark",
+				"endpoint": "https://studentanalytics.dev.azuresynapse.net/livyApi/versions/2019-11-01-preview/sparkPools/batched",
+				"auth": {
+					"type": "AAD",
+					"authResource": "https://dev.azuresynapse.net"
+				},
+				"sparkVersion": "2.4",
+				"nodeCount": 3,
+				"cores": 4,
+				"memory": 28,
+				"extraHeader": null
+			}
+		},
+		"cells": [
+			{
+				"cell_type": "code",
+				"metadata": {
+					"microsoft": {
+						"language": "python"
+					}
+				},
+				"source": [
+					"%%pyspark\r\n",
+					"logDF = spark.read.load('abfss://datalake@dus02store.dfs.core.windows.net/fromAtlas/NewLog.json', format='json')"
+				],
+				"attachments": null,
+				"execution_count": 1
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"logDF.printSchema()"
+				],
+				"attachments": null,
+				"execution_count": 46
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"from pyspark.sql.functions import *\r\n",
+					"from pyspark.sql.types import *\r\n",
+					"import nltk"
+				],
+				"attachments": null,
+				"execution_count": 2
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					},
+					"collapsed": false
+				},
+				"source": [
+					"display(logDF.groupBy('Component').count().collect())"
+				],
+				"attachments": null,
+				"execution_count": 3
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					},
+					"collapsed": false
+				},
+				"source": [
+					"display(logDF.filter(logDF.Component == 'Assignment').groupBy('Event name').count().collect())"
+				],
+				"attachments": null,
+				"execution_count": 4
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					},
+					"collapsed": false
+				},
+				"source": [
+					"display(logDF.filter(logDF.Component == 'System').groupBy('Event name').count().collect())"
+				],
+				"attachments": null,
+				"execution_count": 5
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					},
+					"collapsed": false
+				},
+				"source": [
+					"display(logDF.filter(logDF.filename != 'NEWLogBUIL 1024 _1094_SP42020.csv').limit(10))"
+				],
+				"attachments": null,
+				"execution_count": 7
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"logDF = logDF.withColumnRenamed('Event name', 'EventName')"
+				],
+				"attachments": null,
+				"execution_count": 6
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					},
+					"collapsed": false
+				},
+				"source": [
+					"logDF.groupBy('EventName').count().write.mode(\"overwrite\").saveAsTable(\"default.EventName\")"
+				],
+				"attachments": null,
+				"execution_count": 7
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					},
+					"collapsed": false
+				},
+				"source": [
+					"logDF = logDF.filter(logDF.filename != 'NEWLogBUIL 1024 _1094_SP42020.csv')"
+				],
+				"attachments": null,
+				"execution_count": 20
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					},
+					"collapsed": false
+				},
+				"source": [
+					"display(logDF.select('Event context', split(col('Event context'), ':').getItem(0).alias('ActivityType'), split(col('Event context'), ':').getItem(1).alias('ActivityName')).groupBy('ActivityType').count().where(col('count')>10).collect())"
+				],
+				"attachments": null,
+				"execution_count": 6
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					},
+					"collapsed": false
+				},
+				"source": [
+					"display(logDF.select('Event context', split(col('Event context'), ':').getItem(0).alias('ActivityType'), split(col('Event context'), ':').getItem(1).alias('ActivityName')).agg(countDistinct('ActivityName')).collect())"
+				],
+				"attachments": null,
+				"execution_count": 3
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"DimResource = spark.sql(\"SELECT * FROM `unisadw`.`dimcourseresource`\")"
+				],
+				"attachments": null,
+				"execution_count": 4
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"logDF = logDF.select('Event context', split(col('Event context'), ':').getItem(0).alias('ActivityType'), split(col('Event context'), ':').getItem(1).alias('ActivityName'))"
+				],
+				"attachments": null,
+				"execution_count": 21
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					},
+					"collapsed": false
+				},
+				"source": [
+					"logDF = logDF.groupBy('ActivityName').count()"
+				],
+				"attachments": null,
+				"execution_count": 25
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					},
+					"collapsed": false
+				},
+				"source": [
+					"DimResource.join(logDF, DimResource.ActivityResourceName == logDF.ActivityName).count()"
+				],
+				"attachments": null,
+				"execution_count": 38
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"DimResource.count()"
+				],
+				"attachments": null,
+				"execution_count": 39
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"logDF = logDF.withColumn('ActivityName', trim(logDF.ActivityName))"
+				],
+				"attachments": null,
+				"execution_count": 36
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					},
+					"collapsed": false
+				},
+				"source": [
+					"logDF.filter(logDF.ActivityName=='Week 3 Activities Forum').collect()"
+				],
+				"attachments": null,
+				"execution_count": 37
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					},
+					"collapsed": false
+				},
+				"source": [
+					"display(logDF.limit(10))"
+				],
+				"attachments": null,
+				"execution_count": 34
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"DimResource = DimResource.groupBy('ActivityResourceName').count()"
+				],
+				"attachments": null,
+				"execution_count": 40
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					},
+					"collapsed": false
+				},
+				"source": [
+					"display(DimResource.select(col('ActivityResourceName').alias('ActivityName')).exceptAll(logDF.select('ActivityName')).collect())"
+				],
+				"attachments": null,
+				"execution_count": 44
+			}
+		]
+	}
+}

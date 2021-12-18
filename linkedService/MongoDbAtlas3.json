@@ -1,0 +1,17 @@
+{
+	"name": "MongoDbAtlas3",
+	"type": "Microsoft.Synapse/workspaces/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "MongoDbAtlas",
+		"typeProperties": {
+			"connectionString": "mongodb+srv://manstein:@cluster0.wzkav.mongodb.net/test?authSource=admin;appname=MongoDB Compass;replicaSet=atlas-10bkn2-shard-0;readPreference=primary",
+			"database": "datalake",
+			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIlNUVURFTlRBTkFMWVRJQ1NfZTAyYzRlNWItN2YzNC00NTZlLWJlNDMtMjc3ODY3OTYxODJhIg0KfQ=="
+		},
+		"connectVia": {
+			"referenceName": "AutoResolveIntegrationRuntime",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}

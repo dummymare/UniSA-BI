@@ -1,0 +1,1266 @@
+{
+	"name": "DimStudent",
+	"properties": {
+		"nbformat": 4,
+		"nbformat_minor": 2,
+		"bigDataPool": {
+			"referenceName": "batched",
+			"type": "BigDataPoolReference"
+		},
+		"sessionProperties": {
+			"driverMemory": "28g",
+			"driverCores": 4,
+			"executorMemory": "28g",
+			"executorCores": 4,
+			"numExecutors": 2,
+			"conf": {
+				"spark.dynamicAllocation.enabled": "false",
+				"spark.dynamicAllocation.minExecutors": "2",
+				"spark.dynamicAllocation.maxExecutors": "2"
+			}
+		},
+		"metadata": {
+			"saveOutput": true,
+			"synapse_widget": {
+				"version": "0.1",
+				"state": {
+					"8deb048c-0fbe-455c-b21f-0878675594fa": {
+						"type": "Synapse.DataFrame",
+						"sync_state": {
+							"table": {
+								"rows": [
+									{
+										"1": "F",
+										"2": "N",
+										"3": "DBIR",
+										"4": [],
+										"5": "Birkenhead",
+										"6": "5015",
+										"7": "SA",
+										"8": "Australia",
+										"9": "CCXZZLZBZ",
+										"10": [
+											2012
+										],
+										"11": "19970925",
+										"12": "1997-09-25 00:00:00",
+										"13": "0"
+									},
+									{
+										"1": "F",
+										"2": "N",
+										"3": "DBIR",
+										"4": [],
+										"5": "Clarence Park",
+										"6": "5034",
+										"7": "SA",
+										"8": "Australia",
+										"9": "CCXZHZGHH",
+										"10": [
+											2012
+										],
+										"11": "19980709",
+										"12": "1998-07-09 00:00:00",
+										"13": "1"
+									},
+									{
+										"1": "F",
+										"2": "N",
+										"3": "DBIR",
+										"4": [],
+										"5": "Erindale",
+										"6": "5066",
+										"7": "SA",
+										"8": "Australia",
+										"9": "CCXZHCXBZ",
+										"10": [
+											2012
+										],
+										"11": "19990424",
+										"12": "1999-04-24 00:00:00",
+										"13": "2"
+									},
+									{
+										"1": "F",
+										"2": "N",
+										"3": "DBIR",
+										"4": [],
+										"5": "MARDEN",
+										"6": "5070",
+										"7": "SA",
+										"8": "Australia",
+										"9": "CCXZHZXDG",
+										"10": [
+											2012
+										],
+										"11": "19990403",
+										"12": "1999-04-03 00:00:00",
+										"13": "3"
+									},
+									{
+										"1": "F",
+										"2": "N",
+										"3": "DBIR",
+										"4": [],
+										"5": "Pasadena",
+										"6": "5042",
+										"7": "SA",
+										"8": "Australia",
+										"9": "CCXZHZGCA",
+										"10": [
+											2012
+										],
+										"11": "19980511",
+										"12": "1998-05-11 00:00:00",
+										"13": "4"
+									},
+									{
+										"1": "F",
+										"2": "N",
+										"3": "DBIR",
+										"4": [],
+										"5": "Seacombe Heights",
+										"6": "5047",
+										"7": "SA",
+										"8": "Australia",
+										"9": "CCXZHCCGZ",
+										"10": [
+											2012
+										],
+										"11": "19981112",
+										"12": "1998-11-12 00:00:00",
+										"13": "5"
+									},
+									{
+										"1": "F",
+										"2": "N",
+										"3": "LBAN",
+										"4": [],
+										"5": "North Adelaide",
+										"6": "5006",
+										"7": "SA",
+										"8": "Australia",
+										"9": "CCXZDZCBA",
+										"10": [
+											2105
+										],
+										"11": "19960828",
+										"12": "1996-08-28 00:00:00",
+										"13": "6"
+									},
+									{
+										"1": "F",
+										"2": "N",
+										"3": "SOUAU",
+										"4": [],
+										"5": "MORAYFIELD",
+										"6": "4506",
+										"7": "QLD",
+										"8": "Australia",
+										"9": "CCXZWWDDX",
+										"10": [
+											2105
+										],
+										"11": "19840830",
+										"12": "1984-08-30 00:00:00",
+										"13": "7"
+									},
+									{
+										"1": "F",
+										"2": "N",
+										"3": "SOUAU",
+										"4": [],
+										"5": "REDLYNCH",
+										"6": "4870",
+										"7": "QLD",
+										"8": "Australia",
+										"9": "CCXCGCZHX",
+										"10": [
+											2105
+										],
+										"11": "19860211",
+										"12": "1986-02-11 00:00:00",
+										"13": "8"
+									},
+									{
+										"1": "F",
+										"2": "N",
+										"3": "SOUAU",
+										"4": [],
+										"5": "ST KILDA",
+										"6": "3182",
+										"7": "VIC",
+										"8": "Australia",
+										"9": "CCXZDWDDD",
+										"10": [
+											2105
+										],
+										"11": "19961001",
+										"12": "1996-10-01 00:00:00",
+										"13": "9"
+									},
+									{
+										"1": "F",
+										"2": "N",
+										"3": "XBBE",
+										"4": [],
+										"5": "ANNANDALE",
+										"6": "4814",
+										"7": "QLD",
+										"8": "Australia",
+										"9": "CCXHXHCBD",
+										"10": [
+											1925
+										],
+										"11": "19850105",
+										"12": "1985-01-05 00:00:00",
+										"13": "10"
+									},
+									{
+										"1": "F",
+										"2": "N",
+										"3": "XBBE",
+										"4": [],
+										"5": "BELLEVUE HILL",
+										"6": "2023",
+										"7": "NSW",
+										"8": "Australia",
+										"9": "CCXHXZALX",
+										"10": [
+											1925
+										],
+										"11": "19970617",
+										"12": "1997-06-17 00:00:00",
+										"13": "11"
+									},
+									{
+										"1": "F",
+										"2": "N",
+										"3": "XBBE",
+										"4": [],
+										"5": "BROADVIEW",
+										"6": "5083",
+										"7": "SA",
+										"8": "Australia",
+										"9": "CCXCZGWGC",
+										"10": [
+											1925
+										],
+										"11": "19940129",
+										"12": "1994-01-29 00:00:00",
+										"13": "12"
+									},
+									{
+										"1": "F",
+										"2": "N",
+										"3": "XBBE",
+										"4": [],
+										"5": "CARLTON",
+										"6": "3053",
+										"7": "VIC",
+										"8": "Australia",
+										"9": "CCXHXZHWH",
+										"10": [
+											1925
+										],
+										"11": "19780517",
+										"12": "1978-05-17 00:00:00",
+										"13": "13"
+									},
+									{
+										"1": "F",
+										"2": "N",
+										"3": "XBBE",
+										"4": [],
+										"5": "COBURG NORTH",
+										"6": "3058",
+										"7": "VIC",
+										"8": "Australia",
+										"9": "CCXZGCXXD",
+										"10": [
+											1925
+										],
+										"11": "19900915",
+										"12": "1990-09-15 00:00:00",
+										"13": "14"
+									},
+									{
+										"1": "F",
+										"2": "N",
+										"3": "XBBE",
+										"4": [],
+										"5": "COOGEE",
+										"6": "2034",
+										"7": "NSW",
+										"8": "Australia",
+										"9": "CCXZAZZGL",
+										"10": [
+											2012
+										],
+										"11": "19871018",
+										"12": "1987-10-18 00:00:00",
+										"13": "15"
+									},
+									{
+										"1": "F",
+										"2": "N",
+										"3": "XBBE",
+										"4": [],
+										"5": "CRANBOURNE NORTH",
+										"6": "3977",
+										"7": "VIC",
+										"8": "Australia",
+										"9": "CCXZAZWGC",
+										"10": [
+											1925
+										],
+										"11": "19780423",
+										"12": "1978-04-23 00:00:00",
+										"13": "16"
+									},
+									{
+										"1": "F",
+										"2": "N",
+										"3": "XBBE",
+										"4": [],
+										"5": "Copacabana",
+										"6": "2251",
+										"7": "NSW",
+										"8": "Australia",
+										"9": "CCXHXXXLD",
+										"10": [
+											1925
+										],
+										"11": "19861111",
+										"12": "1986-11-11 00:00:00",
+										"13": "17"
+									},
+									{
+										"1": "F",
+										"2": "N",
+										"3": "XBBE",
+										"4": [],
+										"5": "Cranebrook",
+										"6": "2749",
+										"7": "NSW",
+										"8": "Australia",
+										"9": "CCXHCLCGX",
+										"10": [
+											2012
+										],
+										"11": "19850906",
+										"12": "1985-09-06 00:00:00",
+										"13": "18"
+									},
+									{
+										"1": "F",
+										"2": "N",
+										"3": "XBBE",
+										"4": [],
+										"5": "FELIXSTOW",
+										"6": "5070",
+										"7": "SA",
+										"8": "Australia",
+										"9": "CCXHCHXAL",
+										"10": [
+											2012
+										],
+										"11": "19771211",
+										"12": "1977-12-11 00:00:00",
+										"13": "19"
+									}
+								],
+								"schema": [
+									{
+										"key": "0",
+										"name": "AcademicLoadDesc",
+										"type": "string"
+									},
+									{
+										"key": "1",
+										"name": "GenderCode",
+										"type": "string"
+									},
+									{
+										"key": "2",
+										"name": "InternationalStudentFlag",
+										"type": "string"
+									},
+									{
+										"key": "3",
+										"name": "ProgramCode",
+										"type": "string"
+									},
+									{
+										"key": "4",
+										"name": "ProgramDescs",
+										"type": "ArrayType(StringType,true)"
+									},
+									{
+										"key": "5",
+										"name": "StudentAddressCityCode",
+										"type": "string"
+									},
+									{
+										"key": "6",
+										"name": "StudentAddressPostcode",
+										"type": "int"
+									},
+									{
+										"key": "7",
+										"name": "StudentAddressStateCode",
+										"type": "string"
+									},
+									{
+										"key": "8",
+										"name": "StudentCountryDesc",
+										"type": "string"
+									},
+									{
+										"key": "9",
+										"name": "StudentID",
+										"type": "string"
+									},
+									{
+										"key": "10",
+										"name": "TermCodes",
+										"type": "ArrayType(IntegerType,true)"
+									},
+									{
+										"key": "11",
+										"name": "BirthDateSK",
+										"type": "int"
+									},
+									{
+										"key": "12",
+										"name": "BirthDate",
+										"type": "timestamp"
+									},
+									{
+										"key": "13",
+										"name": "StudentSK",
+										"type": "bigint"
+									}
+								]
+							},
+							"isSummary": false,
+							"language": "scala"
+						},
+						"persist_state": {
+							"view": {
+								"type": "details",
+								"chartOptions": {
+									"chartType": "bar",
+									"aggregationType": "sum",
+									"categoryFieldKeys": [
+										"0"
+									],
+									"seriesFieldKeys": [
+										"6"
+									],
+									"isStacked": false
+								}
+							}
+						}
+					},
+					"2f2da85f-ffcf-4fc3-8270-8ffcb62d784a": {
+						"type": "Synapse.DataFrame",
+						"sync_state": {
+							"table": {
+								"rows": [
+									{
+										"0": "",
+										"1": "",
+										"2": "290"
+									},
+									{
+										"0": "4",
+										"1": "20",
+										"2": "1437"
+									},
+									{
+										"0": "4",
+										"1": "19",
+										"2": "702"
+									},
+									{
+										"0": "1",
+										"1": "19",
+										"2": "478"
+									},
+									{
+										"0": "6",
+										"1": "18",
+										"2": "16"
+									},
+									{
+										"0": "1",
+										"1": "20",
+										"2": "936"
+									},
+									{
+										"0": "6",
+										"1": "19",
+										"2": "655"
+									},
+									{
+										"0": "3",
+										"1": "20",
+										"2": "1084"
+									},
+									{
+										"0": "3",
+										"1": "21",
+										"2": "1730"
+									},
+									{
+										"0": "6",
+										"1": "20",
+										"2": "1097"
+									},
+									{
+										"0": "4",
+										"1": "21",
+										"2": "76"
+									},
+									{
+										"0": "3",
+										"1": "19",
+										"2": "528"
+									},
+									{
+										"0": "1",
+										"1": "21",
+										"2": "1818"
+									}
+								],
+								"schema": [
+									{
+										"key": "0",
+										"name": "StudyPeriod",
+										"type": "string"
+									},
+									{
+										"key": "1",
+										"name": "Year",
+										"type": "string"
+									},
+									{
+										"key": "2",
+										"name": "count",
+										"type": "bigint"
+									}
+								]
+							},
+							"isSummary": false,
+							"language": "scala"
+						},
+						"persist_state": {
+							"view": {
+								"type": "details",
+								"chartOptions": {
+									"chartType": "bar",
+									"aggregationType": "sum",
+									"categoryFieldKeys": [
+										"0"
+									],
+									"seriesFieldKeys": [
+										"2"
+									],
+									"isStacked": false
+								}
+							}
+						}
+					}
+				}
+			},
+			"enableDebugMode": false,
+			"kernelspec": {
+				"name": "synapse_pyspark",
+				"display_name": "Synapse PySpark"
+			},
+			"language_info": {
+				"name": "python"
+			},
+			"a365ComputeOptions": {
+				"id": "/subscriptions/551f35f8-5023-4513-ae40-48f2e9f65fc6/resourceGroups/DUS02mem/providers/Microsoft.Synapse/workspaces/studentanalytics/bigDataPools/batched",
+				"name": "batched",
+				"type": "Spark",
+				"endpoint": "https://studentanalytics.dev.azuresynapse.net/livyApi/versions/2019-11-01-preview/sparkPools/batched",
+				"auth": {
+					"type": "AAD",
+					"authResource": "https://dev.azuresynapse.net"
+				},
+				"sparkVersion": "2.4",
+				"nodeCount": 3,
+				"cores": 4,
+				"memory": 28,
+				"extraHeader": null
+			}
+		},
+		"cells": [
+			{
+				"cell_type": "code",
+				"source": [
+					"StudentDF = spark.read.load('abfss://datalake@dus02store.dfs.core.windows.net/fromAtlas/newstudentlistv2.json', format='json')\r\n",
+					"DateDF = spark.read.load('abfss://datalake@dus02store.dfs.core.windows.net/local/QID1109_20210913_202220_1.parq', format='parquet')"
+				],
+				"attachments": null,
+				"execution_count": 1
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"from pyspark.sql.functions import *\r\n",
+					"from pyspark.sql.types import *\r\n",
+					"import pandas as pd"
+				],
+				"attachments": null,
+				"execution_count": 2
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"def mergeState(states):\r\n",
+					"    stateDF = pd.DataFrame(data=states, columns=columnNames.value)\r\n",
+					"\r\n",
+					"    stateDF = stateDF.sort_values(by='TermCode').fillna(method='ffill').fillna(method='bfill').reset_index(drop=True)\r\n",
+					"    stateDF = stateDF.rename(columns={'TermCode': 'EffectiveTerm'})\r\n",
+					"    stateDF['ExpiryTerm'] = 0\r\n",
+					"    stateDF['keep'] = True\r\n",
+					"\r\n",
+					"    index = 0\r\n",
+					"    sindex = 1\r\n",
+					"    columns = ['AcademicLoadDesc', 'GenderCode', 'InternationalStudentFlag', 'ProgramCode', 'StudentAddressCityCode',\r\n",
+					"                'StudentAddressStateCode', 'StudentCountryDesc', 'BirthDateSK']\r\n",
+					"    \r\n",
+					"    while sindex < stateDF.shape[0]:\r\n",
+					"        if stateDF.loc[index, columns].equals(stateDF.loc[sindex, columns]):\r\n",
+					"            stateDF.loc[sindex, 'keep'] = False\r\n",
+					"        else:\r\n",
+					"            stateDF.loc[index, 'ExpiryTerm'] = stateDF.loc[sindex, 'EffectiveTerm']\r\n",
+					"            index = sindex\r\n",
+					"            \r\n",
+					"        sindex = sindex + 1\r\n",
+					"    \r\n",
+					"    stateDF.loc[stateDF[stateDF['keep']].index[-1], 'ExpiryTerm'] = 9999\r\n",
+					"    return stateDF[stateDF['keep']].to_dict(orient='record')\r\n",
+					""
+				],
+				"attachments": null,
+				"execution_count": 35
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"StudentDF = StudentDF.filter(StudentDF.StudentID.isNotNull())"
+				],
+				"attachments": null,
+				"execution_count": 4
+			},
+			{
+				"cell_type": "markdown",
+				"metadata": {
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"Fix degree code"
+				],
+				"attachments": null
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"StudentDF = StudentDF.withColumn('ProgramCode', when(StudentDF.ProgramDesc == 'Associate Degree in Engineering', 'XTEN')\r\n",
+					"                                                .when(StudentDF.ProgramDesc == 'Bachelor of Business (Management)', 'XBBG')\r\n",
+					"                                                .when(StudentDF.ProgramDesc == 'Bachelor of Commerce (Accounting)', 'XBCA')\r\n",
+					"                                                .when(StudentDF.ProgramDesc == 'Bachelor of Information Technology', 'XBIT')\r\n",
+					"                                                .when(StudentDF.ProgramDesc == 'Bachelor of Information Technology and Data Analytics', 'XBCP')\r\n",
+					"                                                .when(StudentDF.ProgramDesc == 'Bachelor of Psychology', 'XBPY')\r\n",
+					"                                                .when(StudentDF.ProgramDesc == 'Bachelor of Social Work', 'MBSW')\r\n",
+					"                                                .when(StudentDF.ProgramDesc == 'Bachelor of Software Engineering (Honours)', 'LHSG')\r\n",
+					"                                                .when(StudentDF.ProgramDesc == 'OUA Short Courses UGRD', 'OUA Short Courses UGRD')\r\n",
+					"                                                .otherwise(StudentDF.ProgramCode))"
+				],
+				"attachments": null,
+				"execution_count": 5
+			},
+			{
+				"cell_type": "markdown",
+				"metadata": {
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"Country Australia"
+				],
+				"attachments": null
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"StudentDF = StudentDF.withColumn('StudentCountryDesc', when(isnull(StudentDF.StudentCountryDesc) & (StudentDF.InternationalStudentFlag == 'N'), 'Australia')\r\n",
+					"                                                        .when((StudentDF.StudentCountryDesc == '') & (StudentDF.InternationalStudentFlag == 'N'), 'Australia')\r\n",
+					"                                                        .when((StudentDF.StudentCountryDesc == 'NaN') & (StudentDF.InternationalStudentFlag == 'N'), 'Australia')\r\n",
+					"                                                        .otherwise(StudentDF.StudentCountryDesc))"
+				],
+				"attachments": null,
+				"execution_count": 6
+			},
+			{
+				"cell_type": "markdown",
+				"metadata": {
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"Change postcode to int"
+				],
+				"attachments": null
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"StudentDF =StudentDF.withColumn('StudentAddressPostcode', StudentDF.StudentAddressPostcode.cast(IntegerType()))"
+				],
+				"attachments": null,
+				"execution_count": 7
+			},
+			{
+				"cell_type": "markdown",
+				"metadata": {
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"Get study period, termcode, year"
+				],
+				"attachments": null
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					},
+					"collapsed": false
+				},
+				"source": [
+					"display(StudentDF.withColumn('StudyPeriod', regexp_extract(StudentDF.termYear, r'SP(\\d?)', 1))\r\n",
+					"                .withColumn('Year', when(StudentDF.termYear == 'UPDATED_INFT 1024 SP4 2020 NO Assessment Submission Data', 20)\r\n",
+					"                                    .otherwise(regexp_extract(element_at(split(StudentDF.termYear, '[_ ]'), -1), r'20(\\d+)', 1)))\r\n",
+					"                .groupBy(['StudyPeriod', 'Year']).count())"
+				],
+				"attachments": null,
+				"execution_count": 8
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"StudentDF = StudentDF.withColumn('StudyPeriod', regexp_extract(StudentDF.termYear, r'SP(\\d?)', 1))\\\r\n",
+					"                        .withColumn('Year', when(StudentDF.termYear == 'UPDATED_INFT 1024 SP4 2020 NO Assessment Submission Data', 20)\r\n",
+					"                                            .otherwise(regexp_extract(element_at(split(StudentDF.termYear, '[_ ]'), -1), r'20(\\d+)', 1)))"
+				],
+				"attachments": null,
+				"execution_count": 8
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"StudentDF = StudentDF.withColumn('TermCode', when(StudentDF.StudyPeriod == '1', concat(StudentDF.Year, lit('05')).cast(IntegerType()))\r\n",
+					"                                            .when(StudentDF.StudyPeriod == '3', concat(StudentDF.Year, lit('12')).cast(IntegerType()))\r\n",
+					"                                            .when(StudentDF.StudyPeriod == '4', concat(StudentDF.Year, lit('14')).cast(IntegerType()))\r\n",
+					"                                            .when(StudentDF.StudyPeriod == '6', concat(StudentDF.Year, lit('25')).cast(IntegerType()))\r\n",
+					"                                            .otherwise(None))"
+				],
+				"attachments": null,
+				"execution_count": 9
+			},
+			{
+				"cell_type": "markdown",
+				"metadata": {
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"Form Birth Date"
+				],
+				"attachments": null
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"StudentDF = StudentDF.withColumn('BirthDate', to_date(StudentDF.StudentDOB, \"dd/MM/yy\"))"
+				],
+				"attachments": null,
+				"execution_count": 10
+			},
+			{
+				"cell_type": "markdown",
+				"metadata": {
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"Remove duplicates"
+				],
+				"attachments": null
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					},
+					"collapsed": true
+				},
+				"source": [
+					"StudentDF = StudentDF.groupBy(['AcademicLoadDesc', 'GenderCode', 'InternationalStudentFlag', \r\n",
+					"                                'ProgramCode', 'StudentAddressCityCode', 'StudentAddressPostcode', 'StudentAddressStateCode', \r\n",
+					"                                'StudentCountryDesc', 'BirthDate', 'StudentID'])\\\r\n",
+					"                        .agg(collect_set('TermCode').alias('TermCodes'), collect_set('ProgramDesc').alias('ProgramDescs'))"
+				],
+				"attachments": null,
+				"execution_count": 11
+			},
+			{
+				"cell_type": "markdown",
+				"metadata": {
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"Lookup for dimdate SK"
+				],
+				"attachments": null
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"StudentDF = StudentDF.join(DateDF, StudentDF.BirthDate == DateDF.FullDateAlternateKey, 'left')\\\r\n",
+					"                    .select(StudentDF.AcademicLoadDesc, StudentDF.GenderCode, StudentDF.InternationalStudentFlag, StudentDF.ProgramCode, \r\n",
+					"                    StudentDF.ProgramDescs, StudentDF.StudentAddressCityCode, StudentDF.StudentAddressPostcode, StudentDF.StudentAddressStateCode, \r\n",
+					"                    StudentDF.StudentCountryDesc, StudentDF.StudentID, StudentDF.TermCodes, DateDF.DateKey.alias('BirthDateSK'), \r\n",
+					"                    DateDF.FullDateAlternateKey.alias('BirthDate'))"
+				],
+				"attachments": null,
+				"execution_count": 12
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"StudentDF.printSchema()"
+				],
+				"attachments": null,
+				"execution_count": 24
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"StudentDF.count()"
+				],
+				"attachments": null,
+				"execution_count": 25
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					},
+					"collapsed": false
+				},
+				"source": [
+					"display(StudentDF.limit(20))"
+				],
+				"attachments": null,
+				"execution_count": 15
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"StudentDF = StudentDF.select('AcademicLoadDesc', 'GenderCode', 'InternationalStudentFlag', 'ProgramCode', 'ProgramDescs', \r\n",
+					"                            'StudentAddressCityCode', 'StudentAddressPostcode', 'StudentAddressStateCode', 'StudentCountryDesc',\r\n",
+					"                            'StudentID', explode(col('TermCodes')).alias('TermCode'), 'BirthDateSK')\r\n",
+					"StudentDF = StudentDF.withColumn('StudentAddressPostcode', when(isnull(StudentDF.StudentAddressPostcode), \r\n",
+					"                                                                        StudentDF.StudentAddressCityCode.cast(IntegerType()))\r\n",
+					"                                                            .otherwise(StudentDF.StudentAddressPostcode))\r\n",
+					"StudentDF = StudentDF.withColumn('ProgramDesc', StudentDF.ProgramDescs.__getitem__(0).cast(StringType()))\r\n",
+					"StudentDF = StudentDF.withColumn('AddressDesc', concat_ws(',', StudentDF.StudentAddressCityCode, \r\n",
+					"                                                            StudentDF.StudentAddressStateCode, StudentDF.StudentAddressPostcode))"
+				],
+				"attachments": null,
+				"execution_count": 13
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"StudentDF = StudentDF.groupBy(['StudentID', 'TermCode']).\\\r\n",
+					"                        agg(collect_set(StudentDF.AcademicLoadDesc).alias('AcademicLoadDesc'), \r\n",
+					"                        collect_set(StudentDF.GenderCode).__getitem__(0).cast(StringType()).alias('GenderCode'),\r\n",
+					"                        collect_set(StudentDF.InternationalStudentFlag).__getitem__(0).cast(StringType()).alias('InternationalStudentFlag'), \r\n",
+					"                        collect_set(StudentDF.ProgramCode).alias('ProgramCode'),\r\n",
+					"                        collect_set(StudentDF.ProgramDesc).alias('ProgramDesc'), \r\n",
+					"                        collect_set(StudentDF.StudentAddressCityCode).alias('StudentAddressCityCode'),\r\n",
+					"                        collect_set(StudentDF.StudentAddressPostcode).alias('StudentAddressPostcode'),\r\n",
+					"                        collect_set(StudentDF.StudentAddressStateCode).alias('StudentAddressStateCode'), \r\n",
+					"                        collect_set(StudentDF.AddressDesc).alias('AddressDesc'),\r\n",
+					"                        collect_set(StudentDF.StudentCountryDesc).alias('StudentCountryDesc'),\r\n",
+					"                        collect_set(StudentDF.BirthDateSK).__getitem__(0).cast(IntegerType()).alias('BirthDateSK'))"
+				],
+				"attachments": null,
+				"execution_count": 14
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"StudentDF = StudentDF.withColumn('AcademicLoadDesc', when(size(StudentDF.AcademicLoadDesc) == 0, lit(None))\r\n",
+					"                                                    .otherwise(StudentDF.AcademicLoadDesc))\r\n",
+					"StudentDF = StudentDF.withColumn('ProgramCode', when(size(StudentDF.ProgramCode) == 0, lit(None))\r\n",
+					"                                                    .otherwise(StudentDF.ProgramCode))\r\n",
+					"StudentDF = StudentDF.withColumn('StudentAddressStateCode', when(size(StudentDF.StudentAddressStateCode) == 0, lit(None))\r\n",
+					"                                                    .otherwise(StudentDF.StudentAddressStateCode))\r\n",
+					"StudentDF = StudentDF.withColumn('StudentCountryDesc', when(size(StudentDF.StudentCountryDesc) == 0, lit(None))\r\n",
+					"                                                    .otherwise(StudentDF.StudentCountryDesc))"
+				],
+				"attachments": null,
+				"execution_count": 15
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"columnNames = sc.broadcast(StudentDF.columns)"
+				],
+				"attachments": null,
+				"execution_count": 16
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"StudentDF.printSchema()"
+				],
+				"attachments": null,
+				"execution_count": 47
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"StudentDF.schema"
+				],
+				"attachments": null,
+				"execution_count": 48
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"newSchema = StructType([StructField('StudentID', StringType(), True),\r\n",
+					"                        StructField('EffectiveTerm', IntegerType(), True),\r\n",
+					"                        StructField('AcademicLoadDesc', ArrayType(StringType(), True), True),\r\n",
+					"                        StructField('GenderCode', StringType(), True),\r\n",
+					"                        StructField('InternationalStudentFlag', StringType(), True),\r\n",
+					"                        StructField('ProgramCode', ArrayType(StringType(), True), True),\r\n",
+					"                        StructField('ProgramDesc', ArrayType(StringType(), True), True),\r\n",
+					"                        StructField('StudentAddressCityCode', ArrayType(StringType(), True), True),\r\n",
+					"                        StructField('StudentAddressPostcode', ArrayType(IntegerType(), True), True),\r\n",
+					"                        StructField('StudentAddressStateCode', ArrayType(StringType(), True), True),\r\n",
+					"                        StructField('AddressDesc', ArrayType(StringType(), True), True),\r\n",
+					"                        StructField('StudentCountryDesc', ArrayType(StringType(), True), True),\r\n",
+					"                        StructField('BirthDateSK', IntegerType(), True),\r\n",
+					"                        StructField('ExpiryTerm', IntegerType(), True),\r\n",
+					"                        StructField('keep', BooleanType(), True)])"
+				],
+				"attachments": null,
+				"execution_count": 21
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					},
+					"collapsed": false
+				},
+				"source": [
+					"StudentDF = spark.createDataFrame(StudentDF.rdd.map(lambda r: (r['StudentID'], r)).groupByKey().mapValues(mergeState).flatMap(lambda x: x[1]), schema=newSchema)"
+				],
+				"attachments": null,
+				"execution_count": 37
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"StudentDF = StudentDF.withColumn('StudentSK', monotonically_increasing_id()).drop(col('keep'))\r\n",
+					"StudentDF.write.mode(\"overwrite\").saveAsTable(\"unisadw.DimStudent\")"
+				],
+				"attachments": null,
+				"execution_count": 38
+			}
+		]
+	}
+}

@@ -1,0 +1,1458 @@
+{
+	"name": "subvgrade",
+	"properties": {
+		"nbformat": 4,
+		"nbformat_minor": 2,
+		"bigDataPool": {
+			"referenceName": "batched",
+			"type": "BigDataPoolReference"
+		},
+		"sessionProperties": {
+			"driverMemory": "28g",
+			"driverCores": 4,
+			"executorMemory": "28g",
+			"executorCores": 4,
+			"numExecutors": 2,
+			"conf": {
+				"spark.dynamicAllocation.enabled": "false",
+				"spark.dynamicAllocation.minExecutors": "2",
+				"spark.dynamicAllocation.maxExecutors": "2"
+			}
+		},
+		"metadata": {
+			"saveOutput": true,
+			"synapse_widget": {
+				"version": "0.1",
+				"state": {
+					"60aa8aee-9a32-43db-9857-7d55b356d6be": {
+						"type": "Synapse.DataFrame",
+						"sync_state": {
+							"table": {
+								"rows": [
+									{
+										"0": "Week 8 Challenge Question",
+										"1": "1024",
+										"2": "163506",
+										"3": "UO Information Technology Fundamentals",
+										"4": "External, UniSA Online, Online",
+										"5": "0 days, 15 hours, 42 minutes, 0 seconds",
+										"6": "D",
+										"7": "75.0",
+										"8": "25/08/2019 8:18:00 PM",
+										"9": "CCXZGCLZW",
+										"10": "26/08/2019 12:00:00 PM",
+										"11": "INFT",
+										"12": "1914",
+										"13": "2019",
+										"14": {
+											"$oid": "61303fe9104a174f7dbbbb5a"
+										}
+									},
+									{
+										"0": "Week 8 Challenge Question",
+										"1": "1024",
+										"2": "163506",
+										"3": "UO Information Technology Fundamentals",
+										"4": "External, UniSA Online, Online",
+										"5": "0 days, 0 hours, 1 minutes, 42 seconds",
+										"6": "D",
+										"7": "80.0",
+										"8": "26/08/2019 11:58:18 AM",
+										"9": "XXXCGXBB",
+										"10": "26/08/2019 12:00:00 PM",
+										"11": "INFT",
+										"12": "1914",
+										"13": "2019",
+										"14": {
+											"$oid": "61303fe9104a174f7dbbbb67"
+										}
+									},
+									{
+										"0": "Week 8 Challenge Question",
+										"1": "1024",
+										"2": "163506",
+										"3": "UO Information Technology Fundamentals",
+										"4": "External, UniSA Online, Online",
+										"5": "0 days, 2 hours, 44 minutes, 38 seconds",
+										"6": "D",
+										"7": "80.0",
+										"8": "26/08/2019 9:15:22 AM",
+										"9": "CCXZGCLZD",
+										"10": "26/08/2019 12:00:00 PM",
+										"11": "INFT",
+										"12": "1914",
+										"13": "2019",
+										"14": {
+											"$oid": "61303fe9104a174f7dbbbb81"
+										}
+									},
+									{
+										"0": "Week 2 Challenge Question",
+										"1": "1024",
+										"2": "163506",
+										"3": "UO Information Technology Fundamentals",
+										"4": "External, UniSA Online, Online",
+										"5": "",
+										"6": "F2",
+										"7": "0.0",
+										"8": "",
+										"9": "CCXCHDLDL",
+										"10": "15/07/2019 12:00:00 PM",
+										"11": "INFT",
+										"12": "1914",
+										"13": "2019",
+										"14": {
+											"$oid": "61303fe9104a174f7dbbb98a"
+										}
+									},
+									{
+										"0": "Week 2 Challenge Question",
+										"1": "1024",
+										"2": "163506",
+										"3": "UO Information Technology Fundamentals",
+										"4": "External, UniSA Online, Online",
+										"5": "",
+										"6": "F2",
+										"7": "0.0",
+										"8": "",
+										"9": "CCXZWLDDG",
+										"10": "15/07/2019 12:00:00 PM",
+										"11": "INFT",
+										"12": "1914",
+										"13": "2019",
+										"14": {
+											"$oid": "61303fe9104a174f7dbbb993"
+										}
+									},
+									{
+										"0": "Week 2 Challenge Question",
+										"1": "1024",
+										"2": "163506",
+										"3": "UO Information Technology Fundamentals",
+										"4": "External, UniSA Online, Online",
+										"5": "3 days, 19 hours, 22 minutes, 21 seconds",
+										"6": "C",
+										"7": "70.0",
+										"8": "11/07/2019 4:37:39 PM",
+										"9": "CCXZAABXD",
+										"10": "15/07/2019 12:00:00 PM",
+										"11": "INFT",
+										"12": "1914",
+										"13": "2019",
+										"14": {
+											"$oid": "61303fe9104a174f7dbbb9b0"
+										}
+									},
+									{
+										"0": "Week 2 Challenge Question",
+										"1": "1024",
+										"2": "163506",
+										"3": "UO Information Technology Fundamentals",
+										"4": "External, UniSA Online, Online",
+										"5": "0 days, 21 hours, 6 minutes, 11 seconds",
+										"6": "D",
+										"7": "80.0",
+										"8": "15/07/2019 2:53:49 PM",
+										"9": "CCXZAWDXC",
+										"10": "16/07/2019 12:00:00 PM",
+										"11": "INFT",
+										"12": "1914",
+										"13": "2019",
+										"14": {
+											"$oid": "61303fe9104a174f7dbbb9c4"
+										}
+									},
+									{
+										"0": "Week 2 Challenge Question",
+										"1": "1024",
+										"2": "163506",
+										"3": "UO Information Technology Fundamentals",
+										"4": "External, UniSA Online, Online",
+										"5": "6 days, 20 hours, 28 minutes, 21 seconds",
+										"6": "HD",
+										"7": "90.0",
+										"8": "8/07/2019 3:31:39 PM",
+										"9": "CCXZAACWL",
+										"10": "15/07/2019 12:00:00 PM",
+										"11": "INFT",
+										"12": "1914",
+										"13": "2019",
+										"14": {
+											"$oid": "61303fe9104a174f7dbbb9d5"
+										}
+									},
+									{
+										"0": "Week 2 Challenge Question",
+										"1": "1024",
+										"2": "163506",
+										"3": "UO Information Technology Fundamentals",
+										"4": "External, UniSA Online, Online",
+										"5": "0 days, 15 hours, 53 minutes, 1 seconds",
+										"6": "HD",
+										"7": "100.0",
+										"8": "14/07/2019 8:06:59 PM",
+										"9": "CCXHXXBXW",
+										"10": "15/07/2019 12:00:00 PM",
+										"11": "INFT",
+										"12": "1914",
+										"13": "2019",
+										"14": {
+											"$oid": "61303fe9104a174f7dbbb9e5"
+										}
+									},
+									{
+										"0": "Week 5 Challenge Question",
+										"1": "1024",
+										"2": "163506",
+										"3": "UO Information Technology Fundamentals",
+										"4": "External, UniSA Online, Online",
+										"5": "",
+										"6": "F2",
+										"7": "0.0",
+										"8": "",
+										"9": "CCXZAZLCL",
+										"10": "7/08/2019 12:00:00 PM",
+										"11": "INFT",
+										"12": "1914",
+										"13": "2019",
+										"14": {
+											"$oid": "61303fe9104a174f7dbbb9f7"
+										}
+									}
+								],
+								"schema": [
+									{
+										"key": "0",
+										"name": "Assessment Name",
+										"type": "string"
+									},
+									{
+										"key": "1",
+										"name": "Catalog Number",
+										"type": "bigint"
+									},
+									{
+										"key": "2",
+										"name": "Course ID",
+										"type": "bigint"
+									},
+									{
+										"key": "3",
+										"name": "Course Name",
+										"type": "string"
+									},
+									{
+										"key": "4",
+										"name": "Course Offering Description",
+										"type": "string"
+									},
+									{
+										"key": "5",
+										"name": "Early / Late",
+										"type": "string"
+									},
+									{
+										"key": "6",
+										"name": "Grade",
+										"type": "string"
+									},
+									{
+										"key": "7",
+										"name": "Grade Numeric",
+										"type": "double"
+									},
+									{
+										"key": "8",
+										"name": "Last Submission Time",
+										"type": "string"
+									},
+									{
+										"key": "9",
+										"name": "Student ID",
+										"type": "string"
+									},
+									{
+										"key": "10",
+										"name": "Student's Due Date",
+										"type": "string"
+									},
+									{
+										"key": "11",
+										"name": "Subject Area",
+										"type": "string"
+									},
+									{
+										"key": "12",
+										"name": "Term Code",
+										"type": "bigint"
+									},
+									{
+										"key": "13",
+										"name": "Year",
+										"type": "bigint"
+									},
+									{
+										"key": "14",
+										"name": "_id",
+										"type": "StructType(StructField($oid,StringType,true))"
+									}
+								]
+							},
+							"isSummary": false,
+							"language": "scala"
+						},
+						"persist_state": {
+							"view": {
+								"type": "details",
+								"chartOptions": {
+									"chartType": "bar",
+									"aggregationType": "sum",
+									"categoryFieldKeys": [
+										"0"
+									],
+									"seriesFieldKeys": [
+										"1"
+									],
+									"isStacked": false
+								}
+							}
+						}
+					},
+					"2a5f488a-aab3-4d59-9c43-d4094034f6dd": {
+						"type": "Synapse.DataFrame",
+						"sync_state": {
+							"table": {
+								"rows": [
+									{
+										"0": "Week 8 Challenge Question",
+										"1": "1024",
+										"2": "163506",
+										"3": "UO Information Technology Fundamentals",
+										"4": "External, UniSA Online, Online",
+										"5": "0 days, 15 hours, 42 minutes, 0 seconds",
+										"6": "D",
+										"7": "75.0",
+										"8": "25/08/2019 8:18:00 PM",
+										"9": "CCXZGCLZW",
+										"10": "26/08/2019 12:00:00 PM",
+										"11": "INFT",
+										"12": "1914",
+										"13": "2019",
+										"14": {
+											"$oid": "61303fe9104a174f7dbbbb5a"
+										},
+										"15": "2019-08-25 20:18:00",
+										"16": "2019-08-26 12:00:00"
+									},
+									{
+										"0": "Week 8 Challenge Question",
+										"1": "1024",
+										"2": "163506",
+										"3": "UO Information Technology Fundamentals",
+										"4": "External, UniSA Online, Online",
+										"5": "0 days, 0 hours, 1 minutes, 42 seconds",
+										"6": "D",
+										"7": "80.0",
+										"8": "26/08/2019 11:58:18 AM",
+										"9": "XXXCGXBB",
+										"10": "26/08/2019 12:00:00 PM",
+										"11": "INFT",
+										"12": "1914",
+										"13": "2019",
+										"14": {
+											"$oid": "61303fe9104a174f7dbbbb67"
+										},
+										"15": "2019-08-26 11:58:18",
+										"16": "2019-08-26 12:00:00"
+									},
+									{
+										"0": "Week 8 Challenge Question",
+										"1": "1024",
+										"2": "163506",
+										"3": "UO Information Technology Fundamentals",
+										"4": "External, UniSA Online, Online",
+										"5": "0 days, 2 hours, 44 minutes, 38 seconds",
+										"6": "D",
+										"7": "80.0",
+										"8": "26/08/2019 9:15:22 AM",
+										"9": "CCXZGCLZD",
+										"10": "26/08/2019 12:00:00 PM",
+										"11": "INFT",
+										"12": "1914",
+										"13": "2019",
+										"14": {
+											"$oid": "61303fe9104a174f7dbbbb81"
+										},
+										"15": "2019-08-26 09:15:22",
+										"16": "2019-08-26 12:00:00"
+									},
+									{
+										"0": "Week 2 Challenge Question",
+										"1": "1024",
+										"2": "163506",
+										"3": "UO Information Technology Fundamentals",
+										"4": "External, UniSA Online, Online",
+										"5": "",
+										"6": "F2",
+										"7": "0.0",
+										"8": "",
+										"9": "CCXCHDLDL",
+										"10": "15/07/2019 12:00:00 PM",
+										"11": "INFT",
+										"12": "1914",
+										"13": "2019",
+										"14": {
+											"$oid": "61303fe9104a174f7dbbb98a"
+										},
+										"16": "2019-07-15 12:00:00"
+									},
+									{
+										"0": "Week 2 Challenge Question",
+										"1": "1024",
+										"2": "163506",
+										"3": "UO Information Technology Fundamentals",
+										"4": "External, UniSA Online, Online",
+										"5": "",
+										"6": "F2",
+										"7": "0.0",
+										"8": "",
+										"9": "CCXZWLDDG",
+										"10": "15/07/2019 12:00:00 PM",
+										"11": "INFT",
+										"12": "1914",
+										"13": "2019",
+										"14": {
+											"$oid": "61303fe9104a174f7dbbb993"
+										},
+										"16": "2019-07-15 12:00:00"
+									},
+									{
+										"0": "Week 2 Challenge Question",
+										"1": "1024",
+										"2": "163506",
+										"3": "UO Information Technology Fundamentals",
+										"4": "External, UniSA Online, Online",
+										"5": "3 days, 19 hours, 22 minutes, 21 seconds",
+										"6": "C",
+										"7": "70.0",
+										"8": "11/07/2019 4:37:39 PM",
+										"9": "CCXZAABXD",
+										"10": "15/07/2019 12:00:00 PM",
+										"11": "INFT",
+										"12": "1914",
+										"13": "2019",
+										"14": {
+											"$oid": "61303fe9104a174f7dbbb9b0"
+										},
+										"15": "2019-07-11 16:37:39",
+										"16": "2019-07-15 12:00:00"
+									},
+									{
+										"0": "Week 2 Challenge Question",
+										"1": "1024",
+										"2": "163506",
+										"3": "UO Information Technology Fundamentals",
+										"4": "External, UniSA Online, Online",
+										"5": "0 days, 21 hours, 6 minutes, 11 seconds",
+										"6": "D",
+										"7": "80.0",
+										"8": "15/07/2019 2:53:49 PM",
+										"9": "CCXZAWDXC",
+										"10": "16/07/2019 12:00:00 PM",
+										"11": "INFT",
+										"12": "1914",
+										"13": "2019",
+										"14": {
+											"$oid": "61303fe9104a174f7dbbb9c4"
+										},
+										"15": "2019-07-15 14:53:49",
+										"16": "2019-07-16 12:00:00"
+									},
+									{
+										"0": "Week 2 Challenge Question",
+										"1": "1024",
+										"2": "163506",
+										"3": "UO Information Technology Fundamentals",
+										"4": "External, UniSA Online, Online",
+										"5": "6 days, 20 hours, 28 minutes, 21 seconds",
+										"6": "HD",
+										"7": "90.0",
+										"8": "8/07/2019 3:31:39 PM",
+										"9": "CCXZAACWL",
+										"10": "15/07/2019 12:00:00 PM",
+										"11": "INFT",
+										"12": "1914",
+										"13": "2019",
+										"14": {
+											"$oid": "61303fe9104a174f7dbbb9d5"
+										},
+										"15": "2019-07-08 15:31:39",
+										"16": "2019-07-15 12:00:00"
+									},
+									{
+										"0": "Week 2 Challenge Question",
+										"1": "1024",
+										"2": "163506",
+										"3": "UO Information Technology Fundamentals",
+										"4": "External, UniSA Online, Online",
+										"5": "0 days, 15 hours, 53 minutes, 1 seconds",
+										"6": "HD",
+										"7": "100.0",
+										"8": "14/07/2019 8:06:59 PM",
+										"9": "CCXHXXBXW",
+										"10": "15/07/2019 12:00:00 PM",
+										"11": "INFT",
+										"12": "1914",
+										"13": "2019",
+										"14": {
+											"$oid": "61303fe9104a174f7dbbb9e5"
+										},
+										"15": "2019-07-14 20:06:59",
+										"16": "2019-07-15 12:00:00"
+									},
+									{
+										"0": "Week 5 Challenge Question",
+										"1": "1024",
+										"2": "163506",
+										"3": "UO Information Technology Fundamentals",
+										"4": "External, UniSA Online, Online",
+										"5": "",
+										"6": "F2",
+										"7": "0.0",
+										"8": "",
+										"9": "CCXZAZLCL",
+										"10": "7/08/2019 12:00:00 PM",
+										"11": "INFT",
+										"12": "1914",
+										"13": "2019",
+										"14": {
+											"$oid": "61303fe9104a174f7dbbb9f7"
+										},
+										"16": "2019-08-07 12:00:00"
+									}
+								],
+								"schema": [
+									{
+										"key": "0",
+										"name": "Assessment Name",
+										"type": "string"
+									},
+									{
+										"key": "1",
+										"name": "Catalog Number",
+										"type": "bigint"
+									},
+									{
+										"key": "2",
+										"name": "Course ID",
+										"type": "bigint"
+									},
+									{
+										"key": "3",
+										"name": "Course Name",
+										"type": "string"
+									},
+									{
+										"key": "4",
+										"name": "Course Offering Description",
+										"type": "string"
+									},
+									{
+										"key": "5",
+										"name": "Early / Late",
+										"type": "string"
+									},
+									{
+										"key": "6",
+										"name": "Grade",
+										"type": "string"
+									},
+									{
+										"key": "7",
+										"name": "Grade Numeric",
+										"type": "double"
+									},
+									{
+										"key": "8",
+										"name": "Last Submission Time",
+										"type": "string"
+									},
+									{
+										"key": "9",
+										"name": "Student ID",
+										"type": "string"
+									},
+									{
+										"key": "10",
+										"name": "Student's Due Date",
+										"type": "string"
+									},
+									{
+										"key": "11",
+										"name": "Subject Area",
+										"type": "string"
+									},
+									{
+										"key": "12",
+										"name": "Term Code",
+										"type": "bigint"
+									},
+									{
+										"key": "13",
+										"name": "Year",
+										"type": "bigint"
+									},
+									{
+										"key": "14",
+										"name": "_id",
+										"type": "StructType(StructField($oid,StringType,true))"
+									},
+									{
+										"key": "15",
+										"name": "SubTime",
+										"type": "timestamp"
+									},
+									{
+										"key": "16",
+										"name": "DueTime",
+										"type": "timestamp"
+									}
+								]
+							},
+							"isSummary": false,
+							"language": "scala"
+						},
+						"persist_state": {
+							"view": {
+								"type": "details",
+								"chartOptions": {
+									"chartType": "bar",
+									"aggregationType": "sum",
+									"categoryFieldKeys": [
+										"0"
+									],
+									"seriesFieldKeys": [
+										"1"
+									],
+									"isStacked": false
+								}
+							}
+						}
+					},
+					"da71dc1a-f0f1-4ee9-97ca-811b04ebf629": {
+						"type": "Synapse.DataFrame",
+						"sync_state": {
+							"table": {
+								"rows": [
+									{
+										"0": "F2",
+										"1": "213"
+									},
+									{
+										"0": "P2",
+										"1": "169"
+									},
+									{
+										"0": "F1",
+										"1": "150"
+									},
+									{
+										"0": "D",
+										"1": "377"
+									},
+									{
+										"0": "C",
+										"1": "382"
+									},
+									{
+										"0": "HD",
+										"1": "287"
+									},
+									{
+										"0": "P1",
+										"1": "332"
+									},
+									{
+										"0": "NaN",
+										"1": "3"
+									},
+									{
+										"0": "",
+										"1": "4"
+									}
+								],
+								"schema": [
+									{
+										"key": "0",
+										"name": "Grade",
+										"type": "string"
+									},
+									{
+										"key": "1",
+										"name": "count(DISTINCT Student ID)",
+										"type": "bigint"
+									}
+								]
+							},
+							"isSummary": false,
+							"language": "scala"
+						},
+						"persist_state": {
+							"view": {
+								"type": "details",
+								"chartOptions": {
+									"chartType": "bar",
+									"aggregationType": "sum",
+									"categoryFieldKeys": [
+										"0"
+									],
+									"seriesFieldKeys": [
+										"1"
+									],
+									"isStacked": false
+								}
+							}
+						}
+					},
+					"4464f263-5644-472b-b08d-8cf89064776c": {
+						"type": "Synapse.DataFrame",
+						"sync_state": {
+							"table": {
+								"rows": [
+									{
+										"0": "F2",
+										"1": "413"
+									},
+									{
+										"0": "P2",
+										"1": "506"
+									},
+									{
+										"0": "F1",
+										"1": "405"
+									},
+									{
+										"0": "D",
+										"1": "1830"
+									},
+									{
+										"0": "C",
+										"1": "1510"
+									},
+									{
+										"0": "HD",
+										"1": "2089"
+									},
+									{
+										"0": "P1",
+										"1": "1096"
+									},
+									{
+										"0": "NaN",
+										"1": "7"
+									},
+									{
+										"0": "",
+										"1": "6"
+									}
+								],
+								"schema": [
+									{
+										"key": "0",
+										"name": "Grade",
+										"type": "string"
+									},
+									{
+										"key": "1",
+										"name": "count(DISTINCT Student ID)",
+										"type": "bigint"
+									}
+								]
+							},
+							"isSummary": false,
+							"language": "scala"
+						},
+						"persist_state": {
+							"view": {
+								"type": "details",
+								"chartOptions": {
+									"chartType": "bar",
+									"aggregationType": "sum",
+									"categoryFieldKeys": [
+										"0"
+									],
+									"seriesFieldKeys": [
+										"1"
+									],
+									"isStacked": false
+								}
+							}
+						}
+					},
+					"f1973a5e-9426-46df-ac45-e4f472f21ac4": {
+						"type": "Synapse.DataFrame",
+						"sync_state": {
+							"table": {
+								"rows": [
+									{
+										"0": "CIVE",
+										"1": "1912",
+										"2": "23"
+									},
+									{
+										"0": "CIVE",
+										"1": "2005",
+										"2": "16"
+									},
+									{
+										"0": "INFS",
+										"1": "1905",
+										"2": "11"
+									},
+									{
+										"0": "CIVE",
+										"1": "2025",
+										"2": "58"
+									},
+									{
+										"0": "BUIL",
+										"1": "2025",
+										"2": "53"
+									},
+									{
+										"0": "BUIL",
+										"1": "1905",
+										"2": "14"
+									},
+									{
+										"0": "COMP",
+										"1": "2005",
+										"2": "19"
+									},
+									{
+										"0": "ENGG",
+										"1": "2025",
+										"2": "2"
+									},
+									{
+										"0": "INFT",
+										"1": "1905",
+										"2": "71"
+									},
+									{
+										"0": "INFT",
+										"1": "1912",
+										"2": "4"
+									},
+									{
+										"0": "MENG",
+										"1": "2112",
+										"2": "23"
+									},
+									{
+										"0": "COMP",
+										"1": "2105",
+										"2": "34"
+									},
+									{
+										"0": "INFS",
+										"1": "2025",
+										"2": "28"
+									},
+									{
+										"0": "INFS",
+										"1": "2014",
+										"2": "16"
+									},
+									{
+										"0": "BUIL",
+										"1": "2005",
+										"2": "36"
+									},
+									{
+										"0": "BUIL",
+										"1": "1925",
+										"2": "49"
+									},
+									{
+										"0": "COMP",
+										"1": "2014",
+										"2": "9"
+									},
+									{
+										"0": "ENGG",
+										"1": "2105",
+										"2": "7"
+									},
+									{
+										"0": "CIVE",
+										"1": "2012",
+										"2": "38"
+									},
+									{
+										"0": "COMP",
+										"1": "2025",
+										"2": "56"
+									},
+									{
+										"0": "COMP",
+										"1": "2112",
+										"2": "54"
+									},
+									{
+										"0": "INFT",
+										"1": "2025",
+										"2": "12"
+									},
+									{
+										"0": "MENG",
+										"1": "2025",
+										"2": "4"
+									},
+									{
+										"0": "INFS",
+										"1": "2105",
+										"2": "20"
+									},
+									{
+										"0": "INFS",
+										"1": "1912",
+										"2": "31"
+									},
+									{
+										"0": "CIVE",
+										"1": "1925",
+										"2": "15"
+									},
+									{
+										"0": "BUIL",
+										"1": "2105",
+										"2": "52"
+									},
+									{
+										"0": "INFT",
+										"1": "2105",
+										"2": "30"
+									},
+									{
+										"0": "BUIL",
+										"1": "2014",
+										"2": "43"
+									},
+									{
+										"0": "MATH",
+										"1": "1905",
+										"2": "16"
+									},
+									{
+										"0": "INFT",
+										"1": "2014",
+										"2": "7"
+									},
+									{
+										"0": "INFS",
+										"1": "2005",
+										"2": "11"
+									},
+									{
+										"0": "INFT",
+										"1": "1925",
+										"2": "18"
+									},
+									{
+										"0": "BUIL",
+										"1": "1912",
+										"2": "21"
+									},
+									{
+										"0": "MATH",
+										"1": "2105",
+										"2": "31"
+									},
+									{
+										"0": "MATH",
+										"1": "2005",
+										"2": "30"
+									},
+									{
+										"0": "BUIL",
+										"1": "1914",
+										"2": "28"
+									},
+									{
+										"0": "MATH",
+										"1": "1914",
+										"2": "26"
+									},
+									{
+										"0": "INFT",
+										"1": "2005",
+										"2": "20"
+									},
+									{
+										"0": "COMP",
+										"1": "2012",
+										"2": "54"
+									},
+									{
+										"0": "COMP",
+										"1": "1905",
+										"2": "10"
+									},
+									{
+										"0": "CIVE",
+										"1": "2014",
+										"2": "21"
+									},
+									{
+										"0": "INFT",
+										"1": "2112",
+										"2": "29"
+									},
+									{
+										"0": "INFS",
+										"1": "2112",
+										"2": "48"
+									},
+									{
+										"0": "CIVE",
+										"1": "2105",
+										"2": "19"
+									},
+									{
+										"0": "MATH",
+										"1": "2025",
+										"2": "4"
+									},
+									{
+										"0": "BUIL",
+										"1": "1825",
+										"2": "1"
+									},
+									{
+										"0": "BUIL",
+										"1": "2012",
+										"2": "43"
+									},
+									{
+										"0": "INFT",
+										"1": "2012",
+										"2": "15"
+									},
+									{
+										"0": "MATH",
+										"1": "2014",
+										"2": "54"
+									},
+									{
+										"0": "ENGG",
+										"1": "2112",
+										"2": "9"
+									},
+									{
+										"0": "CIVE",
+										"1": "1905",
+										"2": "10"
+									},
+									{
+										"0": "COMP",
+										"1": "1925",
+										"2": "33"
+									},
+									{
+										"0": "BUIL",
+										"1": "2112",
+										"2": "68"
+									},
+									{
+										"0": "CIVE",
+										"1": "1914",
+										"2": "16"
+									},
+									{
+										"0": "INFS",
+										"1": "2012",
+										"2": "35"
+									},
+									{
+										"0": "COMP",
+										"1": "1914",
+										"2": "6"
+									},
+									{
+										"0": "COMP",
+										"1": "1912",
+										"2": "27"
+									},
+									{
+										"0": "CIVE",
+										"1": "2112",
+										"2": "67"
+									},
+									{
+										"0": "INFS",
+										"1": "1914",
+										"2": "23"
+									},
+									{
+										"0": "INFT",
+										"1": "1914",
+										"2": "20"
+									}
+								],
+								"schema": [
+									{
+										"key": "0",
+										"name": "Subject Area",
+										"type": "string"
+									},
+									{
+										"key": "1",
+										"name": "Term Code",
+										"type": "bigint"
+									},
+									{
+										"key": "2",
+										"name": "F2 Students without submission",
+										"type": "bigint"
+									}
+								]
+							},
+							"isSummary": false,
+							"language": "scala"
+						},
+						"persist_state": {
+							"view": {
+								"type": "details",
+								"chartOptions": {
+									"chartType": "bar",
+									"aggregationType": "sum",
+									"categoryFieldKeys": [
+										"1"
+									],
+									"seriesFieldKeys": [
+										"2"
+									],
+									"isStacked": false
+								}
+							}
+						}
+					},
+					"446c2707-1feb-4f79-8378-eedeee6f07d1": {
+						"type": "Synapse.DataFrame",
+						"sync_state": {
+							"table": {
+								"rows": [
+									{
+										"0": "F2",
+										"1": "57.92327917540181"
+									},
+									{
+										"0": "P2",
+										"1": "47.655996810207334"
+									},
+									{
+										"0": "F1",
+										"1": "42.848771798704526"
+									},
+									{
+										"0": "D",
+										"1": "28.529465020576136"
+									},
+									{
+										"0": "C",
+										"1": "32.74178961748633"
+									},
+									{
+										"0": "HD",
+										"1": "21.899144032921814"
+									},
+									{
+										"0": "P1",
+										"1": "36.26202090209022"
+									},
+									{
+										"0": "NaN",
+										"1": "83.25361111111111"
+									},
+									{
+										"0": "",
+										"1": "269.87180555555557"
+									}
+								],
+								"schema": [
+									{
+										"key": "0",
+										"name": "Grade",
+										"type": "string"
+									},
+									{
+										"key": "1",
+										"name": "Average hours late",
+										"type": "double"
+									}
+								]
+							},
+							"isSummary": false,
+							"language": "scala"
+						},
+						"persist_state": {
+							"view": {
+								"type": "details",
+								"chartOptions": {
+									"chartType": "bar",
+									"aggregationType": "sum",
+									"categoryFieldKeys": [
+										"0"
+									],
+									"seriesFieldKeys": [
+										"1"
+									],
+									"isStacked": false
+								}
+							}
+						}
+					}
+				}
+			},
+			"kernelspec": {
+				"name": "synapse_pyspark",
+				"display_name": "Synapse PySpark"
+			},
+			"language_info": {
+				"name": "python"
+			},
+			"a365ComputeOptions": {
+				"id": "/subscriptions/551f35f8-5023-4513-ae40-48f2e9f65fc6/resourceGroups/DUS02mem/providers/Microsoft.Synapse/workspaces/studentanalytics/bigDataPools/batched",
+				"name": "batched",
+				"type": "Spark",
+				"endpoint": "https://studentanalytics.dev.azuresynapse.net/livyApi/versions/2019-11-01-preview/sparkPools/batched",
+				"auth": {
+					"type": "AAD",
+					"authResource": "https://dev.azuresynapse.net"
+				},
+				"sparkVersion": "2.4",
+				"nodeCount": 3,
+				"cores": 4,
+				"memory": 28,
+				"extraHeader": null
+			}
+		},
+		"cells": [
+			{
+				"cell_type": "code",
+				"metadata": {
+					"microsoft": {
+						"language": "python"
+					},
+					"collapsed": false
+				},
+				"source": [
+					"%%pyspark\r\n",
+					"df = spark.read.load('abfss://datalake@dus02store.dfs.core.windows.net/fromAtlas/submissionvgrades.json', format='json')\r\n",
+					"display(df.limit(10))"
+				],
+				"attachments": null,
+				"execution_count": 1
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"from pyspark.sql.functions import *\r\n",
+					"df.printSchema()"
+				],
+				"attachments": null,
+				"execution_count": 5
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"df = df.withColumn('SubTime', to_timestamp('Last Submission Time', 'dd/MM/yyyy hh:mm:ss a'))\r\n",
+					"df = df.withColumn('DueTime', to_timestamp(\"Student's Due Date\", 'dd/MM/yyyy hh:mm:ss a'))"
+				],
+				"attachments": null,
+				"execution_count": 6
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					},
+					"collapsed": false
+				},
+				"source": [
+					"display(df.limit(10))"
+				],
+				"attachments": null,
+				"execution_count": 7
+			},
+			{
+				"cell_type": "markdown",
+				"metadata": {
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"Number of Students Submitted ahead of Due by Grade"
+				],
+				"attachments": null
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					},
+					"collapsed": false
+				},
+				"source": [
+					"display(df.where(df.SubTime <= df.DueTime).groupBy('Grade').agg(countDistinct('Student ID')).collect())"
+				],
+				"attachments": null,
+				"execution_count": 24
+			},
+			{
+				"cell_type": "markdown",
+				"metadata": {
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"Number of Students Submitted late by Grade"
+				],
+				"attachments": null
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					},
+					"collapsed": false
+				},
+				"source": [
+					"display(df.where(df.SubTime > df.DueTime).groupBy('Grade').agg(countDistinct('Student ID')).collect())"
+				],
+				"attachments": null,
+				"execution_count": 23
+			},
+			{
+				"cell_type": "markdown",
+				"metadata": {
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"Average Late submission hours by Grade"
+				],
+				"attachments": null
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					},
+					"collapsed": false
+				},
+				"source": [
+					"display(df.where(df.SubTime > df.DueTime).groupBy('Grade')\\\r\n",
+					"        .agg(avg((df.SubTime.cast('long') - df.DueTime.cast('long'))/3600).alias('Average hours late')).collect())"
+				],
+				"attachments": null,
+				"execution_count": 27
+			},
+			{
+				"cell_type": "markdown",
+				"metadata": {
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"Number of F2 Students without submission by Subject"
+				],
+				"attachments": null
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					},
+					"collapsed": false
+				},
+				"source": [
+					"display(df.where((df.Grade == 'F2') & isnull(df.SubTime)).groupBy(['Subject Area', 'Term Code'])\\\r\n",
+					"        .agg(countDistinct('Student ID').alias('F2 Students without submission')).collect())"
+				],
+				"attachments": null,
+				"execution_count": 26
+			}
+		]
+	}
+}
