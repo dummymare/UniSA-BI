@@ -1,0 +1,45 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"workspaceName": {
+			"value": "studentanalytics"
+		},
+		"CosmosDbMongoDbApi1_connectionString": {
+			"value": ""
+		},
+		"CosmosDbMongoDbNew_connectionString": {
+			"value": ""
+		},
+		"MongoDbAtlas2_connectionString": {
+			"value": ""
+		},
+		"MongoDbAtlas3_connectionString": {
+			"value": ""
+		},
+		"MyMongoDb_connectionString": {
+			"value": ""
+		},
+		"studentanalytics-WorkspaceDefaultSqlServer_connectionString": {
+			"value": ""
+		},
+		"CosmosDbMongoDbApi1_properties_typeProperties_database": {
+			"value": "datalake"
+		},
+		"CosmosDbMongoDbNew_properties_typeProperties_database": {
+			"value": "datalake"
+		},
+		"MongoDbAtlas2_properties_typeProperties_database": {
+			"value": "datalake"
+		},
+		"MongoDbAtlas3_properties_typeProperties_database": {
+			"value": "datalake"
+		},
+		"MyMongoDb_properties_typeProperties_database": {
+			"value": "testDB"
+		},
+		"studentanalytics-WorkspaceDefaultStorage_properties_typeProperties_url": {
+			"value": "https://dus02store.dfs.core.windows.net"
+		}
+	}
+}
