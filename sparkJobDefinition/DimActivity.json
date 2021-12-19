@@ -1,0 +1,29 @@
+{
+	"name": "DimActivity",
+	"properties": {
+		"targetBigDataPool": {
+			"referenceName": "batched",
+			"type": "BigDataPoolReference"
+		},
+		"requiredSparkVersion": "2.4",
+		"language": "python",
+		"jobProperties": {
+			"name": "DimActivity",
+			"file": "abfss://datalake@dus02store.dfs.core.windows.net/synapse/workspaces/studentanalytics/batchjobs/Spark%20job%20definition%201/Init.py",
+			"conf": {
+				"spark.dynamicAllocation.enabled": "true",
+				"spark.dynamicAllocation.minExecutors": "1",
+				"spark.dynamicAllocation.maxExecutors": "2",
+				"spark.autotune.trackingId": "cdd41836-0ab5-4048-87f8-648a60a19917"
+			},
+			"args": [],
+			"jars": [],
+			"files": [],
+			"driverMemory": "28g",
+			"driverCores": 4,
+			"executorMemory": "28g",
+			"executorCores": 4,
+			"numExecutors": 1
+		}
+	}
+}
