@@ -16,160 +16,12 @@
 			"conf": {
 				"spark.dynamicAllocation.enabled": "false",
 				"spark.dynamicAllocation.minExecutors": "1",
-				"spark.dynamicAllocation.maxExecutors": "1"
+				"spark.dynamicAllocation.maxExecutors": "1",
+				"spark.autotune.trackingId": "6c3db343-478b-4bd4-ba76-acc758592fad"
 			}
 		},
 		"metadata": {
 			"saveOutput": true,
-			"synapse_widget": {
-				"version": "0.1",
-				"state": {
-					"d72b6905-2ac7-4afc-aa30-969482633344": {
-						"type": "Synapse.DataFrame",
-						"sync_state": {
-							"table": {
-								"rows": [
-									{
-										"0": "Report viewed",
-										"1": "1",
-										"2": "1"
-									},
-									{
-										"0": "Enrolment instance updated",
-										"1": "1",
-										"2": "2"
-									},
-									{
-										"0": "Wiki version restored",
-										"1": "1",
-										"2": "3"
-									},
-									{
-										"0": "Wiki page deleted",
-										"1": "1",
-										"2": "4"
-									},
-									{
-										"0": "Reveal identities confirmation page viewed.",
-										"1": "1",
-										"2": "5"
-									},
-									{
-										"0": "Badge created",
-										"1": "2",
-										"2": "6"
-									},
-									{
-										"0": "Forum summary report viewed",
-										"1": "2",
-										"2": "7"
-									},
-									{
-										"0": "Conversation deleted",
-										"1": "2",
-										"2": "8"
-									},
-									{
-										"0": "Quiz override updated",
-										"1": "2",
-										"2": "9"
-									},
-									{
-										"0": "Export link created",
-										"1": "2",
-										"2": "10"
-									},
-									{
-										"0": "Essay assessed",
-										"1": "3",
-										"2": "11"
-									},
-									{
-										"0": "Entry has been deleted",
-										"1": "4",
-										"2": "12"
-									},
-									{
-										"0": "Notes viewed",
-										"1": "4",
-										"2": "13"
-									},
-									{
-										"0": "Wiki page version deleted",
-										"1": "4",
-										"2": "14"
-									},
-									{
-										"0": "Response deleted",
-										"1": "5",
-										"2": "15"
-									},
-									{
-										"0": "The identities have been revealed.",
-										"1": "5",
-										"2": "16"
-									},
-									{
-										"0": "UniSA Media Library LTI Launch",
-										"1": "7",
-										"2": "17"
-									},
-									{
-										"0": "TXT grade exported",
-										"1": "7",
-										"2": "18"
-									},
-									{
-										"0": "Discussion updated",
-										"1": "7",
-										"2": "19"
-									},
-									{
-										"0": "Page moved",
-										"1": "8",
-										"2": "20"
-									}
-								],
-								"schema": [
-									{
-										"key": "0",
-										"name": "ActivityName",
-										"type": "string"
-									},
-									{
-										"key": "1",
-										"name": "NumberOfActivities",
-										"type": "bigint"
-									},
-									{
-										"key": "2",
-										"name": "ActivitySK",
-										"type": "int"
-									}
-								]
-							},
-							"isSummary": false,
-							"language": "scala"
-						},
-						"persist_state": {
-							"view": {
-								"type": "details",
-								"chartOptions": {
-									"chartType": "bar",
-									"aggregationType": "sum",
-									"categoryFieldKeys": [
-										"0"
-									],
-									"seriesFieldKeys": [
-										"1"
-									],
-									"isStacked": false
-								}
-							}
-						}
-					}
-				}
-			},
 			"enableDebugMode": false,
 			"kernelspec": {
 				"name": "synapse_pyspark",
@@ -191,18 +43,18 @@
 				"nodeCount": 3,
 				"cores": 4,
 				"memory": 28,
-				"extraHeader": null
-			}
+				"automaticScaleJobs": false
+			},
+			"sessionKeepAliveTimeout": 30
 		},
 		"cells": [
 			{
 				"cell_type": "code",
 				"source": [
-					"logDF = spark.read.load('abfss://datalake@dus02store.dfs.core.windows.net/fromAtlas/NewLog.json', format='json')\r\n",
+					"logDF = spark.read.option(\"header\",\"true\").load('abfss://datalake@dus02store.dfs.core.windows.net/fromAtlas/output.csv', format='csv')\r\n",
 					"logDF = logDF.filter(logDF.filename != 'NEWLogBUIL 1024 _1094_SP42020.csv')"
 				],
-				"attachments": null,
-				"execution_count": 11
+				"execution_count": 8
 			},
 			{
 				"cell_type": "code",
@@ -221,8 +73,7 @@
 					"from pyspark.sql.functions import *\r\n",
 					"from pyspark.sql.window import Window"
 				],
-				"attachments": null,
-				"execution_count": 12
+				"execution_count": 9
 			},
 			{
 				"cell_type": "code",
@@ -240,8 +91,7 @@
 				"source": [
 					"w = Window.orderBy(\"count\")"
 				],
-				"attachments": null,
-				"execution_count": 15
+				"execution_count": 10
 			},
 			{
 				"cell_type": "code",
@@ -261,28 +111,7 @@
 					"logDF = logDF.withColumnRenamed('count', 'NumberOfActivities')\r\n",
 					"logDF = logDF.withColumnRenamed('Event name', 'ActivityName')"
 				],
-				"attachments": null,
-				"execution_count": 16
-			},
-			{
-				"cell_type": "code",
-				"metadata": {
-					"jupyter": {
-						"source_hidden": false,
-						"outputs_hidden": false
-					},
-					"nteract": {
-						"transient": {
-							"deleting": false
-						}
-					},
-					"collapsed": false
-				},
-				"source": [
-					"display(logDF.limit(20))"
-				],
-				"attachments": null,
-				"execution_count": 17
+				"execution_count": 11
 			},
 			{
 				"cell_type": "code",
@@ -298,10 +127,9 @@
 					}
 				},
 				"source": [
-					"logDF.write.mode(\"overwrite\").saveAsTable(\"unisadw.dimactivity\")"
+					"logDF.write.mode(\"overwrite\").saveAsTable(\"default.dimactivity\")"
 				],
-				"attachments": null,
-				"execution_count": 18
+				"execution_count": 12
 			}
 		]
 	}
