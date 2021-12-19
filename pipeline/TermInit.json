@@ -1,5 +1,5 @@
 {
-	"name": "Pipeline 1",
+	"name": "TermInit",
 	"properties": {
 		"activities": [
 			{
