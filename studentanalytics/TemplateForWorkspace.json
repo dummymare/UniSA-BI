@@ -22693,12 +22693,12 @@
 				"language": "python",
 				"jobProperties": {
 					"name": "DimActivity",
-					"file": "abfss://datalake@dus02store.dfs.core.windows.net/synapse/workspaces/studentanalytics/batchjobs/Spark%20job%20definition%201/Init.py",
+					"file": "abfss://datalake@dus02store.dfs.core.windows.net/synapse/workspaces/studentanalytics/batchjobs/DimActivity/Init.py",
 					"conf": {
 						"spark.dynamicAllocation.enabled": "true",
 						"spark.dynamicAllocation.minExecutors": "1",
 						"spark.dynamicAllocation.maxExecutors": "2",
-						"spark.autotune.trackingId": "cdd41836-0ab5-4048-87f8-648a60a19917"
+						"spark.autotune.trackingId": "e2814432-15b4-4287-9c93-be40b87c1836"
 					},
 					"args": [],
 					"jars": [],
