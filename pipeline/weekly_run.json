@@ -1,0 +1,21 @@
+{
+	"name": "weekly_run",
+	"properties": {
+		"activities": [
+			{
+				"name": "TermIniit",
+				"type": "ExecutePipeline",
+				"dependsOn": [],
+				"userProperties": [],
+				"typeProperties": {
+					"pipeline": {
+						"referenceName": "TermInit",
+						"type": "PipelineReference"
+					},
+					"waitOnCompletion": true
+				}
+			}
+		],
+		"annotations": []
+	}
+}
