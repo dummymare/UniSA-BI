@@ -292,27 +292,7 @@
 			"properties": {
 				"activities": [
 					{
-						"name": "DimActivity_daily",
-						"type": "SynapseNotebook",
-						"dependsOn": [],
-						"policy": {
-							"timeout": "7.00:00:00",
-							"retry": 0,
-							"retryIntervalInSeconds": 30,
-							"secureOutput": false,
-							"secureInput": false
-						},
-						"userProperties": [],
-						"typeProperties": {
-							"notebook": {
-								"referenceName": "DimActivity",
-								"type": "NotebookReference"
-							},
-							"snapshot": true
-						}
-					},
-					{
-						"name": "Spark job definition1",
+						"name": "DimActivity",
 						"type": "SparkJob",
 						"dependsOn": [],
 						"policy": {
@@ -329,6 +309,25 @@
 								"type": "SparkJobDefinitionReference"
 							}
 						}
+					},
+					{
+						"name": "DimStudent",
+						"type": "SparkJob",
+						"dependsOn": [],
+						"policy": {
+							"timeout": "7.00:00:00",
+							"retry": 0,
+							"retryIntervalInSeconds": 30,
+							"secureOutput": false,
+							"secureInput": false
+						},
+						"userProperties": [],
+						"typeProperties": {
+							"sparkJob": {
+								"referenceName": "DimStudent",
+								"type": "SparkJobDefinitionReference"
+							}
+						}
 					}
 				],
 				"policy": {
@@ -338,8 +337,8 @@
 				"annotations": []
 			},
 			"dependsOn": [
-				"[concat(variables('workspaceId'), '/notebooks/DimActivity')]",
-				"[concat(variables('workspaceId'), '/sparkJobDefinitions/DimActivity')]"
+				"[concat(variables('workspaceId'), '/sparkJobDefinitions/DimActivity')]",
+				"[concat(variables('workspaceId'), '/sparkJobDefinitions/DimStudent')]"
 			]
 		},
 		{
@@ -22545,6 +22544,38 @@
 						"spark.dynamicAllocation.minExecutors": "1",
 						"spark.dynamicAllocation.maxExecutors": "2",
 						"spark.autotune.trackingId": "e2814432-15b4-4287-9c93-be40b87c1836"
+					},
+					"args": [],
+					"jars": [],
+					"files": [],
+					"driverMemory": "28g",
+					"driverCores": 4,
+					"executorMemory": "28g",
+					"executorCores": 4,
+					"numExecutors": 1
+				}
+			},
+			"dependsOn": []
+		},
+		{
+			"name": "[concat(parameters('workspaceName'), '/DimStudent')]",
+			"type": "Microsoft.Synapse/workspaces/sparkJobDefinitions",
+			"apiVersion": "2019-06-01-preview",
+			"properties": {
+				"targetBigDataPool": {
+					"referenceName": "batched",
+					"type": "BigDataPoolReference"
+				},
+				"requiredSparkVersion": "2.4",
+				"language": "python",
+				"jobProperties": {
+					"name": "DimStudent",
+					"file": "abfss://datalake@dus02store.dfs.core.windows.net/synapse/workspaces/studentanalytics/batchjobs/DimStudent/Init.py",
+					"conf": {
+						"spark.dynamicAllocation.enabled": "true",
+						"spark.dynamicAllocation.minExecutors": "1",
+						"spark.dynamicAllocation.maxExecutors": "2",
+						"spark.autotune.trackingId": "01536893-8b58-431b-b07c-a10e175f6f18"
 					},
 					"args": [],
 					"jars": [],
