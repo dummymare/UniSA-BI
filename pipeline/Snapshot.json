@@ -1,0 +1,21 @@
+{
+	"name": "Snapshot",
+	"properties": {
+		"activities": [
+			{
+				"name": "Weekly_run",
+				"type": "ExecutePipeline",
+				"dependsOn": [],
+				"userProperties": [],
+				"typeProperties": {
+					"pipeline": {
+						"referenceName": "weekly_run",
+						"type": "PipelineReference"
+					},
+					"waitOnCompletion": true
+				}
+			}
+		],
+		"annotations": []
+	}
+}
